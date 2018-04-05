@@ -83,6 +83,13 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
             thought = thoughtList[indexPath.row]
             cell.configCell(thought: thought)
         
+            cell.thoughtLbl.adjustsFontSizeToFitWidth = true
+            cell.topicLbl.adjustsFontSizeToFitWidth = true
+            cell.userLbl.adjustsFontSizeToFitWidth = true
+            cell.locationLbl.adjustsFontSizeToFitWidth = true
+            cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+            cell.numOfLikes.adjustsFontSizeToFitWidth = true
+
             //adding values to labels
             cell.thoughtLbl.text = mainInstance.thought
             cell.topicLbl.text = mainInstance.topic
@@ -122,6 +129,7 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
 }

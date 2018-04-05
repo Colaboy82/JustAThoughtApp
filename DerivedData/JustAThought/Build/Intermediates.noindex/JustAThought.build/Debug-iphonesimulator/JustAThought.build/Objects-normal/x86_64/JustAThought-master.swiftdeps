@@ -1,16 +1,16 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "27eed7cc2ec535b93cea59e8b3f067d2"
-build_time: [1522155530, 298966000]
+build_time: [1522898151, 694374000]
 inputs:
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/Not used/FindTopicTableViewController.swift": [1514346502, 0]
-  "/Users/derrickmu/Desktop/JustAThought/JustAThought/CellTypes/VCTableViewCell.swift": [1521735428, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/CellTypes/VCTableViewCell.swift": [1522897348, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/TutorialPage.swift": [1521739644, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/Models/ThoughtModel.swift": [1521734745, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/LoginVC.swift": [1521721641, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/InfoVC.swift": [1517275650, 0]
-  "/Users/derrickmu/Desktop/JustAThought/JustAThought/SpecificThoughtVC.swift": [1521738183, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/SpecificThoughtVC.swift": [1522898056, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/CellTypes/SearchTopicViewCell.swift": [1514340559, 0]
-  "/Users/derrickmu/Desktop/JustAThought/JustAThought/SpecificTopicVC.swift": [1521738160, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/SpecificTopicVC.swift": [1522898092, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/LikeLeaderboardVC.swift": [1521738196, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/Models/CitiesModel.swift": [1514492706, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/SpecificCityVC.swift": [1521738178, 0]

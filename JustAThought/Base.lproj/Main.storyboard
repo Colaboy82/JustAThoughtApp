@@ -600,7 +600,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8S-XG-bM9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8S-XG-bM9">
                                                     <rect key="frame" x="15" y="96" width="91" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -612,7 +612,6 @@
                                                 <constraint firstAttribute="bottom" secondItem="SKF-Y1-2Zb" secondAttribute="bottom" constant="24.5" id="EVa-KT-xXP"/>
                                                 <constraint firstItem="b3D-Lh-1z7" firstAttribute="top" secondItem="YRi-ex-dk2" secondAttribute="bottom" constant="3" id="GeR-vi-JiQ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="b3D-Lh-1z7" secondAttribute="trailing" constant="254" id="GiR-NG-PRb"/>
-                                                <constraint firstItem="SKF-Y1-2Zb" firstAttribute="leading" relation="lessThanOrEqual" secondItem="E8S-XG-bM9" secondAttribute="trailing" constant="165" id="IjQ-FB-djm"/>
                                                 <constraint firstItem="b3D-Lh-1z7" firstAttribute="leading" secondItem="TUn-qg-OfJ" secondAttribute="leadingMargin" id="J66-As-ZIv"/>
                                                 <constraint firstItem="b3D-Lh-1z7" firstAttribute="top" secondItem="TUn-qg-OfJ" secondAttribute="topMargin" constant="38" id="STb-Px-N5j"/>
                                                 <constraint firstItem="E8S-XG-bM9" firstAttribute="leading" secondItem="TUn-qg-OfJ" secondAttribute="leadingMargin" id="XOv-gT-cBm"/>
@@ -663,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgO-Rj-Zdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="188"/>
+            <point key="canvasLocation" x="154" y="185"/>
         </scene>
         <!--Find Topic Table View Controller-->
         <scene sceneID="snr-uo-5EN">
@@ -1462,7 +1461,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRs-dC-GID">
-                                                    <rect key="frame" x="95" y="11" width="113" height="21"/>
+                                                    <rect key="frame" x="115" y="9" width="144" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1474,22 +1473,14 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbQ-cf-b0O">
-                                                    <rect key="frame" x="15" y="72" width="66" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbQ-cf-b0O">
+                                                    <rect key="frame" x="15" y="72" width="132" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thought" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHm-9a-5BL">
-                                                    <rect key="frame" x="99" y="114" width="176" height="87"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# of likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN4-iF-tZl">
-                                                    <rect key="frame" x="268" y="11" width="69" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thought" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHm-9a-5BL">
+                                                    <rect key="frame" x="48" y="114" width="281" height="96"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1517,16 +1508,30 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN4-iF-tZl">
+                                                    <rect key="frame" x="268" y="9" width="69" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" relation="lessThanOrEqual" secondItem="CHm-9a-5BL" secondAttribute="bottom" constant="21" id="2If-YH-5Vz"/>
-                                                <constraint firstItem="BRs-dC-GID" firstAttribute="leading" secondItem="SZe-il-RZo" secondAttribute="leadingMargin" constant="80" id="3Ra-YI-a5Y"/>
-                                                <constraint firstItem="CHm-9a-5BL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="SZe-il-RZo" secondAttribute="leadingMargin" constant="84" id="Lzb-tf-NN5"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="BRs-dC-GID" secondAttribute="bottom" constant="190" id="Qmi-OU-Psf"/>
-                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="BRs-dC-GID" secondAttribute="trailing" constant="152" id="YLI-su-0eo"/>
-                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="CHm-9a-5BL" secondAttribute="trailing" constant="85" id="uI8-Pn-166"/>
-                                                <constraint firstItem="CHm-9a-5BL" firstAttribute="top" secondItem="SZe-il-RZo" secondAttribute="topMargin" constant="103" id="w1R-RM-Zds"/>
-                                                <constraint firstItem="BRs-dC-GID" firstAttribute="top" secondItem="SZe-il-RZo" secondAttribute="topMargin" id="yqp-bn-AQc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CHm-9a-5BL" secondAttribute="trailing" constant="31" id="2Nb-ci-TIQ"/>
+                                                <constraint firstItem="mbQ-cf-b0O" firstAttribute="top" secondItem="SZe-il-RZo" secondAttribute="topMargin" constant="61" id="G21-jL-cAU"/>
+                                                <constraint firstItem="mbQ-cf-b0O" firstAttribute="leading" secondItem="SZe-il-RZo" secondAttribute="leadingMargin" id="Jwv-24-4kl"/>
+                                                <constraint firstAttribute="bottom" secondItem="LN4-iF-tZl" secondAttribute="bottom" constant="202.5" id="LwI-ca-jeV"/>
+                                                <constraint firstItem="BRs-dC-GID" firstAttribute="leading" secondItem="SZe-il-RZo" secondAttribute="leading" constant="115" id="N2T-Pm-vcf"/>
+                                                <constraint firstItem="CHm-9a-5BL" firstAttribute="top" secondItem="SZe-il-RZo" secondAttribute="topMargin" constant="103" id="Nsl-2D-e4q"/>
+                                                <constraint firstAttribute="trailing" secondItem="BRs-dC-GID" secondAttribute="trailing" constant="116" id="YPU-Q3-vgH"/>
+                                                <constraint firstItem="CHm-9a-5BL" firstAttribute="leading" secondItem="SZe-il-RZo" secondAttribute="leadingMargin" constant="33" id="YXk-5R-6mk"/>
+                                                <constraint firstItem="LN4-iF-tZl" firstAttribute="top" secondItem="SZe-il-RZo" secondAttribute="top" constant="9" id="YxZ-q4-Tro"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mbQ-cf-b0O" secondAttribute="bottom" constant="129" id="e2P-Fo-W0c"/>
+                                                <constraint firstItem="BRs-dC-GID" firstAttribute="top" secondItem="SZe-il-RZo" secondAttribute="top" constant="9" id="eGM-KU-hkT"/>
+                                                <constraint firstAttribute="bottom" secondItem="BRs-dC-GID" secondAttribute="bottom" constant="202.5" id="foy-5O-65h"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CHm-9a-5BL" secondAttribute="bottom" constant="12" id="lEo-WK-Qir"/>
+                                                <constraint firstItem="LN4-iF-tZl" firstAttribute="leading" secondItem="SZe-il-RZo" secondAttribute="leading" constant="268" id="lvS-LN-fMz"/>
+                                                <constraint firstAttribute="trailing" secondItem="LN4-iF-tZl" secondAttribute="trailing" constant="38" id="tuw-Rg-1XA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mbQ-cf-b0O" secondAttribute="trailing" constant="213" id="ucE-PV-JFb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -1556,7 +1561,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fow-XP-p64" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="916"/>
+            <point key="canvasLocation" x="108" y="915.29235382308855"/>
         </scene>
         <!--User ProfileVC-->
         <scene sceneID="REc-0V-n45">

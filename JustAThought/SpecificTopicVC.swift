@@ -37,6 +37,13 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             let numToString = (thought._likes).toString()
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
+        
+            cell.topicLbl.adjustsFontSizeToFitWidth = true
+            cell.userLbl.adjustsFontSizeToFitWidth = true
+            cell.locationLbl.adjustsFontSizeToFitWidth = true
+            cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+            cell.numOfLikes.adjustsFontSizeToFitWidth = true
+        
             cell.topicLbl.text = thought.typedTopic
             cell.userLbl.text = thought.userName
             cell.timeStampLbl.text = thought.timeStamp

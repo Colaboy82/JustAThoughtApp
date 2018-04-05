@@ -18,10 +18,10 @@
 	<string>FirebaseRemoteConfig</string>
 	<string>Crashlytics</string>
 	<string>CoreLocation</string>
+	<string>WatchKit</string>
 	<string>XCTest</string>
 	<string>FirebaseAuth</string>
 	<string>FirebaseCrash</string>
-	<string>WatchKit</string>
 	<string>FirebaseMessaging</string>
 	<string>FirebaseCore</string>
 	<string>FirebaseInvites</string>
