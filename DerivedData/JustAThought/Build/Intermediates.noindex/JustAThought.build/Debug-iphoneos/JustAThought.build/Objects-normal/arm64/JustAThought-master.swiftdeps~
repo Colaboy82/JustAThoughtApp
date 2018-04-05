@@ -1,0 +1,23 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "b9f9d43f620e44b6ef2b0304b4076d57"
+build_time: [1515382304, 272471000]
+inputs:
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/Not used/FindTopicTableViewController.swift": [1514346502, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/CellTypes/VCTableViewCell.swift": [1515162817, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/Models/ThoughtModel.swift": [1515168649, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/LoginVC.swift": [1515033788, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/CellTypes/SearchTopicViewCell.swift": [1514340559, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/SpecificTopicVC.swift": [1515034713, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/LikeLeaderboardVC.swift": [1515215486, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/Models/CitiesModel.swift": [1514492706, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/SpecificCityVC.swift": [1515034543, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/Global.swift": [1515046009, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/ViewController.swift": [1515215070, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/TopicCreateVC.swift": [1515033926, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/Models/TopicModel.swift": [1514753633, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/ResetPasswordVC.swift": [1515033904, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/NavigationController.swift": [1515199920, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/CreateAccountVC.swift": [1515186446, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/Models/UserModel.swift": [1515175172, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/UserProfileVC.swift": [1515175838, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/AppDelegate.swift": [1513741220, 0]

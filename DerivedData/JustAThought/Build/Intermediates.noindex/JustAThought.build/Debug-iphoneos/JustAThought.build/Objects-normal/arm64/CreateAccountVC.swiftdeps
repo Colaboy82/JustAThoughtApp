@@ -1,0 +1,1080 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CreateAccountVC"
+provides-nominal:
+- "12JustAThought15CreateAccountVCC"
+provides-member:
+- ["12JustAThought15CreateAccountVCC", ""]
+provides-dynamic-lookup:
+- "createAccountAction"
+- "didReceiveMemoryWarning"
+- "emailTextField"
+- "firstNameTextField"
+- "lastNameTextField"
+- "middleNameTextField"
+- "passwordTextField"
+- "textFieldShouldReturn"
+- "usernameTextField"
+- "viewDidLoad"
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "=="
+- "AnyObject"
+- "AssignmentPrecedence"
+- !private "Auth"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CreateAccountVC"
+- "Database"
+- "Dictionary"
+- "StringLiteralType"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- "UITextField"
+- "UITextFieldDelegate"
+- "UIViewController"
+- !private "print"
+- !private "||"
+depends-member:
+- !private ["So4AuthC", "auth"]
+- !private ["So4AuthC", "createUser"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "endEditing"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Auth"]
+- ["s7CVarArgP", "Database"]
+- !private ["s7CVarArgP", "UIAlertAction"]
+- !private ["s7CVarArgP", "UIAlertController"]
+- !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "child"]
+- !private ["s7CVarArgP", "createUser"]
+- ["s7CVarArgP", "database"]
+- !private ["s7CVarArgP", "databaseRef"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "emailTextField"]
+- !private ["s7CVarArgP", "endEditing"]
+- !private ["s7CVarArgP", "exists"]
+- !private ["s7CVarArgP", "firstNameTextField"]
+- !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "lastNameTextField"]
+- !private ["s7CVarArgP", "middleNameTextField"]
+- !private ["s7CVarArgP", "observeSingleEvent"]
+- !private ["s7CVarArgP", "passwordTextField"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "queryEqual"]
+- !private ["s7CVarArgP", "queryOrdered"]
+- ["s7CVarArgP", "reference"]
+- !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "text"]
+- ["s7CVarArgP", "textField"]
+- ["s7CVarArgP", "textFieldDidBeginEditing"]
+- ["s7CVarArgP", "textFieldDidEndEditing"]
+- ["s7CVarArgP", "textFieldShouldBeginEditing"]
+- ["s7CVarArgP", "textFieldShouldClear"]
+- ["s7CVarArgP", "textFieldShouldEndEditing"]
+- ["s7CVarArgP", "textFieldShouldReturn"]
+- !private ["s7CVarArgP", "uid"]
+- !private ["s7CVarArgP", "updateChildValues"]
+- !private ["s7CVarArgP", "usernameTextField"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- ["12JustAThought15CreateAccountVCC", "AnyObject"]
+- !private ["12JustAThought15CreateAccountVCC", "Auth"]
+- ["12JustAThought15CreateAccountVCC", "Bool"]
+- ["12JustAThought15CreateAccountVCC", "Database"]
+- !private ["12JustAThought15CreateAccountVCC", "UIAlertAction"]
+- !private ["12JustAThought15CreateAccountVCC", "UIAlertController"]
+- ["12JustAThought15CreateAccountVCC", "UITextField"]
+- ["12JustAThought15CreateAccountVCC", "createAccountAction"]
+- ["12JustAThought15CreateAccountVCC", "databaseRef"]
+- ["12JustAThought15CreateAccountVCC", "deinit"]
+- ["12JustAThought15CreateAccountVCC", "didReceiveMemoryWarning"]
+- ["12JustAThought15CreateAccountVCC", "emailTextField"]
+- ["12JustAThought15CreateAccountVCC", "firstNameTextField"]
+- !private ["12JustAThought15CreateAccountVCC", "hideKeyboardWhenTappedAround"]
+- ["12JustAThought15CreateAccountVCC", "init"]
+- ["12JustAThought15CreateAccountVCC", "lastNameTextField"]
+- ["12JustAThought15CreateAccountVCC", "middleNameTextField"]
+- ["12JustAThought15CreateAccountVCC", "passwordTextField"]
+- !private ["12JustAThought15CreateAccountVCC", "present"]
+- !private ["12JustAThought15CreateAccountVCC", "print"]
+- !private ["12JustAThought15CreateAccountVCC", "storyboard"]
+- ["12JustAThought15CreateAccountVCC", "textField"]
+- ["12JustAThought15CreateAccountVCC", "textFieldDidBeginEditing"]
+- ["12JustAThought15CreateAccountVCC", "textFieldDidEndEditing"]
+- ["12JustAThought15CreateAccountVCC", "textFieldShouldBeginEditing"]
+- ["12JustAThought15CreateAccountVCC", "textFieldShouldClear"]
+- ["12JustAThought15CreateAccountVCC", "textFieldShouldEndEditing"]
+- ["12JustAThought15CreateAccountVCC", "textFieldShouldReturn"]
+- ["12JustAThought15CreateAccountVCC", "usernameTextField"]
+- !private ["12JustAThought15CreateAccountVCC", "view"]
+- ["12JustAThought15CreateAccountVCC", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "Auth"]
+- ["s28CustomDebugStringConvertibleP", "Database"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "child"]
+- !private ["s28CustomDebugStringConvertibleP", "createUser"]
+- ["s28CustomDebugStringConvertibleP", "database"]
+- !private ["s28CustomDebugStringConvertibleP", "databaseRef"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "emailTextField"]
+- !private ["s28CustomDebugStringConvertibleP", "endEditing"]
+- !private ["s28CustomDebugStringConvertibleP", "exists"]
+- !private ["s28CustomDebugStringConvertibleP", "firstNameTextField"]
+- !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "lastNameTextField"]
+- !private ["s28CustomDebugStringConvertibleP", "middleNameTextField"]
+- !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "passwordTextField"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "queryEqual"]
+- !private ["s28CustomDebugStringConvertibleP", "queryOrdered"]
+- ["s28CustomDebugStringConvertibleP", "reference"]
+- !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- ["s28CustomDebugStringConvertibleP", "textField"]
+- ["s28CustomDebugStringConvertibleP", "textFieldDidBeginEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldDidEndEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldBeginEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldClear"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldEndEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
+- !private ["s28CustomDebugStringConvertibleP", "updateChildValues"]
+- !private ["s28CustomDebugStringConvertibleP", "usernameTextField"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Auth"]
+- ["s23CustomStringConvertibleP", "Database"]
+- !private ["s23CustomStringConvertibleP", "UIAlertAction"]
+- !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "child"]
+- !private ["s23CustomStringConvertibleP", "createUser"]
+- ["s23CustomStringConvertibleP", "database"]
+- !private ["s23CustomStringConvertibleP", "databaseRef"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "emailTextField"]
+- !private ["s23CustomStringConvertibleP", "endEditing"]
+- !private ["s23CustomStringConvertibleP", "exists"]
+- !private ["s23CustomStringConvertibleP", "firstNameTextField"]
+- !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "lastNameTextField"]
+- !private ["s23CustomStringConvertibleP", "middleNameTextField"]
+- !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
+- !private ["s23CustomStringConvertibleP", "passwordTextField"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "queryEqual"]
+- !private ["s23CustomStringConvertibleP", "queryOrdered"]
+- ["s23CustomStringConvertibleP", "reference"]
+- !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", "textField"]
+- ["s23CustomStringConvertibleP", "textFieldDidBeginEditing"]
+- ["s23CustomStringConvertibleP", "textFieldDidEndEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldBeginEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldClear"]
+- ["s23CustomStringConvertibleP", "textFieldShouldEndEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s23CustomStringConvertibleP", "uid"]
+- !private ["s23CustomStringConvertibleP", "updateChildValues"]
+- !private ["s23CustomStringConvertibleP", "usernameTextField"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["SC13DataEventTypeO", "value"]
+- !private ["So12DataSnapshotC", "exists"]
+- ["So8DatabaseC", "database"]
+- ["So8DatabaseC", "reference"]
+- !private ["So13DatabaseQueryC", "child"]
+- !private ["So13DatabaseQueryC", "observeSingleEvent"]
+- !private ["So13DatabaseQueryC", "queryEqual"]
+- !private ["So13DatabaseQueryC", "queryOrdered"]
+- !private ["So13DatabaseQueryC", "updateChildValues"]
+- !private ["So17DatabaseReferenceC", "child"]
+- !private ["So17DatabaseReferenceC", "queryOrdered"]
+- !private ["So17DatabaseReferenceC", "updateChildValues"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Auth"]
+- ["s9EquatableP", "Database"]
+- !private ["s9EquatableP", "UIAlertAction"]
+- !private ["s9EquatableP", "UIAlertController"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addAction"]
+- !private ["s9EquatableP", "alert"]
+- !private ["s9EquatableP", "auth"]
+- !private ["s9EquatableP", "cancel"]
+- !private ["s9EquatableP", "child"]
+- !private ["s9EquatableP", "createUser"]
+- ["s9EquatableP", "database"]
+- !private ["s9EquatableP", "databaseRef"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "emailTextField"]
+- !private ["s9EquatableP", "endEditing"]
+- !private ["s9EquatableP", "exists"]
+- !private ["s9EquatableP", "firstNameTextField"]
+- !private ["s9EquatableP", "hideKeyboardWhenTappedAround"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "instantiateViewController"]
+- !private ["s9EquatableP", "lastNameTextField"]
+- !private ["s9EquatableP", "middleNameTextField"]
+- !private ["s9EquatableP", "observeSingleEvent"]
+- !private ["s9EquatableP", "passwordTextField"]
+- !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "queryEqual"]
+- !private ["s9EquatableP", "queryOrdered"]
+- ["s9EquatableP", "reference"]
+- !private ["s9EquatableP", "storyboard"]
+- !private ["s9EquatableP", "text"]
+- ["s9EquatableP", "textField"]
+- ["s9EquatableP", "textFieldDidBeginEditing"]
+- ["s9EquatableP", "textFieldDidEndEditing"]
+- ["s9EquatableP", "textFieldShouldBeginEditing"]
+- ["s9EquatableP", "textFieldShouldClear"]
+- ["s9EquatableP", "textFieldShouldEndEditing"]
+- ["s9EquatableP", "textFieldShouldReturn"]
+- !private ["s9EquatableP", "uid"]
+- !private ["s9EquatableP", "updateChildValues"]
+- !private ["s9EquatableP", "usernameTextField"]
+- !private ["s9EquatableP", "value"]
+- !private ["s9EquatableP", "view"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Auth"]
+- ["s8HashableP", "Database"]
+- !private ["s8HashableP", "UIAlertAction"]
+- !private ["s8HashableP", "UIAlertController"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addAction"]
+- !private ["s8HashableP", "alert"]
+- !private ["s8HashableP", "auth"]
+- !private ["s8HashableP", "cancel"]
+- !private ["s8HashableP", "child"]
+- !private ["s8HashableP", "createUser"]
+- ["s8HashableP", "database"]
+- !private ["s8HashableP", "databaseRef"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "emailTextField"]
+- !private ["s8HashableP", "endEditing"]
+- !private ["s8HashableP", "exists"]
+- !private ["s8HashableP", "firstNameTextField"]
+- !private ["s8HashableP", "hideKeyboardWhenTappedAround"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "instantiateViewController"]
+- !private ["s8HashableP", "lastNameTextField"]
+- !private ["s8HashableP", "middleNameTextField"]
+- !private ["s8HashableP", "observeSingleEvent"]
+- !private ["s8HashableP", "passwordTextField"]
+- !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "queryEqual"]
+- !private ["s8HashableP", "queryOrdered"]
+- ["s8HashableP", "reference"]
+- !private ["s8HashableP", "storyboard"]
+- !private ["s8HashableP", "text"]
+- ["s8HashableP", "textField"]
+- ["s8HashableP", "textFieldDidBeginEditing"]
+- ["s8HashableP", "textFieldDidEndEditing"]
+- ["s8HashableP", "textFieldShouldBeginEditing"]
+- ["s8HashableP", "textFieldShouldClear"]
+- ["s8HashableP", "textFieldShouldEndEditing"]
+- ["s8HashableP", "textFieldShouldReturn"]
+- !private ["s8HashableP", "uid"]
+- !private ["s8HashableP", "updateChildValues"]
+- !private ["s8HashableP", "usernameTextField"]
+- !private ["s8HashableP", "value"]
+- !private ["s8HashableP", "view"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Auth"]
+- ["So8NSCodingP", "Database"]
+- !private ["So8NSCodingP", "UIAlertAction"]
+- !private ["So8NSCodingP", "UIAlertController"]
+- !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "databaseRef"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "emailTextField"]
+- !private ["So8NSCodingP", "endEditing"]
+- !private ["So8NSCodingP", "firstNameTextField"]
+- !private ["So8NSCodingP", "hideKeyboardWhenTappedAround"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "lastNameTextField"]
+- !private ["So8NSCodingP", "middleNameTextField"]
+- !private ["So8NSCodingP", "passwordTextField"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "storyboard"]
+- !private ["So8NSCodingP", "text"]
+- ["So8NSCodingP", "textField"]
+- ["So8NSCodingP", "textFieldDidBeginEditing"]
+- ["So8NSCodingP", "textFieldDidEndEditing"]
+- ["So8NSCodingP", "textFieldShouldBeginEditing"]
+- ["So8NSCodingP", "textFieldShouldClear"]
+- ["So8NSCodingP", "textFieldShouldEndEditing"]
+- ["So8NSCodingP", "textFieldShouldReturn"]
+- !private ["So8NSCodingP", "usernameTextField"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "Auth"]
+- ["So26NSExtensionRequestHandlingP", "Database"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "databaseRef"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "emailTextField"]
+- !private ["So26NSExtensionRequestHandlingP", "firstNameTextField"]
+- !private ["So26NSExtensionRequestHandlingP", "hideKeyboardWhenTappedAround"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "lastNameTextField"]
+- !private ["So26NSExtensionRequestHandlingP", "middleNameTextField"]
+- !private ["So26NSExtensionRequestHandlingP", "passwordTextField"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- ["So26NSExtensionRequestHandlingP", "textField"]
+- ["So26NSExtensionRequestHandlingP", "textFieldDidBeginEditing"]
+- ["So26NSExtensionRequestHandlingP", "textFieldDidEndEditing"]
+- ["So26NSExtensionRequestHandlingP", "textFieldShouldBeginEditing"]
+- ["So26NSExtensionRequestHandlingP", "textFieldShouldClear"]
+- ["So26NSExtensionRequestHandlingP", "textFieldShouldEndEditing"]
+- ["So26NSExtensionRequestHandlingP", "textFieldShouldReturn"]
+- !private ["So26NSExtensionRequestHandlingP", "usernameTextField"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "AnyObject"]
+- !private ["So8NSObjectC", "Auth"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Database"]
+- !private ["So8NSObjectC", "UIAlertAction"]
+- !private ["So8NSObjectC", "UIAlertController"]
+- ["So8NSObjectC", "UITextField"]
+- !private ["So8NSObjectC", "addAction"]
+- !private ["So8NSObjectC", "auth"]
+- !private ["So8NSObjectC", "child"]
+- ["So8NSObjectC", "createAccountAction"]
+- !private ["So8NSObjectC", "createUser"]
+- ["So8NSObjectC", "database"]
+- ["So8NSObjectC", "databaseRef"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "emailTextField"]
+- !private ["So8NSObjectC", "endEditing"]
+- !private ["So8NSObjectC", "exists"]
+- ["So8NSObjectC", "firstNameTextField"]
+- !private ["So8NSObjectC", "hideKeyboardWhenTappedAround"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- ["So8NSObjectC", "lastNameTextField"]
+- ["So8NSObjectC", "middleNameTextField"]
+- !private ["So8NSObjectC", "observeSingleEvent"]
+- ["So8NSObjectC", "passwordTextField"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "queryEqual"]
+- !private ["So8NSObjectC", "queryOrdered"]
+- ["So8NSObjectC", "reference"]
+- !private ["So8NSObjectC", "storyboard"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "textField"]
+- ["So8NSObjectC", "textFieldDidBeginEditing"]
+- ["So8NSObjectC", "textFieldDidEndEditing"]
+- ["So8NSObjectC", "textFieldShouldBeginEditing"]
+- ["So8NSObjectC", "textFieldShouldClear"]
+- ["So8NSObjectC", "textFieldShouldEndEditing"]
+- ["So8NSObjectC", "textFieldShouldReturn"]
+- !private ["So8NSObjectC", "uid"]
+- !private ["So8NSObjectC", "updateChildValues"]
+- ["So8NSObjectC", "usernameTextField"]
+- !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "Auth"]
+- ["So16NSObjectProtocolP", "Database"]
+- !private ["So16NSObjectProtocolP", "UIAlertAction"]
+- !private ["So16NSObjectProtocolP", "UIAlertController"]
+- !private ["So16NSObjectProtocolP", "addAction"]
+- !private ["So16NSObjectProtocolP", "auth"]
+- !private ["So16NSObjectProtocolP", "child"]
+- !private ["So16NSObjectProtocolP", "createUser"]
+- ["So16NSObjectProtocolP", "database"]
+- !private ["So16NSObjectProtocolP", "databaseRef"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "emailTextField"]
+- !private ["So16NSObjectProtocolP", "endEditing"]
+- !private ["So16NSObjectProtocolP", "exists"]
+- !private ["So16NSObjectProtocolP", "firstNameTextField"]
+- !private ["So16NSObjectProtocolP", "hideKeyboardWhenTappedAround"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- !private ["So16NSObjectProtocolP", "lastNameTextField"]
+- !private ["So16NSObjectProtocolP", "middleNameTextField"]
+- !private ["So16NSObjectProtocolP", "observeSingleEvent"]
+- !private ["So16NSObjectProtocolP", "passwordTextField"]
+- !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "queryEqual"]
+- !private ["So16NSObjectProtocolP", "queryOrdered"]
+- ["So16NSObjectProtocolP", "reference"]
+- !private ["So16NSObjectProtocolP", "storyboard"]
+- !private ["So16NSObjectProtocolP", "text"]
+- ["So16NSObjectProtocolP", "textField"]
+- ["So16NSObjectProtocolP", "textFieldDidBeginEditing"]
+- ["So16NSObjectProtocolP", "textFieldDidEndEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldBeginEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldClear"]
+- ["So16NSObjectProtocolP", "textFieldShouldEndEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldReturn"]
+- !private ["So16NSObjectProtocolP", "uid"]
+- !private ["So16NSObjectProtocolP", "updateChildValues"]
+- !private ["So16NSObjectProtocolP", "usernameTextField"]
+- !private ["So16NSObjectProtocolP", "view"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "alert"]
+- !private ["s16RawRepresentableP", "cancel"]
+- !private ["s16RawRepresentableP", "value"]
+- ["s8SequenceP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "endEditing"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["SC18UIAlertActionStyleO", "cancel"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
+- !private ["SC22UIAlertControllerStyleO", "alert"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "endEditing"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Auth"]
+- ["So21UIAppearanceContainerP", "Database"]
+- !private ["So21UIAppearanceContainerP", "UIAlertAction"]
+- !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- !private ["So21UIAppearanceContainerP", "addAction"]
+- !private ["So21UIAppearanceContainerP", "databaseRef"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "emailTextField"]
+- !private ["So21UIAppearanceContainerP", "endEditing"]
+- !private ["So21UIAppearanceContainerP", "firstNameTextField"]
+- !private ["So21UIAppearanceContainerP", "hideKeyboardWhenTappedAround"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "lastNameTextField"]
+- !private ["So21UIAppearanceContainerP", "middleNameTextField"]
+- !private ["So21UIAppearanceContainerP", "passwordTextField"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "storyboard"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- ["So21UIAppearanceContainerP", "textField"]
+- ["So21UIAppearanceContainerP", "textFieldDidBeginEditing"]
+- ["So21UIAppearanceContainerP", "textFieldDidEndEditing"]
+- ["So21UIAppearanceContainerP", "textFieldShouldBeginEditing"]
+- ["So21UIAppearanceContainerP", "textFieldShouldClear"]
+- ["So21UIAppearanceContainerP", "textFieldShouldEndEditing"]
+- ["So21UIAppearanceContainerP", "textFieldShouldReturn"]
+- !private ["So21UIAppearanceContainerP", "usernameTextField"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "Auth"]
+- ["So18UIContentContainerP", "Database"]
+- !private ["So18UIContentContainerP", "UIAlertAction"]
+- !private ["So18UIContentContainerP", "UIAlertController"]
+- !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "databaseRef"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "emailTextField"]
+- !private ["So18UIContentContainerP", "firstNameTextField"]
+- !private ["So18UIContentContainerP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "lastNameTextField"]
+- !private ["So18UIContentContainerP", "middleNameTextField"]
+- !private ["So18UIContentContainerP", "passwordTextField"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "storyboard"]
+- ["So18UIContentContainerP", "textField"]
+- ["So18UIContentContainerP", "textFieldDidBeginEditing"]
+- ["So18UIContentContainerP", "textFieldDidEndEditing"]
+- ["So18UIContentContainerP", "textFieldShouldBeginEditing"]
+- ["So18UIContentContainerP", "textFieldShouldClear"]
+- ["So18UIContentContainerP", "textFieldShouldEndEditing"]
+- ["So18UIContentContainerP", "textFieldShouldReturn"]
+- !private ["So18UIContentContainerP", "usernameTextField"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "delegate"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "delegate"]
+- !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "endEditing"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "endEditing"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Auth"]
+- ["So18UIFocusEnvironmentP", "Database"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
+- !private ["So18UIFocusEnvironmentP", "databaseRef"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "emailTextField"]
+- !private ["So18UIFocusEnvironmentP", "endEditing"]
+- !private ["So18UIFocusEnvironmentP", "firstNameTextField"]
+- !private ["So18UIFocusEnvironmentP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "lastNameTextField"]
+- !private ["So18UIFocusEnvironmentP", "middleNameTextField"]
+- !private ["So18UIFocusEnvironmentP", "passwordTextField"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "storyboard"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- ["So18UIFocusEnvironmentP", "textField"]
+- ["So18UIFocusEnvironmentP", "textFieldDidBeginEditing"]
+- ["So18UIFocusEnvironmentP", "textFieldDidEndEditing"]
+- ["So18UIFocusEnvironmentP", "textFieldShouldBeginEditing"]
+- ["So18UIFocusEnvironmentP", "textFieldShouldClear"]
+- ["So18UIFocusEnvironmentP", "textFieldShouldEndEditing"]
+- ["So18UIFocusEnvironmentP", "textFieldShouldReturn"]
+- !private ["So18UIFocusEnvironmentP", "usernameTextField"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "endEditing"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So10UIKeyInputP", "delegate"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
+- ["So30UIPasteConfigurationSupportingP", "Database"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "databaseRef"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "emailTextField"]
+- !private ["So30UIPasteConfigurationSupportingP", "endEditing"]
+- !private ["So30UIPasteConfigurationSupportingP", "firstNameTextField"]
+- !private ["So30UIPasteConfigurationSupportingP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "lastNameTextField"]
+- !private ["So30UIPasteConfigurationSupportingP", "middleNameTextField"]
+- !private ["So30UIPasteConfigurationSupportingP", "passwordTextField"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So30UIPasteConfigurationSupportingP", "textField"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldDidBeginEditing"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldDidEndEditing"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldShouldBeginEditing"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldShouldClear"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldShouldEndEditing"]
+- ["So30UIPasteConfigurationSupportingP", "textFieldShouldReturn"]
+- !private ["So30UIPasteConfigurationSupportingP", "usernameTextField"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "AnyObject"]
+- !private ["So11UIResponderC", "Auth"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "Database"]
+- !private ["So11UIResponderC", "UIAlertAction"]
+- !private ["So11UIResponderC", "UIAlertController"]
+- ["So11UIResponderC", "UITextField"]
+- !private ["So11UIResponderC", "addAction"]
+- ["So11UIResponderC", "createAccountAction"]
+- ["So11UIResponderC", "databaseRef"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "emailTextField"]
+- !private ["So11UIResponderC", "endEditing"]
+- ["So11UIResponderC", "firstNameTextField"]
+- !private ["So11UIResponderC", "hideKeyboardWhenTappedAround"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "lastNameTextField"]
+- ["So11UIResponderC", "middleNameTextField"]
+- ["So11UIResponderC", "passwordTextField"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "storyboard"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "textField"]
+- ["So11UIResponderC", "textFieldDidBeginEditing"]
+- ["So11UIResponderC", "textFieldDidEndEditing"]
+- ["So11UIResponderC", "textFieldShouldBeginEditing"]
+- ["So11UIResponderC", "textFieldShouldClear"]
+- ["So11UIResponderC", "textFieldShouldEndEditing"]
+- ["So11UIResponderC", "textFieldShouldReturn"]
+- ["So11UIResponderC", "usernameTextField"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Auth"]
+- ["So30UIResponderStandardEditActionsP", "Database"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
+- !private ["So30UIResponderStandardEditActionsP", "databaseRef"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "emailTextField"]
+- !private ["So30UIResponderStandardEditActionsP", "endEditing"]
+- !private ["So30UIResponderStandardEditActionsP", "firstNameTextField"]
+- !private ["So30UIResponderStandardEditActionsP", "hideKeyboardWhenTappedAround"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "lastNameTextField"]
+- !private ["So30UIResponderStandardEditActionsP", "middleNameTextField"]
+- !private ["So30UIResponderStandardEditActionsP", "passwordTextField"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So30UIResponderStandardEditActionsP", "textField"]
+- ["So30UIResponderStandardEditActionsP", "textFieldDidBeginEditing"]
+- ["So30UIResponderStandardEditActionsP", "textFieldDidEndEditing"]
+- ["So30UIResponderStandardEditActionsP", "textFieldShouldBeginEditing"]
+- ["So30UIResponderStandardEditActionsP", "textFieldShouldClear"]
+- ["So30UIResponderStandardEditActionsP", "textFieldShouldEndEditing"]
+- ["So30UIResponderStandardEditActionsP", "textFieldShouldReturn"]
+- !private ["So30UIResponderStandardEditActionsP", "usernameTextField"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "Auth"]
+- ["So16UIStateRestoringP", "Database"]
+- !private ["So16UIStateRestoringP", "UIAlertAction"]
+- !private ["So16UIStateRestoringP", "UIAlertController"]
+- !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "databaseRef"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "emailTextField"]
+- !private ["So16UIStateRestoringP", "firstNameTextField"]
+- !private ["So16UIStateRestoringP", "hideKeyboardWhenTappedAround"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "lastNameTextField"]
+- !private ["So16UIStateRestoringP", "middleNameTextField"]
+- !private ["So16UIStateRestoringP", "passwordTextField"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "storyboard"]
+- ["So16UIStateRestoringP", "textField"]
+- ["So16UIStateRestoringP", "textFieldDidBeginEditing"]
+- ["So16UIStateRestoringP", "textFieldDidEndEditing"]
+- ["So16UIStateRestoringP", "textFieldShouldBeginEditing"]
+- ["So16UIStateRestoringP", "textFieldShouldClear"]
+- ["So16UIStateRestoringP", "textFieldShouldEndEditing"]
+- ["So16UIStateRestoringP", "textFieldShouldReturn"]
+- !private ["So16UIStateRestoringP", "usernameTextField"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So15UITextDraggableP", "delegate"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "delegate"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "delegate"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So19UITextFieldDelegateP", "Auth"]
+- ["So19UITextFieldDelegateP", "Database"]
+- !private ["So19UITextFieldDelegateP", "UIAlertAction"]
+- !private ["So19UITextFieldDelegateP", "UIAlertController"]
+- !private ["So19UITextFieldDelegateP", "databaseRef"]
+- !private ["So19UITextFieldDelegateP", "emailTextField"]
+- !private ["So19UITextFieldDelegateP", "firstNameTextField"]
+- !private ["So19UITextFieldDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So19UITextFieldDelegateP", "lastNameTextField"]
+- !private ["So19UITextFieldDelegateP", "middleNameTextField"]
+- !private ["So19UITextFieldDelegateP", "passwordTextField"]
+- !private ["So19UITextFieldDelegateP", "present"]
+- !private ["So19UITextFieldDelegateP", "print"]
+- !private ["So19UITextFieldDelegateP", "storyboard"]
+- ["So19UITextFieldDelegateP", "textField"]
+- ["So19UITextFieldDelegateP", "textFieldDidBeginEditing"]
+- ["So19UITextFieldDelegateP", "textFieldDidEndEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldBeginEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldClear"]
+- ["So19UITextFieldDelegateP", "textFieldShouldEndEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldReturn"]
+- !private ["So19UITextFieldDelegateP", "usernameTextField"]
+- !private ["So19UITextFieldDelegateP", "view"]
+- ["So19UITextFieldDelegateP", ""]
+- !private ["So11UITextInputP", "delegate"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "delegate"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "delegate"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "Auth"]
+- ["So18UITraitEnvironmentP", "Database"]
+- !private ["So18UITraitEnvironmentP", "UIAlertAction"]
+- !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- !private ["So18UITraitEnvironmentP", "addAction"]
+- !private ["So18UITraitEnvironmentP", "databaseRef"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "emailTextField"]
+- !private ["So18UITraitEnvironmentP", "endEditing"]
+- !private ["So18UITraitEnvironmentP", "firstNameTextField"]
+- !private ["So18UITraitEnvironmentP", "hideKeyboardWhenTappedAround"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "lastNameTextField"]
+- !private ["So18UITraitEnvironmentP", "middleNameTextField"]
+- !private ["So18UITraitEnvironmentP", "passwordTextField"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "storyboard"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- ["So18UITraitEnvironmentP", "textField"]
+- ["So18UITraitEnvironmentP", "textFieldDidBeginEditing"]
+- ["So18UITraitEnvironmentP", "textFieldDidEndEditing"]
+- ["So18UITraitEnvironmentP", "textFieldShouldBeginEditing"]
+- ["So18UITraitEnvironmentP", "textFieldShouldClear"]
+- ["So18UITraitEnvironmentP", "textFieldShouldEndEditing"]
+- ["So18UITraitEnvironmentP", "textFieldShouldReturn"]
+- !private ["So18UITraitEnvironmentP", "usernameTextField"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "endEditing"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "AnyObject"]
+- !private ["So16UIViewControllerC", "Auth"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "Database"]
+- !private ["So16UIViewControllerC", "UIAlertAction"]
+- !private ["So16UIViewControllerC", "UIAlertController"]
+- ["So16UIViewControllerC", "UITextField"]
+- !private ["So16UIViewControllerC", "addAction"]
+- ["So16UIViewControllerC", "createAccountAction"]
+- ["So16UIViewControllerC", "databaseRef"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "emailTextField"]
+- ["So16UIViewControllerC", "firstNameTextField"]
+- !private ["So16UIViewControllerC", "hideKeyboardWhenTappedAround"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "lastNameTextField"]
+- ["So16UIViewControllerC", "middleNameTextField"]
+- ["So16UIViewControllerC", "passwordTextField"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "print"]
+- !private ["So16UIViewControllerC", "storyboard"]
+- ["So16UIViewControllerC", "textField"]
+- ["So16UIViewControllerC", "textFieldDidBeginEditing"]
+- ["So16UIViewControllerC", "textFieldDidEndEditing"]
+- ["So16UIViewControllerC", "textFieldShouldBeginEditing"]
+- ["So16UIViewControllerC", "textFieldShouldClear"]
+- ["So16UIViewControllerC", "textFieldShouldEndEditing"]
+- ["So16UIViewControllerC", "textFieldShouldReturn"]
+- ["So16UIViewControllerC", "usernameTextField"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["So4UserC", "uid"]
+- !private ["So8UserInfoP", "uid"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "endEditing"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createUser"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "databaseRef"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "emailTextField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "exists"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstNameTextField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lastNameTextField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "middleNameTextField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "passwordTextField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "queryEqual"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "queryOrdered"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidBeginEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidEndEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldBeginEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldClear"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldEndEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "usernameTextField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "So4AuthC"
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "12JustAThought15CreateAccountVCC"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "SC13DataEventTypeO"
+- !private "So12DataSnapshotC"
+- "So8DatabaseC"
+- !private "So13DatabaseQueryC"
+- !private "So17DatabaseReferenceC"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s5ErrorP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- "s8SequenceP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "SC18UIAlertActionStyleO"
+- !private "So17UIAlertControllerC"
+- !private "SC22UIAlertControllerStyleO"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So10UIKeyInputP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- "So19UITextFieldDelegateP"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So4UserC"
+- !private "So8UserInfoP"
+- "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/derrickmu/Desktop/JustAThought/JustAThought/JustAThought-Bridging-Header.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "b564af2ab6df86efa06c8f2be967008d"

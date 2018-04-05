@@ -1,0 +1,252 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SearchTopicViewCell"
+provides-nominal:
+- "12JustAThought19SearchTopicViewCellC"
+provides-member:
+- ["12JustAThought19SearchTopicViewCellC", ""]
+provides-dynamic-lookup:
+- "awakeFromNib"
+- "numOfPosts"
+- "setSelected"
+- "topicName"
+depends-top-level:
+- "Bool"
+- "SearchTopicViewCell"
+- "UILabel"
+- "UITableViewCell"
+depends-member:
+- !private ["So15CALayerDelegateP", "awakeFromNib"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "setSelected"]
+- ["So15CALayerDelegateP", ""]
+- !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "setSelected"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "setSelected"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "awakeFromNib"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "setSelected"]
+- ["s9EquatableP", ""]
+- !private ["s8HashableP", "awakeFromNib"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "setSelected"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "setSelected"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "awakeFromNib"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "numOfPosts"]
+- ["So8NSObjectC", "setSelected"]
+- ["So8NSObjectC", "topicName"]
+- !private ["So16NSObjectProtocolP", "awakeFromNib"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "setSelected"]
+- ["So16NSObjectProtocolP", ""]
+- ["12JustAThought19SearchTopicViewCellC", "Bool"]
+- ["12JustAThought19SearchTopicViewCellC", "UILabel"]
+- ["12JustAThought19SearchTopicViewCellC", "awakeFromNib"]
+- ["12JustAThought19SearchTopicViewCellC", "deinit"]
+- ["12JustAThought19SearchTopicViewCellC", "init"]
+- ["12JustAThought19SearchTopicViewCellC", "numOfPosts"]
+- ["12JustAThought19SearchTopicViewCellC", "setSelected"]
+- ["12JustAThought19SearchTopicViewCellC", "topicName"]
+- !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "setSelected"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "awakeFromNib"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "setSelected"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "awakeFromNib"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "setSelected"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So17UICoordinateSpaceP", "awakeFromNib"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "setSelected"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "awakeFromNib"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "setSelected"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "setSelected"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "awakeFromNib"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "setSelected"]
+- ["So11UIFocusItemP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "awakeFromNib"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "numOfPosts"]
+- ["So11UIResponderC", "setSelected"]
+- ["So11UIResponderC", "topicName"]
+- !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "setSelected"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So15UITableViewCellC", "Bool"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", "awakeFromNib"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "numOfPosts"]
+- ["So15UITableViewCellC", "setSelected"]
+- ["So15UITableViewCellC", "topicName"]
+- ["So15UITableViewCellC", ""]
+- !private ["So18UITraitEnvironmentP", "awakeFromNib"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "setSelected"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "Bool"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "awakeFromNib"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "numOfPosts"]
+- ["So6UIViewC", "setSelected"]
+- ["So6UIViewC", "topicName"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "12JustAThought19SearchTopicViewCellC"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/derrickmu/Desktop/JustAThought/JustAThought/JustAThought-Bridging-Header.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+interface-hash: "b083a722f675262363614b682a4f89eb"

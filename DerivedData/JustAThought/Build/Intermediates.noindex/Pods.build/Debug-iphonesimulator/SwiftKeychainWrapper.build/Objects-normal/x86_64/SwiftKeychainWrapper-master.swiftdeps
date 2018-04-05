@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "fd087a3a358442f399a8db0068bcf5b6"
+build_time: [1517272164, 279755000]
+inputs:
+  "/Users/derrickmu/Desktop/JustAThought/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainItemAccessibility.swift": [1513819623, 0]
+  "/Users/derrickmu/Desktop/JustAThought/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift": [1513819623, 0]

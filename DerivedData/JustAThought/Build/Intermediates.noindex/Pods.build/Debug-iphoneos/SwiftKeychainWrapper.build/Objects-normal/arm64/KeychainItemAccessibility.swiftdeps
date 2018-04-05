@@ -1,0 +1,177 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "KeychainAttrRepresentable"
+- "KeychainItemAccessibility"
+provides-nominal:
+- "20SwiftKeychainWrapper0B17AttrRepresentableP"
+- "20SwiftKeychainWrapper0B17ItemAccessibilityO"
+provides-member:
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", ""]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "CFString"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "KeychainAttrRepresentable"
+- "KeychainItemAccessibility"
+- "kSecAttrAccessibleAfterFirstUnlock"
+- "kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly"
+- "kSecAttrAccessibleAlways"
+- "kSecAttrAccessibleAlwaysThisDeviceOnly"
+- "kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly"
+- "kSecAttrAccessibleWhenUnlocked"
+- "kSecAttrAccessibleWhenUnlockedThisDeviceOnly"
+- !private "keychainItemAccessibilityLookup"
+depends-member:
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "hashValue"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "hashValue"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "hashValue"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "afterFirstUnlock"]
+- ["s9EquatableP", "afterFirstUnlockThisDeviceOnly"]
+- ["s9EquatableP", "always"]
+- ["s9EquatableP", "alwaysThisDeviceOnly"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "keychainAttrValue"]
+- !private ["s9EquatableP", "keychainItemAccessibilityLookup"]
+- ["s9EquatableP", "whenPasscodeSetThisDeviceOnly"]
+- ["s9EquatableP", "whenUnlocked"]
+- ["s9EquatableP", "whenUnlockedThisDeviceOnly"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "afterFirstUnlock"]
+- ["s8HashableP", "afterFirstUnlockThisDeviceOnly"]
+- ["s8HashableP", "always"]
+- ["s8HashableP", "alwaysThisDeviceOnly"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "keychainAttrValue"]
+- !private ["s8HashableP", "keychainItemAccessibilityLookup"]
+- ["s8HashableP", "whenPasscodeSetThisDeviceOnly"]
+- ["s8HashableP", "whenUnlocked"]
+- ["s8HashableP", "whenUnlockedThisDeviceOnly"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "CFString"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "afterFirstUnlock"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "afterFirstUnlockThisDeviceOnly"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "always"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "alwaysThisDeviceOnly"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "hashValue"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "keychainAttrValue"]
+- !private ["20SwiftKeychainWrapper0B17AttrRepresentableP", "keychainItemAccessibilityLookup"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "whenPasscodeSetThisDeviceOnly"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "whenUnlocked"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", "whenUnlockedThisDeviceOnly"]
+- ["20SwiftKeychainWrapper0B17AttrRepresentableP", ""]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "CFString"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "KeychainItemAccessibility"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "__derived_enum_equals"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "accessibilityForAttributeValue"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "afterFirstUnlock"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "afterFirstUnlockThisDeviceOnly"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "always"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "alwaysThisDeviceOnly"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "deinit"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "hashValue"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "keychainAttrValue"]
+- !private ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "keychainItemAccessibilityLookup"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "whenPasscodeSetThisDeviceOnly"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "whenUnlocked"]
+- ["20SwiftKeychainWrapper0B17ItemAccessibilityO", "whenUnlockedThisDeviceOnly"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- !private ["s10MirrorPathP", "hashValue"]
+- !private ["s7NumericP", "hashValue"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s10StrideableP", "hashValue"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s11_StrideableP", "hashValue"]
+depends-nominal:
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- "20SwiftKeychainWrapper0B17AttrRepresentableP"
+- "20SwiftKeychainWrapper0B17ItemAccessibilityO"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s7NumericP"
+- !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-umbrella.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/SwiftKeychainWrapper/SwiftKeychainWrapper/SwiftKeychainWrapper.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/SwiftKeychainWrapper.build/unextended-module.modulemap"
+interface-hash: "8a7902ec9b7aa4f06814ae876a85e379"

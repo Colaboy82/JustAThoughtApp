@@ -1,0 +1,598 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AboutPages"
+provides-nominal:
+- "12JustAThought10AboutPagesC"
+provides-member:
+- ["12JustAThought10AboutPagesC", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "scrollView"
+- "toolbarView"
+- "viewDidLoad"
+depends-top-level:
+- "AboutPages"
+- "AssignmentPrecedence"
+- "UIScrollView"
+- "UIScrollViewDelegate"
+- "UIView"
+- "UIViewController"
+depends-member:
+- ["12JustAThought10AboutPagesC", "UIScrollView"]
+- ["12JustAThought10AboutPagesC", "UIView"]
+- ["12JustAThought10AboutPagesC", "deinit"]
+- ["12JustAThought10AboutPagesC", "didReceiveMemoryWarning"]
+- ["12JustAThought10AboutPagesC", "init"]
+- ["12JustAThought10AboutPagesC", "scrollView"]
+- ["12JustAThought10AboutPagesC", "scrollViewDidChangeAdjustedContentInset"]
+- ["12JustAThought10AboutPagesC", "scrollViewDidEndDecelerating"]
+- ["12JustAThought10AboutPagesC", "scrollViewDidEndDragging"]
+- ["12JustAThought10AboutPagesC", "scrollViewDidEndScrollingAnimation"]
+- ["12JustAThought10AboutPagesC", "scrollViewDidEndZooming"]
+- ["12JustAThought10AboutPagesC", "scrollViewDidScroll"]
+- ["12JustAThought10AboutPagesC", "scrollViewDidScrollToTop"]
+- ["12JustAThought10AboutPagesC", "scrollViewDidZoom"]
+- ["12JustAThought10AboutPagesC", "scrollViewShouldScrollToTop"]
+- ["12JustAThought10AboutPagesC", "scrollViewWillBeginDecelerating"]
+- ["12JustAThought10AboutPagesC", "scrollViewWillBeginDragging"]
+- ["12JustAThought10AboutPagesC", "scrollViewWillBeginZooming"]
+- ["12JustAThought10AboutPagesC", "scrollViewWillEndDragging"]
+- ["12JustAThought10AboutPagesC", "toolbarView"]
+- ["12JustAThought10AboutPagesC", "viewDidLoad"]
+- ["12JustAThought10AboutPagesC", "viewForZooming"]
+- ["12JustAThought10AboutPagesC", "viewForZoomingInScrollView"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "scrollView"]
+- ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s7CVarArgP", "scrollViewDidEndDecelerating"]
+- ["s7CVarArgP", "scrollViewDidEndDragging"]
+- ["s7CVarArgP", "scrollViewDidEndScrollingAnimation"]
+- ["s7CVarArgP", "scrollViewDidEndZooming"]
+- ["s7CVarArgP", "scrollViewDidScroll"]
+- ["s7CVarArgP", "scrollViewDidScrollToTop"]
+- ["s7CVarArgP", "scrollViewDidZoom"]
+- ["s7CVarArgP", "scrollViewShouldScrollToTop"]
+- ["s7CVarArgP", "scrollViewWillBeginDecelerating"]
+- ["s7CVarArgP", "scrollViewWillBeginDragging"]
+- ["s7CVarArgP", "scrollViewWillBeginZooming"]
+- ["s7CVarArgP", "scrollViewWillEndDragging"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", "viewForZooming"]
+- ["s7CVarArgP", "viewForZoomingInScrollView"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollView"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDragging"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndScrollingAnimation"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndZooming"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidScroll"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidScrollToTop"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidZoom"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewShouldScrollToTop"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginDecelerating"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginDragging"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginZooming"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", "viewForZooming"]
+- ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "scrollView"]
+- ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndDragging"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndScrollingAnimation"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndZooming"]
+- ["s23CustomStringConvertibleP", "scrollViewDidScroll"]
+- ["s23CustomStringConvertibleP", "scrollViewDidScrollToTop"]
+- ["s23CustomStringConvertibleP", "scrollViewDidZoom"]
+- ["s23CustomStringConvertibleP", "scrollViewShouldScrollToTop"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginDecelerating"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginDragging"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginZooming"]
+- ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", "viewForZooming"]
+- ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "scrollView"]
+- ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s9EquatableP", "scrollViewDidEndDecelerating"]
+- ["s9EquatableP", "scrollViewDidEndDragging"]
+- ["s9EquatableP", "scrollViewDidEndScrollingAnimation"]
+- ["s9EquatableP", "scrollViewDidEndZooming"]
+- ["s9EquatableP", "scrollViewDidScroll"]
+- ["s9EquatableP", "scrollViewDidScrollToTop"]
+- ["s9EquatableP", "scrollViewDidZoom"]
+- ["s9EquatableP", "scrollViewShouldScrollToTop"]
+- ["s9EquatableP", "scrollViewWillBeginDecelerating"]
+- ["s9EquatableP", "scrollViewWillBeginDragging"]
+- ["s9EquatableP", "scrollViewWillBeginZooming"]
+- ["s9EquatableP", "scrollViewWillEndDragging"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", "viewForZooming"]
+- ["s9EquatableP", "viewForZoomingInScrollView"]
+- ["s9EquatableP", ""]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "scrollView"]
+- ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s8HashableP", "scrollViewDidEndDecelerating"]
+- ["s8HashableP", "scrollViewDidEndDragging"]
+- ["s8HashableP", "scrollViewDidEndScrollingAnimation"]
+- ["s8HashableP", "scrollViewDidEndZooming"]
+- ["s8HashableP", "scrollViewDidScroll"]
+- ["s8HashableP", "scrollViewDidScrollToTop"]
+- ["s8HashableP", "scrollViewDidZoom"]
+- ["s8HashableP", "scrollViewShouldScrollToTop"]
+- ["s8HashableP", "scrollViewWillBeginDecelerating"]
+- ["s8HashableP", "scrollViewWillBeginDragging"]
+- ["s8HashableP", "scrollViewWillBeginZooming"]
+- ["s8HashableP", "scrollViewWillEndDragging"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", "viewForZooming"]
+- ["s8HashableP", "viewForZoomingInScrollView"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "scrollView"]
+- ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSCodingP", "scrollViewDidEndDecelerating"]
+- ["So8NSCodingP", "scrollViewDidEndDragging"]
+- ["So8NSCodingP", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSCodingP", "scrollViewDidEndZooming"]
+- ["So8NSCodingP", "scrollViewDidScroll"]
+- ["So8NSCodingP", "scrollViewDidScrollToTop"]
+- ["So8NSCodingP", "scrollViewDidZoom"]
+- ["So8NSCodingP", "scrollViewShouldScrollToTop"]
+- ["So8NSCodingP", "scrollViewWillBeginDecelerating"]
+- ["So8NSCodingP", "scrollViewWillBeginDragging"]
+- ["So8NSCodingP", "scrollViewWillBeginZooming"]
+- ["So8NSCodingP", "scrollViewWillEndDragging"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", "viewForZooming"]
+- ["So8NSCodingP", "viewForZoomingInScrollView"]
+- ["So8NSCodingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "scrollView"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDragging"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidEndScrollingAnimation"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidEndZooming"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidScroll"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidScrollToTop"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewDidZoom"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewShouldScrollToTop"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginDecelerating"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginDragging"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginZooming"]
+- ["So26NSExtensionRequestHandlingP", "scrollViewWillEndDragging"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", "viewForZooming"]
+- ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- ["So8NSObjectC", "UIScrollView"]
+- ["So8NSObjectC", "UIView"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "scrollView"]
+- ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSObjectC", "scrollViewDidEndDecelerating"]
+- ["So8NSObjectC", "scrollViewDidEndDragging"]
+- ["So8NSObjectC", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSObjectC", "scrollViewDidEndZooming"]
+- ["So8NSObjectC", "scrollViewDidScroll"]
+- ["So8NSObjectC", "scrollViewDidScrollToTop"]
+- ["So8NSObjectC", "scrollViewDidZoom"]
+- ["So8NSObjectC", "scrollViewShouldScrollToTop"]
+- ["So8NSObjectC", "scrollViewWillBeginDecelerating"]
+- ["So8NSObjectC", "scrollViewWillBeginDragging"]
+- ["So8NSObjectC", "scrollViewWillBeginZooming"]
+- ["So8NSObjectC", "scrollViewWillEndDragging"]
+- ["So8NSObjectC", "toolbarView"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewForZooming"]
+- ["So8NSObjectC", "viewForZoomingInScrollView"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "scrollView"]
+- ["So16NSObjectProtocolP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So16NSObjectProtocolP", "scrollViewDidEndDecelerating"]
+- ["So16NSObjectProtocolP", "scrollViewDidEndDragging"]
+- ["So16NSObjectProtocolP", "scrollViewDidEndScrollingAnimation"]
+- ["So16NSObjectProtocolP", "scrollViewDidEndZooming"]
+- ["So16NSObjectProtocolP", "scrollViewDidScroll"]
+- ["So16NSObjectProtocolP", "scrollViewDidScrollToTop"]
+- ["So16NSObjectProtocolP", "scrollViewDidZoom"]
+- ["So16NSObjectProtocolP", "scrollViewShouldScrollToTop"]
+- ["So16NSObjectProtocolP", "scrollViewWillBeginDecelerating"]
+- ["So16NSObjectProtocolP", "scrollViewWillBeginDragging"]
+- ["So16NSObjectProtocolP", "scrollViewWillBeginZooming"]
+- ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", "viewForZooming"]
+- ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "scrollView"]
+- ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndDragging"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndZooming"]
+- ["So21UIAppearanceContainerP", "scrollViewDidScroll"]
+- ["So21UIAppearanceContainerP", "scrollViewDidScrollToTop"]
+- ["So21UIAppearanceContainerP", "scrollViewDidZoom"]
+- ["So21UIAppearanceContainerP", "scrollViewShouldScrollToTop"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginDecelerating"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginDragging"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginZooming"]
+- ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", "viewForZooming"]
+- ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "scrollView"]
+- ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
+- ["So18UIContentContainerP", "scrollViewDidEndDragging"]
+- ["So18UIContentContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So18UIContentContainerP", "scrollViewDidEndZooming"]
+- ["So18UIContentContainerP", "scrollViewDidScroll"]
+- ["So18UIContentContainerP", "scrollViewDidScrollToTop"]
+- ["So18UIContentContainerP", "scrollViewDidZoom"]
+- ["So18UIContentContainerP", "scrollViewShouldScrollToTop"]
+- ["So18UIContentContainerP", "scrollViewWillBeginDecelerating"]
+- ["So18UIContentContainerP", "scrollViewWillBeginDragging"]
+- ["So18UIContentContainerP", "scrollViewWillBeginZooming"]
+- ["So18UIContentContainerP", "scrollViewWillEndDragging"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", "viewForZooming"]
+- ["So18UIContentContainerP", "viewForZoomingInScrollView"]
+- ["So18UIContentContainerP", ""]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "scrollView"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndDragging"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndScrollingAnimation"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndZooming"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidScroll"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidScrollToTop"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidZoom"]
+- ["So18UIFocusEnvironmentP", "scrollViewShouldScrollToTop"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginDecelerating"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginDragging"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginZooming"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", "viewForZooming"]
+- ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "scrollView"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDragging"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndScrollingAnimation"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndZooming"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidScroll"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidScrollToTop"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidZoom"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewShouldScrollToTop"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginDecelerating"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginDragging"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginZooming"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
+- ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "UIScrollView"]
+- ["So11UIResponderC", "UIView"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "scrollView"]
+- ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So11UIResponderC", "scrollViewDidEndDecelerating"]
+- ["So11UIResponderC", "scrollViewDidEndDragging"]
+- ["So11UIResponderC", "scrollViewDidEndScrollingAnimation"]
+- ["So11UIResponderC", "scrollViewDidEndZooming"]
+- ["So11UIResponderC", "scrollViewDidScroll"]
+- ["So11UIResponderC", "scrollViewDidScrollToTop"]
+- ["So11UIResponderC", "scrollViewDidZoom"]
+- ["So11UIResponderC", "scrollViewShouldScrollToTop"]
+- ["So11UIResponderC", "scrollViewWillBeginDecelerating"]
+- ["So11UIResponderC", "scrollViewWillBeginDragging"]
+- ["So11UIResponderC", "scrollViewWillBeginZooming"]
+- ["So11UIResponderC", "scrollViewWillEndDragging"]
+- ["So11UIResponderC", "toolbarView"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewForZooming"]
+- ["So11UIResponderC", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "scrollView"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDragging"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndScrollingAnimation"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndZooming"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidScroll"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidScrollToTop"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidZoom"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewShouldScrollToTop"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginDecelerating"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginDragging"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginZooming"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", "viewForZooming"]
+- ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So12UIScrollViewC", "delegate"]
+- !private ["So20UIScrollViewDelegateP", "scrollView"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndZooming"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidScroll"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidScrollToTop"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidZoom"]
+- ["So20UIScrollViewDelegateP", "scrollViewShouldScrollToTop"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginDragging"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginZooming"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
+- ["So20UIScrollViewDelegateP", "viewForZooming"]
+- ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
+- ["So20UIScrollViewDelegateP", ""]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "scrollView"]
+- ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
+- ["So16UIStateRestoringP", "scrollViewDidEndDragging"]
+- ["So16UIStateRestoringP", "scrollViewDidEndScrollingAnimation"]
+- ["So16UIStateRestoringP", "scrollViewDidEndZooming"]
+- ["So16UIStateRestoringP", "scrollViewDidScroll"]
+- ["So16UIStateRestoringP", "scrollViewDidScrollToTop"]
+- ["So16UIStateRestoringP", "scrollViewDidZoom"]
+- ["So16UIStateRestoringP", "scrollViewShouldScrollToTop"]
+- ["So16UIStateRestoringP", "scrollViewWillBeginDecelerating"]
+- ["So16UIStateRestoringP", "scrollViewWillBeginDragging"]
+- ["So16UIStateRestoringP", "scrollViewWillBeginZooming"]
+- ["So16UIStateRestoringP", "scrollViewWillEndDragging"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", "viewForZooming"]
+- ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "scrollView"]
+- ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndDragging"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndScrollingAnimation"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndZooming"]
+- ["So18UITraitEnvironmentP", "scrollViewDidScroll"]
+- ["So18UITraitEnvironmentP", "scrollViewDidScrollToTop"]
+- ["So18UITraitEnvironmentP", "scrollViewDidZoom"]
+- ["So18UITraitEnvironmentP", "scrollViewShouldScrollToTop"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginDecelerating"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginDragging"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginZooming"]
+- ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", "viewForZooming"]
+- ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "delegate"]
+- ["So16UIViewControllerC", "UIScrollView"]
+- ["So16UIViewControllerC", "UIView"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "scrollView"]
+- ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
+- ["So16UIViewControllerC", "scrollViewDidEndDragging"]
+- ["So16UIViewControllerC", "scrollViewDidEndScrollingAnimation"]
+- ["So16UIViewControllerC", "scrollViewDidEndZooming"]
+- ["So16UIViewControllerC", "scrollViewDidScroll"]
+- ["So16UIViewControllerC", "scrollViewDidScrollToTop"]
+- ["So16UIViewControllerC", "scrollViewDidZoom"]
+- ["So16UIViewControllerC", "scrollViewShouldScrollToTop"]
+- ["So16UIViewControllerC", "scrollViewWillBeginDecelerating"]
+- ["So16UIViewControllerC", "scrollViewWillBeginDragging"]
+- ["So16UIViewControllerC", "scrollViewWillBeginZooming"]
+- ["So16UIViewControllerC", "scrollViewWillEndDragging"]
+- ["So16UIViewControllerC", "toolbarView"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewForZooming"]
+- ["So16UIViewControllerC", "viewForZoomingInScrollView"]
+- ["So16UIViewControllerC", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDragging"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndScrollingAnimation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidScroll"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidScrollToTop"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidZoom"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewShouldScrollToTop"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginDecelerating"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginDragging"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "12JustAThought10AboutPagesC"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/derrickmu/Desktop/JustAThought/JustAThought/JustAThought-Bridging-Header.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "d24988b2fc63957ffed134981201c241"
