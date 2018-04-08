@@ -7,11 +7,23 @@ provides-member:
 - ["12JustAThought17SpecificThoughtVCC", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
+- "likeBtn"
+- "likePressed"
+- "locationLbl"
+- "numOfLikes"
 - "numberOfSections"
 - "tableView"
+- "thoughtLbl"
+- "timeStampLbl"
+- "topicLbl"
+- "unlikeBtn"
+- "unlikePressed"
+- "userLbl"
 - "viewDidLoad"
 depends-top-level:
 - !private "!="
+- !private "+"
+- !private "-"
 - !private "=="
 - !private ">"
 - !private "AnyObject"
@@ -27,10 +39,13 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - "NSIndexPath"
+- !private "NSNull"
 - "SpecificThoughtVC"
 - "String"
 - !private "StringLiteralType"
 - "ThoughtModel"
+- "UIButton"
+- "UILabel"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewDataSource"
@@ -53,6 +68,8 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "removeAll"]
 - !private ["s23BidirectionalCollectionP", "row"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["s13BinaryIntegerP", "toString"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "adjustsFontSizeToFitWidth"]
 - !private ["So15CALayerDelegateP", "configCell"]
@@ -71,6 +88,7 @@ depends-member:
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "DataEventType"]
 - !private ["s7CVarArgP", "Database"]
+- !private ["s7CVarArgP", "Int"]
 - ["s7CVarArgP", "ThoughtModel"]
 - !private ["s7CVarArgP", "adjustsFontSizeToFitWidth"]
 - !private ["s7CVarArgP", "allObjects"]
@@ -126,6 +144,7 @@ depends-member:
 - !private ["s7CVarArgP", "thoughtLbl"]
 - !private ["s7CVarArgP", "thoughtList"]
 - !private ["s7CVarArgP", "timeStampLbl"]
+- !private ["s7CVarArgP", "toString"]
 - !private ["s7CVarArgP", "topicLbl"]
 - !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "unlikeBtn"]
@@ -143,9 +162,11 @@ depends-member:
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "row"]
+- !private ["s10ComparableP", "toString"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "DataEventType"]
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
 - ["s28CustomDebugStringConvertibleP", "ThoughtModel"]
 - !private ["s28CustomDebugStringConvertibleP", "adjustsFontSizeToFitWidth"]
 - !private ["s28CustomDebugStringConvertibleP", "allObjects"]
@@ -213,6 +234,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "toString"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
 - ["s17CustomReflectableP", "init"]
@@ -220,9 +242,11 @@ depends-member:
 - !private ["s17CustomReflectableP", "removeAll"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "toString"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "DataEventType"]
 - !private ["s23CustomStringConvertibleP", "Database"]
+- !private ["s23CustomStringConvertibleP", "Int"]
 - ["s23CustomStringConvertibleP", "ThoughtModel"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "adjustsFontSizeToFitWidth"]
@@ -280,6 +304,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "thoughtLbl"]
 - !private ["s23CustomStringConvertibleP", "thoughtList"]
 - !private ["s23CustomStringConvertibleP", "timeStampLbl"]
+- !private ["s23CustomStringConvertibleP", "toString"]
 - !private ["s23CustomStringConvertibleP", "topicLbl"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "unlikeBtn"]
@@ -308,6 +333,7 @@ depends-member:
 - !private ["s9DecodableP", "removeAll"]
 - !private ["s9DecodableP", "row"]
 - !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "toString"]
 - !private ["s10DictionaryV", "subscript"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "count"]
@@ -316,9 +342,11 @@ depends-member:
 - !private ["s9EncodableP", "removeAll"]
 - !private ["s9EncodableP", "row"]
 - !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "toString"]
 - !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "DataEventType"]
 - !private ["s9EquatableP", "Database"]
+- !private ["s9EquatableP", "Int"]
 - ["s9EquatableP", "ThoughtModel"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "adjustsFontSizeToFitWidth"]
@@ -372,6 +400,7 @@ depends-member:
 - !private ["s9EquatableP", "thoughtLbl"]
 - !private ["s9EquatableP", "thoughtList"]
 - !private ["s9EquatableP", "timeStampLbl"]
+- !private ["s9EquatableP", "toString"]
 - !private ["s9EquatableP", "topicLbl"]
 - !private ["s9EquatableP", "uid"]
 - !private ["s9EquatableP", "unlikeBtn"]
@@ -390,11 +419,16 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "toString"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s17FixedWidthIntegerP", "toString"]
 - !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "DataEventType"]
 - !private ["s8HashableP", "Database"]
+- !private ["s8HashableP", "Int"]
 - ["s8HashableP", "ThoughtModel"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "adjustsFontSizeToFitWidth"]
@@ -448,6 +482,7 @@ depends-member:
 - !private ["s8HashableP", "thoughtLbl"]
 - !private ["s8HashableP", "thoughtList"]
 - !private ["s8HashableP", "timeStampLbl"]
+- !private ["s8HashableP", "toString"]
 - !private ["s8HashableP", "topicLbl"]
 - !private ["s8HashableP", "uid"]
 - !private ["s8HashableP", "unlikeBtn"]
@@ -458,8 +493,11 @@ depends-member:
 - ["s8HashableP", "viewForZoomingInScrollView"]
 - ["s8HashableP", ""]
 - !private ["10Foundation9IndexPathV", "row"]
+- !private ["Si", "init"]
+- !private ["Si", "toString"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "toString"]
 - !private ["12JustAThought4MainC", "location"]
 - !private ["12JustAThought4MainC", "numLikes"]
 - !private ["12JustAThought4MainC", "thought"]
@@ -468,6 +506,7 @@ depends-member:
 - !private ["12JustAThought4MainC", "uid"]
 - !private ["12JustAThought4MainC", "username"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "toString"]
 - !private ["s17MutableCollectionP", "count"]
 - ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "insert"]
@@ -477,6 +516,7 @@ depends-member:
 - !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "DataEventType"]
 - !private ["So8NSCodingP", "Database"]
+- !private ["So8NSCodingP", "Int"]
 - ["So8NSCodingP", "ThoughtModel"]
 - !private ["So8NSCodingP", "adjustsFontSizeToFitWidth"]
 - !private ["So8NSCodingP", "configCell"]
@@ -530,14 +570,18 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "DataEventType"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
+- !private ["So26NSExtensionRequestHandlingP", "Int"]
 - ["So26NSExtensionRequestHandlingP", "ThoughtModel"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "isNavigationBarHidden"]
+- !private ["So26NSExtensionRequestHandlingP", "likeBtn"]
+- !private ["So26NSExtensionRequestHandlingP", "locationLbl"]
 - !private ["So26NSExtensionRequestHandlingP", "mainInstance"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "numOfLikes"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
@@ -559,7 +603,12 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitles"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitlesForTableView"]
 - ["So26NSExtensionRequestHandlingP", "tableView"]
+- !private ["So26NSExtensionRequestHandlingP", "thoughtLbl"]
 - !private ["So26NSExtensionRequestHandlingP", "thoughtList"]
+- !private ["So26NSExtensionRequestHandlingP", "timeStampLbl"]
+- !private ["So26NSExtensionRequestHandlingP", "topicLbl"]
+- !private ["So26NSExtensionRequestHandlingP", "unlikeBtn"]
+- !private ["So26NSExtensionRequestHandlingP", "userLbl"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
@@ -578,8 +627,11 @@ depends-member:
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "NSIndexPath"]
+- !private ["So8NSObjectC", "NSNull"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "ThoughtModel"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "VCTableViewCell"]
@@ -599,11 +651,12 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isHidden"]
 - !private ["So8NSObjectC", "isNavigationBarHidden"]
-- !private ["So8NSObjectC", "likeBtn"]
-- !private ["So8NSObjectC", "locationLbl"]
+- ["So8NSObjectC", "likeBtn"]
+- ["So8NSObjectC", "likePressed"]
+- ["So8NSObjectC", "locationLbl"]
 - !private ["So8NSObjectC", "mainInstance"]
 - !private ["So8NSObjectC", "navigationController"]
-- !private ["So8NSObjectC", "numOfLikes"]
+- ["So8NSObjectC", "numOfLikes"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectC", "observe"]
@@ -630,13 +683,14 @@ depends-member:
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
 - ["So8NSObjectC", "tableView"]
 - !private ["So8NSObjectC", "text"]
-- !private ["So8NSObjectC", "thoughtLbl"]
+- ["So8NSObjectC", "thoughtLbl"]
 - ["So8NSObjectC", "thoughtList"]
-- !private ["So8NSObjectC", "timeStampLbl"]
-- !private ["So8NSObjectC", "topicLbl"]
+- ["So8NSObjectC", "timeStampLbl"]
+- ["So8NSObjectC", "topicLbl"]
 - !private ["So8NSObjectC", "uid"]
-- !private ["So8NSObjectC", "unlikeBtn"]
-- !private ["So8NSObjectC", "userLbl"]
+- ["So8NSObjectC", "unlikeBtn"]
+- ["So8NSObjectC", "unlikePressed"]
+- ["So8NSObjectC", "userLbl"]
 - ["So8NSObjectC", "userNameText"]
 - ["So8NSObjectC", "userNameTextHolder"]
 - !private ["So8NSObjectC", "value"]
@@ -646,6 +700,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Auth"]
 - !private ["So16NSObjectProtocolP", "DataEventType"]
 - !private ["So16NSObjectProtocolP", "Database"]
+- !private ["So16NSObjectProtocolP", "Int"]
 - ["So16NSObjectProtocolP", "ThoughtModel"]
 - !private ["So16NSObjectProtocolP", "adjustsFontSizeToFitWidth"]
 - !private ["So16NSObjectProtocolP", "allObjects"]
@@ -708,6 +763,8 @@ depends-member:
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "toString"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "insert"]
@@ -728,6 +785,10 @@ depends-member:
 - !private ["s8SequenceP", "removeAll"]
 - !private ["s8SequenceP", "row"]
 - !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedIntegerP", "toString"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "toString"]
 - !private ["12JustAThought17SpecificThoughtVCC", "AnyObject"]
 - !private ["12JustAThought17SpecificThoughtVCC", "Auth"]
 - ["12JustAThought17SpecificThoughtVCC", "Bool"]
@@ -738,8 +799,11 @@ depends-member:
 - ["12JustAThought17SpecificThoughtVCC", "IndexPath"]
 - ["12JustAThought17SpecificThoughtVCC", "Int"]
 - ["12JustAThought17SpecificThoughtVCC", "NSIndexPath"]
+- !private ["12JustAThought17SpecificThoughtVCC", "NSNull"]
 - ["12JustAThought17SpecificThoughtVCC", "String"]
 - ["12JustAThought17SpecificThoughtVCC", "ThoughtModel"]
+- ["12JustAThought17SpecificThoughtVCC", "UIButton"]
+- ["12JustAThought17SpecificThoughtVCC", "UILabel"]
 - ["12JustAThought17SpecificThoughtVCC", "UITableView"]
 - ["12JustAThought17SpecificThoughtVCC", "UITableViewCell"]
 - !private ["12JustAThought17SpecificThoughtVCC", "VCTableViewCell"]
@@ -748,8 +812,12 @@ depends-member:
 - ["12JustAThought17SpecificThoughtVCC", "indexPathForPreferredFocusedView"]
 - ["12JustAThought17SpecificThoughtVCC", "indexPathForPreferredFocusedViewInTableView"]
 - ["12JustAThought17SpecificThoughtVCC", "init"]
+- ["12JustAThought17SpecificThoughtVCC", "likeBtn"]
+- ["12JustAThought17SpecificThoughtVCC", "likePressed"]
+- ["12JustAThought17SpecificThoughtVCC", "locationLbl"]
 - !private ["12JustAThought17SpecificThoughtVCC", "mainInstance"]
 - !private ["12JustAThought17SpecificThoughtVCC", "navigationController"]
+- ["12JustAThought17SpecificThoughtVCC", "numOfLikes"]
 - ["12JustAThought17SpecificThoughtVCC", "numberOfSections"]
 - ["12JustAThought17SpecificThoughtVCC", "numberOfSectionsInTableView"]
 - !private ["12JustAThought17SpecificThoughtVCC", "print"]
@@ -771,16 +839,25 @@ depends-member:
 - ["12JustAThought17SpecificThoughtVCC", "sectionIndexTitles"]
 - ["12JustAThought17SpecificThoughtVCC", "sectionIndexTitlesForTableView"]
 - ["12JustAThought17SpecificThoughtVCC", "tableView"]
+- ["12JustAThought17SpecificThoughtVCC", "thoughtLbl"]
 - ["12JustAThought17SpecificThoughtVCC", "thoughtList"]
+- ["12JustAThought17SpecificThoughtVCC", "timeStampLbl"]
+- ["12JustAThought17SpecificThoughtVCC", "topicLbl"]
+- ["12JustAThought17SpecificThoughtVCC", "unlikeBtn"]
+- ["12JustAThought17SpecificThoughtVCC", "unlikePressed"]
+- ["12JustAThought17SpecificThoughtVCC", "userLbl"]
 - ["12JustAThought17SpecificThoughtVCC", "userNameText"]
 - ["12JustAThought17SpecificThoughtVCC", "userNameTextHolder"]
 - ["12JustAThought17SpecificThoughtVCC", "viewDidLoad"]
 - ["12JustAThought17SpecificThoughtVCC", "viewForZooming"]
 - ["12JustAThought17SpecificThoughtVCC", "viewForZoomingInScrollView"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "toString"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["12JustAThought12ThoughtModelC", "adjustLikes"]
 - !private ["12JustAThought12ThoughtModelC", "init"]
 - !private ["12JustAThought12ThoughtModelC", "uid"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
@@ -815,6 +892,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "DataEventType"]
 - !private ["So21UIAppearanceContainerP", "Database"]
+- !private ["So21UIAppearanceContainerP", "Int"]
 - ["So21UIAppearanceContainerP", "ThoughtModel"]
 - !private ["So21UIAppearanceContainerP", "adjustsFontSizeToFitWidth"]
 - !private ["So21UIAppearanceContainerP", "configCell"]
@@ -867,14 +945,18 @@ depends-member:
 - !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "DataEventType"]
 - !private ["So18UIContentContainerP", "Database"]
+- !private ["So18UIContentContainerP", "Int"]
 - ["So18UIContentContainerP", "ThoughtModel"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "isNavigationBarHidden"]
+- !private ["So18UIContentContainerP", "likeBtn"]
+- !private ["So18UIContentContainerP", "locationLbl"]
 - !private ["So18UIContentContainerP", "mainInstance"]
 - !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "numOfLikes"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
 - !private ["So18UIContentContainerP", "print"]
@@ -896,7 +978,12 @@ depends-member:
 - ["So18UIContentContainerP", "sectionIndexTitles"]
 - ["So18UIContentContainerP", "sectionIndexTitlesForTableView"]
 - ["So18UIContentContainerP", "tableView"]
+- !private ["So18UIContentContainerP", "thoughtLbl"]
 - !private ["So18UIContentContainerP", "thoughtList"]
+- !private ["So18UIContentContainerP", "timeStampLbl"]
+- !private ["So18UIContentContainerP", "topicLbl"]
+- !private ["So18UIContentContainerP", "unlikeBtn"]
+- !private ["So18UIContentContainerP", "userLbl"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
@@ -937,6 +1024,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "DataEventType"]
 - !private ["So18UIFocusEnvironmentP", "Database"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
 - ["So18UIFocusEnvironmentP", "ThoughtModel"]
 - !private ["So18UIFocusEnvironmentP", "adjustsFontSizeToFitWidth"]
 - !private ["So18UIFocusEnvironmentP", "configCell"]
@@ -1014,6 +1102,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "DataEventType"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - ["So30UIPasteConfigurationSupportingP", "ThoughtModel"]
 - !private ["So30UIPasteConfigurationSupportingP", "adjustsFontSizeToFitWidth"]
 - !private ["So30UIPasteConfigurationSupportingP", "configCell"]
@@ -1072,8 +1161,11 @@ depends-member:
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "NSIndexPath"]
+- !private ["So11UIResponderC", "NSNull"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "ThoughtModel"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "VCTableViewCell"]
@@ -1086,11 +1178,12 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isHidden"]
 - !private ["So11UIResponderC", "isNavigationBarHidden"]
-- !private ["So11UIResponderC", "likeBtn"]
-- !private ["So11UIResponderC", "locationLbl"]
+- ["So11UIResponderC", "likeBtn"]
+- ["So11UIResponderC", "likePressed"]
+- ["So11UIResponderC", "locationLbl"]
 - !private ["So11UIResponderC", "mainInstance"]
 - !private ["So11UIResponderC", "navigationController"]
-- !private ["So11UIResponderC", "numOfLikes"]
+- ["So11UIResponderC", "numOfLikes"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
 - !private ["So11UIResponderC", "print"]
@@ -1114,12 +1207,13 @@ depends-member:
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
 - ["So11UIResponderC", "tableView"]
 - !private ["So11UIResponderC", "text"]
-- !private ["So11UIResponderC", "thoughtLbl"]
+- ["So11UIResponderC", "thoughtLbl"]
 - ["So11UIResponderC", "thoughtList"]
-- !private ["So11UIResponderC", "timeStampLbl"]
-- !private ["So11UIResponderC", "topicLbl"]
-- !private ["So11UIResponderC", "unlikeBtn"]
-- !private ["So11UIResponderC", "userLbl"]
+- ["So11UIResponderC", "timeStampLbl"]
+- ["So11UIResponderC", "topicLbl"]
+- ["So11UIResponderC", "unlikeBtn"]
+- ["So11UIResponderC", "unlikePressed"]
+- ["So11UIResponderC", "userLbl"]
 - ["So11UIResponderC", "userNameText"]
 - ["So11UIResponderC", "userNameTextHolder"]
 - ["So11UIResponderC", "viewDidLoad"]
@@ -1128,6 +1222,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "DataEventType"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
 - ["So30UIResponderStandardEditActionsP", "ThoughtModel"]
 - !private ["So30UIResponderStandardEditActionsP", "adjustsFontSizeToFitWidth"]
 - !private ["So30UIResponderStandardEditActionsP", "configCell"]
@@ -1181,11 +1276,15 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Auth"]
 - !private ["So20UIScrollViewDelegateP", "DataEventType"]
 - !private ["So20UIScrollViewDelegateP", "Database"]
+- !private ["So20UIScrollViewDelegateP", "Int"]
 - ["So20UIScrollViewDelegateP", "ThoughtModel"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So20UIScrollViewDelegateP", "likeBtn"]
+- !private ["So20UIScrollViewDelegateP", "locationLbl"]
 - !private ["So20UIScrollViewDelegateP", "mainInstance"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
+- !private ["So20UIScrollViewDelegateP", "numOfLikes"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So20UIScrollViewDelegateP", "print"]
@@ -1207,7 +1306,12 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "sectionIndexTitles"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitlesForTableView"]
 - ["So20UIScrollViewDelegateP", "tableView"]
+- !private ["So20UIScrollViewDelegateP", "thoughtLbl"]
 - !private ["So20UIScrollViewDelegateP", "thoughtList"]
+- !private ["So20UIScrollViewDelegateP", "timeStampLbl"]
+- !private ["So20UIScrollViewDelegateP", "topicLbl"]
+- !private ["So20UIScrollViewDelegateP", "unlikeBtn"]
+- !private ["So20UIScrollViewDelegateP", "userLbl"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - ["So20UIScrollViewDelegateP", ""]
@@ -1217,14 +1321,18 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Auth"]
 - !private ["So16UIStateRestoringP", "DataEventType"]
 - !private ["So16UIStateRestoringP", "Database"]
+- !private ["So16UIStateRestoringP", "Int"]
 - ["So16UIStateRestoringP", "ThoughtModel"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "isNavigationBarHidden"]
+- !private ["So16UIStateRestoringP", "likeBtn"]
+- !private ["So16UIStateRestoringP", "locationLbl"]
 - !private ["So16UIStateRestoringP", "mainInstance"]
 - !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "numOfLikes"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
 - !private ["So16UIStateRestoringP", "print"]
@@ -1246,7 +1354,12 @@ depends-member:
 - ["So16UIStateRestoringP", "sectionIndexTitles"]
 - ["So16UIStateRestoringP", "sectionIndexTitlesForTableView"]
 - ["So16UIStateRestoringP", "tableView"]
+- !private ["So16UIStateRestoringP", "thoughtLbl"]
 - !private ["So16UIStateRestoringP", "thoughtList"]
+- !private ["So16UIStateRestoringP", "timeStampLbl"]
+- !private ["So16UIStateRestoringP", "topicLbl"]
+- !private ["So16UIStateRestoringP", "unlikeBtn"]
+- !private ["So16UIStateRestoringP", "userLbl"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
@@ -1265,11 +1378,15 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "Auth"]
 - !private ["So21UITableViewDataSourceP", "DataEventType"]
 - !private ["So21UITableViewDataSourceP", "Database"]
+- !private ["So21UITableViewDataSourceP", "Int"]
 - ["So21UITableViewDataSourceP", "ThoughtModel"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So21UITableViewDataSourceP", "likeBtn"]
+- !private ["So21UITableViewDataSourceP", "locationLbl"]
 - !private ["So21UITableViewDataSourceP", "mainInstance"]
 - !private ["So21UITableViewDataSourceP", "navigationController"]
+- !private ["So21UITableViewDataSourceP", "numOfLikes"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
 - !private ["So21UITableViewDataSourceP", "print"]
@@ -1291,18 +1408,27 @@ depends-member:
 - ["So21UITableViewDataSourceP", "sectionIndexTitles"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitlesForTableView"]
 - ["So21UITableViewDataSourceP", "tableView"]
+- !private ["So21UITableViewDataSourceP", "thoughtLbl"]
 - !private ["So21UITableViewDataSourceP", "thoughtList"]
+- !private ["So21UITableViewDataSourceP", "timeStampLbl"]
+- !private ["So21UITableViewDataSourceP", "topicLbl"]
+- !private ["So21UITableViewDataSourceP", "unlikeBtn"]
+- !private ["So21UITableViewDataSourceP", "userLbl"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So19UITableViewDelegateP", "Auth"]
 - !private ["So19UITableViewDelegateP", "DataEventType"]
 - !private ["So19UITableViewDelegateP", "Database"]
+- !private ["So19UITableViewDelegateP", "Int"]
 - ["So19UITableViewDelegateP", "ThoughtModel"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So19UITableViewDelegateP", "likeBtn"]
+- !private ["So19UITableViewDelegateP", "locationLbl"]
 - !private ["So19UITableViewDelegateP", "mainInstance"]
 - !private ["So19UITableViewDelegateP", "navigationController"]
+- !private ["So19UITableViewDelegateP", "numOfLikes"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So19UITableViewDelegateP", "print"]
@@ -1324,13 +1450,19 @@ depends-member:
 - ["So19UITableViewDelegateP", "sectionIndexTitles"]
 - ["So19UITableViewDelegateP", "sectionIndexTitlesForTableView"]
 - ["So19UITableViewDelegateP", "tableView"]
+- !private ["So19UITableViewDelegateP", "thoughtLbl"]
 - !private ["So19UITableViewDelegateP", "thoughtList"]
+- !private ["So19UITableViewDelegateP", "timeStampLbl"]
+- !private ["So19UITableViewDelegateP", "topicLbl"]
+- !private ["So19UITableViewDelegateP", "unlikeBtn"]
+- !private ["So19UITableViewDelegateP", "userLbl"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "DataEventType"]
 - !private ["So18UITraitEnvironmentP", "Database"]
+- !private ["So18UITraitEnvironmentP", "Int"]
 - ["So18UITraitEnvironmentP", "ThoughtModel"]
 - !private ["So18UITraitEnvironmentP", "adjustsFontSizeToFitWidth"]
 - !private ["So18UITraitEnvironmentP", "configCell"]
@@ -1403,8 +1535,11 @@ depends-member:
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "NSIndexPath"]
+- !private ["So16UIViewControllerC", "NSNull"]
 - ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "ThoughtModel"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - !private ["So16UIViewControllerC", "VCTableViewCell"]
@@ -1413,8 +1548,12 @@ depends-member:
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "isNavigationBarHidden"]
+- ["So16UIViewControllerC", "likeBtn"]
+- ["So16UIViewControllerC", "likePressed"]
+- ["So16UIViewControllerC", "locationLbl"]
 - !private ["So16UIViewControllerC", "mainInstance"]
 - !private ["So16UIViewControllerC", "navigationController"]
+- ["So16UIViewControllerC", "numOfLikes"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - !private ["So16UIViewControllerC", "print"]
@@ -1436,7 +1575,13 @@ depends-member:
 - ["So16UIViewControllerC", "sectionIndexTitles"]
 - ["So16UIViewControllerC", "sectionIndexTitlesForTableView"]
 - ["So16UIViewControllerC", "tableView"]
+- ["So16UIViewControllerC", "thoughtLbl"]
 - ["So16UIViewControllerC", "thoughtList"]
+- ["So16UIViewControllerC", "timeStampLbl"]
+- ["So16UIViewControllerC", "topicLbl"]
+- ["So16UIViewControllerC", "unlikeBtn"]
+- ["So16UIViewControllerC", "unlikePressed"]
+- ["So16UIViewControllerC", "userLbl"]
 - ["So16UIViewControllerC", "userNameText"]
 - ["So16UIViewControllerC", "userNameTextHolder"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -1465,6 +1610,8 @@ depends-member:
 - !private ["s23_BidirectionalIndexableP", "removeAll"]
 - !private ["s23_BidirectionalIndexableP", "row"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s18_BitwiseOperationsP", "toString"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "adjustsFontSizeToFitWidth"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "configCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
@@ -1486,6 +1633,8 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "toString"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -1506,6 +1655,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DataEventType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ThoughtModel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "adjustsFontSizeToFitWidth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "allObjects"]
@@ -1579,6 +1729,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "toString"]
 - !private ["s22_RandomAccessIndexableP", "count"]
 - ["s22_RandomAccessIndexableP", "init"]
 - !private ["s22_RandomAccessIndexableP", "insert"]
@@ -1590,11 +1741,14 @@ depends-member:
 - !private ["s26_RangeReplaceableIndexableP", "insert"]
 - !private ["s26_RangeReplaceableIndexableP", "removeAll"]
 - !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "toString"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
 - !private "So4AuthC"
 - "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -1617,10 +1771,13 @@ depends-nominal:
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
 - !private "10Foundation9IndexPathV"
+- !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "12JustAThought4MainC"
 - !private "s10MirrorPathP"
@@ -1637,12 +1794,16 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "s7NumericP"
 - "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
 - "12JustAThought17SpecificThoughtVCC"
+- !private "s10StrideableP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
@@ -1683,10 +1844,12 @@ depends-nominal:
 - !private "12JustAThought15VCTableViewCellC"
 - "s14_ArrayProtocolP"
 - "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
@@ -1699,6 +1862,7 @@ depends-nominal:
 - "s21_ObjectiveCBridgeableP"
 - "s22_RandomAccessIndexableP"
 - "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1795,4 +1959,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "16c0c7e165826f487c7066f3a18f00c1"
+interface-hash: "40bd222a887052df1b2511fbc88a3b2e"

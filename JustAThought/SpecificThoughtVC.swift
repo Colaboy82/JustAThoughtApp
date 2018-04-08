@@ -19,6 +19,14 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
     var refThoughts: DatabaseReference!
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var thoughtLbl: UILabel!
+    @IBOutlet weak var topicLbl: UILabel!
+    @IBOutlet weak var timeStampLbl: UILabel!
+    @IBOutlet weak var locationLbl: UILabel!
+    @IBOutlet weak var numOfLikes: UILabel!
+    @IBOutlet weak var userLbl: UILabel!
+    @IBOutlet weak var unlikeBtn: UIButton!
+    @IBOutlet weak var likeBtn: UIButton!
     
     var thoughtList = [ThoughtModel]()//list to store all the thought
    
@@ -28,6 +36,7 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
+        
         // Input data into the Array:
         refThoughts = Database.database().reference().child("thoughts");
         //observing the data changes
@@ -58,11 +67,50 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
                         self.thoughtList.insert(thought, at: 0)
                     }
                 }
+                self.thoughtLbl.adjustsFontSizeToFitWidth = true
+                self.topicLbl.adjustsFontSizeToFitWidth = true
+                self.userLbl.adjustsFontSizeToFitWidth = true
+                self.locationLbl.adjustsFontSizeToFitWidth = true
+                self.timeStampLbl.adjustsFontSizeToFitWidth = true
+                self.numOfLikes.adjustsFontSizeToFitWidth = true
                 
-                //reloading the tableview
-                self.tableView.reloadData()
+                //adding values to labels
+                self.thoughtLbl.text = mainInstance.thought
+                self.topicLbl.text = mainInstance.topic
+                self.userLbl.text = mainInstance.username
+                self.timeStampLbl.text = mainInstance.timeStamps
+                self.locationLbl.text = mainInstance.location
+                self.numOfLikes.text = mainInstance.numLikes
+                
+                //unlike and like Btn code
+                var alreadyLikedBool: Bool!
+                let thought: ThoughtModel
+                thought = self.thoughtList[0];
+
+                Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
+                    guard let dict = snapshot.value as? [String:Any] else {
+                        print("Error")
+                        return
+                    }
+                    //let tempUid = "\(thought.uid)"
+                    let alreadyLiked = dict[thought.uid] as! Bool!
+                    if(alreadyLiked != nil){
+                        alreadyLikedBool = alreadyLiked!
+                    }else{
+                        alreadyLikedBool = false
+                    }
+                    if alreadyLikedBool == true {
+                        self.likeBtn.isHidden = true
+                        self.unlikeBtn.isHidden = false
+                    }
+                    if alreadyLikedBool == false{
+                        self.likeBtn.isHidden = false
+                        self.unlikeBtn.isHidden = true
+                    }
+                })
             }
         })
+        
     }
     public func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -89,7 +137,7 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
             cell.locationLbl.adjustsFontSizeToFitWidth = true
             cell.timeStampLbl.adjustsFontSizeToFitWidth = true
             cell.numOfLikes.adjustsFontSizeToFitWidth = true
-
+            
             //adding values to labels
             cell.thoughtLbl.text = mainInstance.thought
             cell.topicLbl.text = mainInstance.topic
@@ -129,7 +177,35 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func likePressed(_ sender: Any){
+        let likeRef = Database.database().reference().child("thoughts").child("likes")
+        
+        likeRef.observeSingleEvent(of: .value, with:  { (snapshot) in
+            if let _ = snapshot.value as? NSNull {
+                self.thoughtList[0].adjustLikes(addLike: true, thoughtID: self.thoughtList[0].uid)
+            }
+        })
+        var a:Int? = Int(mainInstance.numLikes)
+        a = a!+1
+        mainInstance.numLikes = (a?.toString())!
+        
+        //likeBtn.isHidden = true
+        //unlikeBtn.isHidden = false
+    }
+    @IBAction func unlikePressed(_ sender: Any){
+        let likeRef = Database.database().reference().child("thoughts").child("likes")
+        
+        likeRef.observeSingleEvent(of: .value, with:  { (snapshot) in
+            if let _ = snapshot.value as? NSNull {
+                self.thoughtList[0].adjustLikes(addLike: false, thoughtID: self.thoughtList[0].uid)
+            }
+        })
+        var a:Int? = Int(mainInstance.numLikes)
+        a = a!-1
+        mainInstance.numLikes = (a?.toString())!
+        //likeBtn.isHidden = false
+        //unlikeBtn.isHidden = true
+    }
     
     
 }

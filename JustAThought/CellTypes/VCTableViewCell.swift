@@ -42,7 +42,6 @@ class VCTableViewCell: UITableViewCell {
     }
     func configCell(thought: ThoughtModel){//= nil means they do not have to have pictures
         self.thought = thought
-        
     }
     @IBAction func likePressed(_ sender: Any){
         let likeRef = Database.database().reference().child("thoughts").child("likes")

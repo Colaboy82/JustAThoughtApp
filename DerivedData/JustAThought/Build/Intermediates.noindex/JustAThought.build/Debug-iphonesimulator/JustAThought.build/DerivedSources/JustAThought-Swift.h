@@ -382,11 +382,21 @@ SWIFT_CLASS("_TtC12JustAThought14SpecificCityVC")
 SWIFT_CLASS("_TtC12JustAThought17SpecificThoughtVC")
 @interface SpecificThoughtVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified thoughtLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified topicLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeStampLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified numOfLikes;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified userLbl;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified unlikeBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeBtn;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)didReceiveMemoryWarning;
+- (IBAction)likePressed:(id _Nonnull)sender;
+- (IBAction)unlikePressed:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
