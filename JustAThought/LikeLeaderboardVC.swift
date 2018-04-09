@@ -355,7 +355,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
-            Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
+            /*Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
                 guard let dict = snapshot.value as? [String:Any] else {
                     print("Error")
                     return
@@ -375,7 +375,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     cell.likeBtn.isHidden = false
                     cell.unlikeBtn.isHidden = true
                 }
-            })
+            })*/
             return cell
         }else if tableView == tenThoughtsTableView && selectedItem == "Most Liked Thought (Daily)"{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ThoughtCells", for: indexPath) as! VCTableViewCell
@@ -431,7 +431,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
-            Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
+            /*Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
                 guard let dict = snapshot.value as? [String:Any] else {
                     print("Error")
                     return
@@ -451,7 +451,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     cell.likeBtn.isHidden = false
                     cell.unlikeBtn.isHidden = true
                 }
-            })
+            })*/
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ThoughtCells", for: indexPath) as! VCTableViewCell

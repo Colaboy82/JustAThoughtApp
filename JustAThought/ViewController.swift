@@ -375,14 +375,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.locationLbl.text = thought.city! + ", " + thought.country!
                 cell.numOfLikes.text = numToString
                 
-                cell.topicLbl.sizeToFit()
-                cell.topicLbl.numberOfLines = 1;
-                cell.userLbl.sizeToFit()
-                cell.timeStampLbl.sizeToFit()
-                cell.locationLbl.sizeToFit()
-                cell.locationLbl.numberOfLines = 1;
-                cell.numOfLikes.sizeToFit()
-                
                 Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
                         guard let dict = snapshot.value as? [String:Any] else {
                             print("Error")

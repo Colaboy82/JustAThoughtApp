@@ -35,6 +35,13 @@ class SpecificCityVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         thought = thoughtList[indexPath.row]
         cell.configCell(thought: thought)
         let numToString = (thought._likes).toString()
+        
+        cell.topicLbl.adjustsFontSizeToFitWidth = true
+        cell.userLbl.adjustsFontSizeToFitWidth = true
+        cell.locationLbl.adjustsFontSizeToFitWidth = true
+        cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+        cell.numOfLikes.adjustsFontSizeToFitWidth = true
+        
         //adding values to labels
         //cell.thoughtLbl.text = thought.typedThought
         cell.topicLbl.text = thought.typedTopic
@@ -72,7 +79,7 @@ class SpecificCityVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         //getting the thought of selected position
         thought = thoughtList[(indexPath.row)]
         currentThoughtCell.configCell(thought: thought)
-        
+    
         let numToString = (thought._likes).toString()
         mainInstance.thought = thought.typedThought!
         mainInstance.username = thought.userName!
