@@ -18,6 +18,9 @@ class UserProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //usernameLbl.adjustsFontSizeToFitWidth = true
+        //emailLbl.adjustsFontSizeToFitWidth = true
+        
         usernameLbl.text = "Username: " + mainInstance.currentUsername
         emailLbl.text = "Email: " + (Auth.auth().currentUser?.email)!
         usernameLbl.sizeToFit();

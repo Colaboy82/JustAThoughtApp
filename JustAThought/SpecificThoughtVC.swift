@@ -189,8 +189,8 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
         a = a!+1
         mainInstance.numLikes = (a?.toString())!
         
-        //likeBtn.isHidden = true
-        //unlikeBtn.isHidden = false
+        likeBtn.isHidden = true
+        unlikeBtn.isHidden = false
     }
     @IBAction func unlikePressed(_ sender: Any){
         let likeRef = Database.database().reference().child("thoughts").child("likes")
@@ -203,8 +203,8 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
         var a:Int? = Int(mainInstance.numLikes)
         a = a!-1
         mainInstance.numLikes = (a?.toString())!
-        //likeBtn.isHidden = false
-        //unlikeBtn.isHidden = true
+        likeBtn.isHidden = false
+        unlikeBtn.isHidden = true
     }
     
     

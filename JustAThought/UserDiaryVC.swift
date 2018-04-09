@@ -97,6 +97,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("global class is " + mainInstance.currentUsername)
+        userNameLbl.adjustsFontSizeToFitWidth = true
         userNameLbl.text = mainInstance.currentUsername
         navigationController?.isNavigationBarHidden = false
 
