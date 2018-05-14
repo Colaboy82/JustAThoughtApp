@@ -1475,7 +1475,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thought" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHm-9a-5BL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thought" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHm-9a-5BL">
                                 <rect key="frame" x="47" y="214" width="281" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -2178,7 +2178,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="MmZ-pX-UU7"/>
         <segue reference="gDx-Yq-Hgl"/>
-        <segue reference="QSY-Kn-Afy"/>
+        <segue reference="wSk-2z-Sy0"/>
         <segue reference="vWc-6Z-dib"/>
         <segue reference="WSV-sI-QRv"/>
         <segue reference="s9r-49-doH"/>

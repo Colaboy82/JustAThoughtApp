@@ -86,7 +86,7 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
                 var alreadyLikedBool: Bool!
                 let thought: ThoughtModel
                 thought = self.thoughtList[0];
-
+                
                 Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
                     guard let dict = snapshot.value as? [String:Any] else {
                         print("Error")

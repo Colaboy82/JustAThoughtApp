@@ -541,7 +541,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             subtopicsArray.removeAll()
             subtopicSearchView.reloadData()
             loadSubTopics(MainTopic: selectedTopicThought, table: self.subtopicSearchView)
-            self.searchController.isActive = false//
+            self.searchController.isActive = false
             self.subtopicSearchView.isHidden = false
             //self.navigationController?.isToolbarHidden = false
             toolbarView.isHidden = false
@@ -581,11 +581,65 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                 self.view.layoutIfNeeded()
             })
         }
-        if tableView == tenThoughtsTableView{
+        if tableView == tenThoughtsTableView && selectedItem == "Most Liked Thought (Location)"{//sepearte and use specific array
+                let currentThoughtCell = tableView.cellForRow(at: indexPath!) as! VCTableViewCell
+                let thought: ThoughtModel
+                //getting the thought of selected position
+                thought = mostLikedByLocation[(indexPath?.row)!]
+                currentThoughtCell.configCell(thought: thought)
+            
+                let numToString = (thought._likes).toString()
+                mainInstance.thought = thought.typedThought!
+                mainInstance.username = thought.userName!
+                mainInstance.location = thought.city! + ", " + thought.country!
+                mainInstance.timeStamps = thought.timeStamp!
+                mainInstance.topic = thought.typedTopic!
+                mainInstance.numLikes = numToString
+                mainInstance.uid = thought.uid
+            
+                performSegue(withIdentifier:"ToSpecificThoughtVCLeader", sender: nil)
+        }
+        if tableView == tenThoughtsTableView && selectedItem == "Most Liked (Daily)"{//sepearte and use specific array
+            let currentThoughtCell = tableView.cellForRow(at: indexPath!) as! VCTableViewCell
+            let thought: ThoughtModel
+            //getting the thought of selected position
+            thought = mostLikedDaily[(indexPath?.row)!]
+            currentThoughtCell.configCell(thought: thought)
+            
+            let numToString = (thought._likes).toString()
+            mainInstance.thought = thought.typedThought!
+            mainInstance.username = thought.userName!
+            mainInstance.location = thought.city! + ", " + thought.country!
+            mainInstance.timeStamps = thought.timeStamp!
+            mainInstance.topic = thought.typedTopic!
+            mainInstance.numLikes = numToString
+            mainInstance.uid = thought.uid
+            
+            performSegue(withIdentifier:"ToSpecificThoughtVCLeader", sender: nil)
+        }
+        if tableView == tenThoughtsTableView && selectedItem == "Most Liked Thought (All Time)"{//sepearte and use specific array
             let currentThoughtCell = tableView.cellForRow(at: indexPath!) as! VCTableViewCell
             let thought: ThoughtModel
             //getting the thought of selected position
             thought = thoughtList[(indexPath?.row)!]
+            currentThoughtCell.configCell(thought: thought)
+            
+            let numToString = (thought._likes).toString()
+            mainInstance.thought = thought.typedThought!
+            mainInstance.username = thought.userName!
+            mainInstance.location = thought.city! + ", " + thought.country!
+            mainInstance.timeStamps = thought.timeStamp!
+            mainInstance.topic = thought.typedTopic!
+            mainInstance.numLikes = numToString
+            mainInstance.uid = thought.uid
+            
+            performSegue(withIdentifier:"ToSpecificThoughtVCLeader", sender: nil)
+        }
+        if tableView == tenThoughtsTableView && selectedItem == "Most Liked Thought (Topic)"{//sepearte and use specific array
+            let currentThoughtCell = tableView.cellForRow(at: indexPath!) as! VCTableViewCell
+            let thought: ThoughtModel
+            //getting the thought of selected position
+            thought = mostLikedPerTopic[(indexPath?.row)!]
             currentThoughtCell.configCell(thought: thought)
             
             let numToString = (thought._likes).toString()
