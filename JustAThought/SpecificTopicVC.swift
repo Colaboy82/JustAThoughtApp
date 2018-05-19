@@ -93,6 +93,7 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         print("global class is " + mainInstance.selectedTopic)
         topicLbl.text = mainInstance.selectedTopic
         
@@ -138,5 +139,7 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    func setNavigationBar() {
+        self.navigationItem.title = "Topic Feed"
+    }
 }

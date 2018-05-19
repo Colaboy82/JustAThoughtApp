@@ -20,9 +20,11 @@ class ResetPasswordVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var BackToProf: UIButton!
     
     @IBOutlet weak var backB: UIButton!
+    @IBOutlet weak var resetB: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         self.hideKeyboardWhenTappedAround()
         self.emailTextField.delegate = self
         if(mainInstance.profile == true){
@@ -33,6 +35,23 @@ class ResetPasswordVC: UIViewController, UITextFieldDelegate {
             backB.isHidden = false
         }
         self.emailTextField.delegate = self
+        
+        backB.layer.shadowColor = UIColor.black.cgColor
+        backB.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        backB.layer.masksToBounds = false
+        backB.layer.shadowRadius = 1.0
+        backB.layer.shadowOpacity = 0.5
+        backB.layer.cornerRadius = 7
+        backB.showsTouchWhenHighlighted = true
+        
+        resetB.layer.shadowColor = UIColor.black.cgColor
+        resetB.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        resetB.layer.masksToBounds = false
+        resetB.layer.shadowRadius = 1.0
+        resetB.layer.shadowOpacity = 0.5
+        resetB.layer.cornerRadius = 7
+        resetB.showsTouchWhenHighlighted = true
+        
     }
     func containsSwearWord(text: String, swearWords: [String]) -> Bool {
         return swearWords
@@ -102,5 +121,8 @@ class ResetPasswordVC: UIViewController, UITextFieldDelegate {
                 self.present(alertController, animated: true, completion: nil)
             })
         }
+    }
+    func setNavigationBar() {
+        self.navigationItem.title = "Reset Password"
     }
 }

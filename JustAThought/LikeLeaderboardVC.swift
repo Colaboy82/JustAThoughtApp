@@ -75,6 +75,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         configureSearchController()
         dropDownConstraint.constant = -200
         dropDownShowing = false
@@ -119,6 +120,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
     }
     @IBAction func backToLeaderboard (sender: AnyObject){
         BackToMainTopicBtn.isHidden = true
+        toolbarView.isHidden = true
         dropDownBtn.setTitle("Choose a Leaderboard", for: UIControlState.normal)
         dropDownConstraint.constant = 50
         UIView.animate(withDuration: 0.5, animations: {
@@ -381,7 +383,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             let cell = tableView.dequeueReusableCell(withIdentifier: "ThoughtCells", for: indexPath) as! VCTableViewCell
             let thought: ThoughtModel
             var alreadyLikedBool: Bool!
-
+            
             //getting the thought of selected position
             thought = mostLikedDaily[indexPath.row]
             cell.configCell(thought: thought)
@@ -599,7 +601,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
                 performSegue(withIdentifier:"ToSpecificThoughtVCLeader", sender: nil)
         }
-        if tableView == tenThoughtsTableView && selectedItem == "Most Liked (Daily)"{//sepearte and use specific array
+        if tableView == tenThoughtsTableView && selectedItem == "Most Liked Thought (Daily)"{//sepearte and use specific array
             let currentThoughtCell = tableView.cellForRow(at: indexPath!) as! VCTableViewCell
             let thought: ThoughtModel
             //getting the thought of selected position
@@ -972,5 +974,8 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
         subtopicSearchController.dimsBackgroundDuringPresentation = false
         subtopicSearchController.searchBar.delegate = self
         subtopicSearchView.tableHeaderView = subtopicSearchController.searchBar
+    }
+    func setNavigationBar() {
+        self.navigationItem.title = "Leaderboards"
     }
 }

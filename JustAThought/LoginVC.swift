@@ -28,6 +28,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var pwdBtn: UIButton!
+    @IBOutlet weak var createAcctBtn: UIButton!
+    
     var refUsers: DatabaseReference!
     
     override func viewDidLoad() {
@@ -36,6 +40,31 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
         mainInstance.profile = false
+        
+        loginBtn.layer.shadowColor = UIColor.black.cgColor
+        loginBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        loginBtn.layer.masksToBounds = false
+        loginBtn.layer.shadowRadius = 1.0
+        loginBtn.layer.shadowOpacity = 0.5
+        loginBtn.layer.cornerRadius = 7
+        loginBtn.showsTouchWhenHighlighted = true
+        
+        pwdBtn.layer.shadowColor = UIColor.black.cgColor
+        pwdBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        pwdBtn.layer.masksToBounds = false
+        pwdBtn.layer.shadowRadius = 1.0
+        pwdBtn.layer.shadowOpacity = 0.5
+        pwdBtn.layer.cornerRadius = 7
+        pwdBtn.showsTouchWhenHighlighted = true
+        
+        createAcctBtn.layer.shadowColor = UIColor.black.cgColor
+        createAcctBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        createAcctBtn.layer.masksToBounds = false
+        createAcctBtn.layer.shadowRadius = 1.0
+        createAcctBtn.layer.shadowOpacity = 0.5
+        createAcctBtn.layer.cornerRadius = 7
+        createAcctBtn.showsTouchWhenHighlighted = true
+        
     }
 
     override func didReceiveMemoryWarning() {

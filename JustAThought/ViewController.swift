@@ -36,6 +36,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         @IBOutlet weak var diaryBtn: UIButton!
         @IBOutlet weak var locationBtn: UIButton!
     
+        @IBOutlet weak var enterThoughtBtn: UIButton!
+    
+    
         @IBOutlet weak var mainBar: UIView!
         @IBOutlet weak var searchMenuView: UIView!
         @IBOutlet weak var searchView: UIView!
@@ -365,6 +368,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 //getting the thought of selected position
                 thought = thoughtList[indexPath.row]
                 cell.configCell(thought: thought)
+                cell.layer.borderWidth = 1.0
+                cell.layer.borderColor = UIColor.black.cgColor
                 let numToString = (thought._likes).toString()
                 
                 //adding values to labels
@@ -408,12 +413,55 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 UIView.animate(withDuration: 0.3, animations: {
                     self.view.layoutIfNeeded()
                 })
+                if upperConstraintSearchView.constant == 0{
+                    upperConstraintSearchView.constant = 1500
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.view.layoutIfNeeded()
+                    })
+                    searchShowing = !searchShowing
+                }
+                if upperConstraintCitySearchView.constant == 0 {
+                    upperConstraintCitySearchView.constant = 1500
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.view.layoutIfNeeded()
+                    })
+                    searchCityShowing = !searchCityShowing
+                }
+                if upperConstraint.constant == 0{
+                    upperConstraint.constant = 1500
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.view.layoutIfNeeded()
+                    })
+                    enterThoughtShowing = !enterThoughtShowing
+                }
             }else{
                 leadingConstraint.constant = 270//0
-                
+                toolbarView.isHidden = true
+
                 UIView.animate(withDuration: 0.3, animations: {
                         self.view.layoutIfNeeded()
                     })
+                if upperConstraintSearchView.constant == 0{
+                    upperConstraintSearchView.constant = 1500
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.view.layoutIfNeeded()
+                    })
+                    searchShowing = !searchShowing
+                }
+                if upperConstraintCitySearchView.constant == 0 {
+                    upperConstraintCitySearchView.constant = 1500
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.view.layoutIfNeeded()
+                    })
+                    searchCityShowing = !searchCityShowing
+                }
+                if upperConstraint.constant == 0{
+                    upperConstraint.constant = 1500
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.view.layoutIfNeeded()
+                    })
+                    enterThoughtShowing = !enterThoughtShowing
+                }
             }
             searchMenuShowing = !searchMenuShowing
         }
@@ -799,6 +847,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         override func viewDidLoad() {
             super.viewDidLoad()
+            setNavigationBar()
             self.hideKeyboardWhenTappedAround()
             self.thoughtInput.delegate = self
             
@@ -806,21 +855,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(openSearchMenu(_:)))
             
-            menuBtn.layer.cornerRadius = 5;
-            menuBtn.layer.borderWidth = 4;
-            menuBtn.layer.borderColor = UIColor.red.cgColor
+            menuBtn.showsTouchWhenHighlighted = true
+            diaryBtn.showsTouchWhenHighlighted = true
+            locationBtn.showsTouchWhenHighlighted = true
+            profileBtn.showsTouchWhenHighlighted = true
             
-            profileBtn.layer.cornerRadius = 5;
-            profileBtn.layer.borderWidth = 4;
-            profileBtn.layer.borderColor = UIColor.red.cgColor
-            
-            diaryBtn.layer.cornerRadius = 5;
-            diaryBtn.layer.borderWidth = 4;
-            diaryBtn.layer.borderColor = UIColor.red.cgColor
-            
-            locationBtn.layer.cornerRadius = 5;
-            locationBtn.layer.borderWidth = 4;
-            locationBtn.layer.borderColor = UIColor.red.cgColor
+            enterThoughtBtn.layer.shadowColor = UIColor.black.cgColor
+            enterThoughtBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            enterThoughtBtn.layer.masksToBounds = false
+            enterThoughtBtn.layer.shadowRadius = 1.0
+            enterThoughtBtn.layer.shadowOpacity = 0.5
+            enterThoughtBtn.layer.cornerRadius = 7
+            enterThoughtBtn.showsTouchWhenHighlighted = true
+        
 
             //var leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes(sender:)))//Selector("handleSwipes:"))
             //var rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes(sender:)))//Selector("handleSwipes:"))
@@ -1017,5 +1064,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print(error.localizedDescription)
             }
         }
+    }
+    func setNavigationBar() {
+        self.navigationItem.title = "Main Feed"
     }
 }

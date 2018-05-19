@@ -242,6 +242,8 @@ SWIFT_CLASS("_TtC12JustAThought15CreateAccountVC")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified firstNameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified middleNameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lastNameTextField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backBtn;
 - (void)viewDidLoad;
 - (BOOL)textField:(UITextField * _Nonnull)textFieldToChange shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (void)didReceiveMemoryWarning;
@@ -272,6 +274,10 @@ SWIFT_CLASS("_TtC12JustAThought28FindTopicTableViewController")
 
 SWIFT_CLASS("_TtC12JustAThought6InfoVC")
 @interface InfoVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified tutorialBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified contactUsBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified aboutAppBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified aboutMuBtn;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -313,6 +319,9 @@ SWIFT_CLASS("_TtC12JustAThought7LoginVC")
 @interface LoginVC : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified pwdBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createAcctBtn;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
@@ -343,6 +352,7 @@ SWIFT_CLASS("_TtC12JustAThought15ResetPasswordVC")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified BacktoFeed;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified BackToProf;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backB;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified resetB;
 - (void)viewDidLoad;
 - (BOOL)textField:(UITextField * _Nonnull)textFieldToChange shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (void)didReceiveMemoryWarning;
@@ -432,6 +442,11 @@ SWIFT_CLASS("_TtC12JustAThought13TopicCreateVC")
 
 SWIFT_CLASS("_TtC12JustAThought12TutorialPage")
 @interface TutorialPage : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified howPostBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified howLikeBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified howNavBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified howResetPwBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified buttonFuncBtn;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -501,6 +516,7 @@ SWIFT_CLASS("_TtC12JustAThought14ViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified profileBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified diaryBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified locationBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified enterThoughtBtn;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified mainBar;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified searchMenuView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified searchView;

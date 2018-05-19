@@ -20,7 +20,7 @@ class UserProfileVC: UIViewController {
         super.viewDidLoad()
         //usernameLbl.adjustsFontSizeToFitWidth = true
         //emailLbl.adjustsFontSizeToFitWidth = true
-        
+        setNavigationBar()
         usernameLbl.text = "Username: " + mainInstance.currentUsername
         emailLbl.text = "Email: " + (Auth.auth().currentUser?.email)!
         usernameLbl.sizeToFit();
@@ -41,5 +41,8 @@ class UserProfileVC: UIViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+    func setNavigationBar() {
+        self.navigationItem.title = "User Profile"
     }
 }

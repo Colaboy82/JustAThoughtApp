@@ -94,6 +94,7 @@ class SpecificCityVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         print("global class is " + mainInstance.selectedCity)
         cityLbl.text = mainInstance.selectedCity
         
@@ -139,6 +140,9 @@ class SpecificCityVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func setNavigationBar() {
+        self.navigationItem.title = "City Feed"
     }
     
 }

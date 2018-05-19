@@ -15,6 +15,7 @@ class AboutPages: UIViewController, UIScrollViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         //toolbarView.isHidden = false
         scrollView.delegate = self
         // Do any additional setup after loading the view.
@@ -23,5 +24,8 @@ class AboutPages: UIViewController, UIScrollViewDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func setNavigationBar() {
+        self.navigationItem.title = "About MuSquared"
     }
 }

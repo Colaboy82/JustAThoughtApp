@@ -23,6 +23,8 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var middleNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
 
+    @IBOutlet weak var createBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,23 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
         self.firstNameTextField.delegate = self
         self.middleNameTextField.delegate = self
         self.lastNameTextField.delegate = self
+        
+        createBtn.layer.shadowColor = UIColor.black.cgColor
+        createBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        createBtn.layer.masksToBounds = false
+        createBtn.layer.shadowRadius = 1.0
+        createBtn.layer.shadowOpacity = 0.5
+        createBtn.layer.cornerRadius = 7
+        createBtn.showsTouchWhenHighlighted = true
+        
+        backBtn.layer.shadowColor = UIColor.black.cgColor
+        backBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        backBtn.layer.masksToBounds = false
+        backBtn.layer.shadowRadius = 1.0
+        backBtn.layer.shadowOpacity = 0.5
+        backBtn.layer.cornerRadius = 7
+        backBtn.showsTouchWhenHighlighted = true
+        
     }
     func containsSwearWord(text: String, swearWords: [String]) -> Bool {
         return swearWords

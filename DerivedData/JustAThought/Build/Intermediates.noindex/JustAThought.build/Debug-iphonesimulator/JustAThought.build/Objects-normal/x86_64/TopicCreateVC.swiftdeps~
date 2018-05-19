@@ -14,7 +14,6 @@ provides-dynamic-lookup:
 - "topicInput"
 - "viewDidLoad"
 depends-top-level:
-- !private "=="
 - "AssignmentPrecedence"
 - !private "Auth"
 - "Bool"
@@ -23,7 +22,6 @@ depends-top-level:
 - !private "Database"
 - "DatabaseReference"
 - !private "Dictionary"
-- !private "Error"
 - !private "String"
 - !private "StringLiteralType"
 - "TopicCreateVC"
@@ -36,14 +34,12 @@ depends-member:
 - !private ["So4AuthC", "auth"]
 - !private ["So4AuthC", "currentUser"]
 - !private ["s23BidirectionalCollectionP", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "endEditing"]
 - !private ["So15CALayerDelegateP", "isHidden"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "Database"]
-- !private ["s7CVarArgP", "Error"]
 - !private ["s7CVarArgP", "addTopic"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "child"]
@@ -79,7 +75,6 @@ depends-member:
 - !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
-- !private ["s28CustomDebugStringConvertibleP", "Error"]
 - !private ["s28CustomDebugStringConvertibleP", "addTopic"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
@@ -111,14 +106,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "Database"]
-- !private ["s23CustomStringConvertibleP", "Error"]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addTopic"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "child"]
@@ -160,14 +151,10 @@ depends-member:
 - !private ["So17DatabaseReferenceC", "childByAutoId"]
 - !private ["So17DatabaseReferenceC", "key"]
 - !private ["So17DatabaseReferenceC", "setValue"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "Database"]
-- !private ["s9EquatableP", "Error"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addTopic"]
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "child"]
@@ -199,14 +186,11 @@ depends-member:
 - !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "Database"]
-- !private ["s8HashableP", "Error"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addTopic"]
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "child"]
@@ -238,12 +222,10 @@ depends-member:
 - !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "Database"]
-- !private ["So8NSCodingP", "Error"]
 - !private ["So8NSCodingP", "addTopic"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
@@ -269,7 +251,6 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
-- !private ["So26NSExtensionRequestHandlingP", "Error"]
 - !private ["So26NSExtensionRequestHandlingP", "addTopic"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "hideKeyboardWhenTappedAround"]
@@ -295,7 +276,6 @@ depends-member:
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Database"]
 - ["So8NSObjectC", "DatabaseReference"]
-- !private ["So8NSObjectC", "Error"]
 - !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UILabel"]
@@ -333,7 +313,6 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "Auth"]
 - !private ["So16NSObjectProtocolP", "Database"]
-- !private ["So16NSObjectProtocolP", "Error"]
 - !private ["So16NSObjectProtocolP", "addTopic"]
 - !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "child"]
@@ -377,7 +356,6 @@ depends-member:
 - ["12JustAThought13TopicCreateVCC", "Bool"]
 - !private ["12JustAThought13TopicCreateVCC", "Database"]
 - ["12JustAThought13TopicCreateVCC", "DatabaseReference"]
-- !private ["12JustAThought13TopicCreateVCC", "Error"]
 - !private ["12JustAThought13TopicCreateVCC", "String"]
 - ["12JustAThought13TopicCreateVCC", "UIButton"]
 - ["12JustAThought13TopicCreateVCC", "UILabel"]
@@ -412,7 +390,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "Database"]
-- !private ["So21UIAppearanceContainerP", "Error"]
 - !private ["So21UIAppearanceContainerP", "addTopic"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
@@ -438,7 +415,6 @@ depends-member:
 - !private ["So8UIButtonC", "isHidden"]
 - !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "Database"]
-- !private ["So18UIContentContainerP", "Error"]
 - !private ["So18UIContentContainerP", "addTopic"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "hideKeyboardWhenTappedAround"]
@@ -473,7 +449,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "Database"]
-- !private ["So18UIFocusEnvironmentP", "Error"]
 - !private ["So18UIFocusEnvironmentP", "addTopic"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
@@ -506,7 +481,6 @@ depends-member:
 - !private ["So7UILabelC", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
-- !private ["So30UIPasteConfigurationSupportingP", "Error"]
 - !private ["So30UIPasteConfigurationSupportingP", "addTopic"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
@@ -533,7 +507,6 @@ depends-member:
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Database"]
 - ["So11UIResponderC", "DatabaseReference"]
-- !private ["So11UIResponderC", "Error"]
 - !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UILabel"]
@@ -562,7 +535,6 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
-- !private ["So30UIResponderStandardEditActionsP", "Error"]
 - !private ["So30UIResponderStandardEditActionsP", "addTopic"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
@@ -588,7 +560,6 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
 - !private ["So16UIStateRestoringP", "Auth"]
 - !private ["So16UIStateRestoringP", "Database"]
-- !private ["So16UIStateRestoringP", "Error"]
 - !private ["So16UIStateRestoringP", "addTopic"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "hideKeyboardWhenTappedAround"]
@@ -615,7 +586,6 @@ depends-member:
 - !private ["So11UITextFieldC", "text"]
 - !private ["So19UITextFieldDelegateP", "Auth"]
 - !private ["So19UITextFieldDelegateP", "Database"]
-- !private ["So19UITextFieldDelegateP", "Error"]
 - !private ["So19UITextFieldDelegateP", "addTopic"]
 - !private ["So19UITextFieldDelegateP", "hideKeyboardWhenTappedAround"]
 - !private ["So19UITextFieldDelegateP", "refTopics"]
@@ -639,7 +609,6 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "Database"]
-- !private ["So18UITraitEnvironmentP", "Error"]
 - !private ["So18UITraitEnvironmentP", "addTopic"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
@@ -670,7 +639,6 @@ depends-member:
 - ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "Database"]
 - ["So16UIViewControllerC", "DatabaseReference"]
-- !private ["So16UIViewControllerC", "Error"]
 - !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", "UILabel"]
@@ -701,7 +669,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "endEditing"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -712,7 +679,6 @@ depends-member:
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Error"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTopic"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
@@ -744,14 +710,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "So4AuthC"
 - !private "s23BidirectionalCollectionP"
-- !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "s10CollectionP"
@@ -766,7 +730,6 @@ depends-nominal:
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
-- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -823,7 +786,6 @@ depends-nominal:
 - !private "So8UserInfoP"
 - !private "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"

@@ -21,6 +21,7 @@ class TopicCreateVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         successMessage.isHidden = true
         self.hideKeyboardWhenTappedAround()
         self.topicInput.delegate = self
@@ -63,6 +64,8 @@ class TopicCreateVC: UIViewController, UITextFieldDelegate {
     @IBAction func buttonAddTopic(_ sender: UIButton) {
         addTopic()
     }
-    
+    func setNavigationBar() {
+        self.navigationItem.title = "Request Topic"
+    }
 
 }

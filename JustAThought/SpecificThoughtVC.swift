@@ -35,6 +35,7 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         self.navigationController?.isNavigationBarHidden = false
         
         // Input data into the Array:
@@ -206,6 +207,7 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
         likeBtn.isHidden = false
         unlikeBtn.isHidden = true
     }
-    
-    
+    func setNavigationBar() {
+        self.navigationItem.title = "The Thought"
+    }
 }
