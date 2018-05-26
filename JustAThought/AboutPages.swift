@@ -25,7 +25,11 @@ class AboutPages: UIViewController, UIScrollViewDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func setNavigationBar() {
-        self.navigationItem.title = "About MuSquared"
+    func setNavigationBar() {//"AboutUsPage" "AboutAppPage"
+        if(self.title == "AboutAppPage"){
+            self.navigationItem.title = "About MuSquared"
+        }else{
+            self.navigationItem.title = "About Just A Thought"
+        }
     }
 }

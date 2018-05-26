@@ -54,14 +54,14 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
                     let thoughtObject = thoughts.value as? [String: AnyObject]
                     let thoughtText  = thoughtObject?["thought"]
                     let topicText = thoughtObject?["topic"]
-                    let userName = thoughtObject?["users"]
+                    let userId = thoughtObject?["UID"]
                     let timeStamp = thoughtObject?["time"]
                     let city = thoughtObject?["city"]
                     let country = thoughtObject?["country"]
                     let likes = thoughtObject?["likes"]
                     let id = thoughtObject?["id"]
                     //creating artist object with model and fetched values
-                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userName: userName as! String?, timeStamp: timeStamp as! String?, city: city as! String?, country: country as! String?, _likes: likes as! Int?)
+                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userID: userId as! String?, timeStamp: timeStamp as! String?, city: city as! String?, country: country as! String?, _likes: likes as! Int?)
                     
                     //adding it to list
                     if id as! String? == mainInstance.uid{
@@ -78,7 +78,7 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
                 //adding values to labels
                 self.thoughtLbl.text = mainInstance.thought
                 self.topicLbl.text = mainInstance.topic
-                self.userLbl.text = mainInstance.username
+                self.userLbl.text = self.convertToShortUserName(s: mainInstance.username)
                 self.timeStampLbl.text = mainInstance.timeStamps
                 self.locationLbl.text = mainInstance.location
                 self.numOfLikes.text = mainInstance.numLikes
@@ -142,7 +142,7 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
             //adding values to labels
             cell.thoughtLbl.text = mainInstance.thought
             cell.topicLbl.text = mainInstance.topic
-            cell.userLbl.text = mainInstance.username
+            cell.userLbl.text = convertToShortUserName(s: mainInstance.username)
             cell.timeStampLbl.text = mainInstance.timeStamps
             cell.locationLbl.text = mainInstance.location
             cell.numOfLikes.text = mainInstance.numLikes
@@ -209,5 +209,9 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     func setNavigationBar() {
         self.navigationItem.title = "The Thought"
+    }
+    func convertToShortUserName(s: String) -> String{
+        let result = String(s.characters.prefix(10))
+        return result
     }
 }

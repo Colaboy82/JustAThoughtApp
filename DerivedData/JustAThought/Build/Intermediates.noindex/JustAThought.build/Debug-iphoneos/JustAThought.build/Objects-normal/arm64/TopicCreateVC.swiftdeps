@@ -8,25 +8,26 @@ provides-member:
 provides-dynamic-lookup:
 - "buttonAddTopic"
 - "didReceiveMemoryWarning"
+- "submitBtn"
 - "successMessage"
 - "textFieldShouldReturn"
 - "topicInput"
 - "viewDidLoad"
 depends-top-level:
-- !private "=="
 - "AssignmentPrecedence"
 - !private "Auth"
 - "Bool"
 - !private "BooleanLiteralType"
+- !private "CGSize"
 - "CastingPrecedence"
 - !private "Database"
 - "DatabaseReference"
 - !private "Dictionary"
-- !private "Error"
 - !private "String"
 - !private "StringLiteralType"
 - "TopicCreateVC"
 - "UIButton"
+- !private "UIColor"
 - "UILabel"
 - "UITextField"
 - "UITextFieldDelegate"
@@ -35,18 +36,36 @@ depends-member:
 - !private ["So4AuthC", "auth"]
 - !private ["So4AuthC", "currentUser"]
 - !private ["s23BidirectionalCollectionP", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So7CALayerC", "cornerRadius"]
+- !private ["So7CALayerC", "masksToBounds"]
+- !private ["So7CALayerC", "shadowColor"]
+- !private ["So7CALayerC", "shadowOffset"]
+- !private ["So7CALayerC", "shadowOpacity"]
+- !private ["So7CALayerC", "shadowRadius"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "endEditing"]
 - !private ["So15CALayerDelegateP", "isHidden"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "showsTouchWhenHighlighted"]
 - !private ["So15CALayerDelegateP", "text"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["So13CAMediaTimingP", "masksToBounds"]
+- !private ["So13CAMediaTimingP", "shadowColor"]
+- !private ["So13CAMediaTimingP", "shadowOffset"]
+- !private ["So13CAMediaTimingP", "shadowOpacity"]
+- !private ["So13CAMediaTimingP", "shadowRadius"]
+- !private ["SC6CGSizeV", "init"]
 - !private ["s7CVarArgP", "Auth"]
+- !private ["s7CVarArgP", "CGSize"]
 - !private ["s7CVarArgP", "Database"]
-- !private ["s7CVarArgP", "Error"]
+- !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "addTopic"]
 - !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "cgColor"]
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "childByAutoId"]
+- !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "currentUser"]
 - !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "delegate"]
@@ -57,9 +76,19 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "key"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "masksToBounds"]
+- !private ["s7CVarArgP", "navigationItem"]
 - !private ["s7CVarArgP", "refTopics"]
 - !private ["s7CVarArgP", "reference"]
+- !private ["s7CVarArgP", "setNavigationBar"]
 - !private ["s7CVarArgP", "setValue"]
+- !private ["s7CVarArgP", "shadowColor"]
+- !private ["s7CVarArgP", "shadowOffset"]
+- !private ["s7CVarArgP", "shadowOpacity"]
+- !private ["s7CVarArgP", "shadowRadius"]
+- !private ["s7CVarArgP", "showsTouchWhenHighlighted"]
+- !private ["s7CVarArgP", "submitBtn"]
 - !private ["s7CVarArgP", "successMessage"]
 - !private ["s7CVarArgP", "text"]
 - ["s7CVarArgP", "textField"]
@@ -69,6 +98,7 @@ depends-member:
 - ["s7CVarArgP", "textFieldShouldClear"]
 - ["s7CVarArgP", "textFieldShouldEndEditing"]
 - ["s7CVarArgP", "textFieldShouldReturn"]
+- !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "topicInput"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
@@ -76,12 +106,16 @@ depends-member:
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
+- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
-- !private ["s28CustomDebugStringConvertibleP", "Error"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "addTopic"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "childByAutoId"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
@@ -92,9 +126,19 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "key"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "masksToBounds"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - !private ["s28CustomDebugStringConvertibleP", "refTopics"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
+- !private ["s28CustomDebugStringConvertibleP", "setNavigationBar"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowColor"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowOffset"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowOpacity"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "showsTouchWhenHighlighted"]
+- !private ["s28CustomDebugStringConvertibleP", "submitBtn"]
 - !private ["s28CustomDebugStringConvertibleP", "successMessage"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - ["s28CustomDebugStringConvertibleP", "textField"]
@@ -104,22 +148,24 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldClear"]
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldEndEditing"]
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "topicInput"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
+- !private ["s23CustomStringConvertibleP", "CGSize"]
 - !private ["s23CustomStringConvertibleP", "Database"]
-- !private ["s23CustomStringConvertibleP", "Error"]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "addTopic"]
 - !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "childByAutoId"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
@@ -130,9 +176,19 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "key"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "masksToBounds"]
+- !private ["s23CustomStringConvertibleP", "navigationItem"]
 - !private ["s23CustomStringConvertibleP", "refTopics"]
 - !private ["s23CustomStringConvertibleP", "reference"]
+- !private ["s23CustomStringConvertibleP", "setNavigationBar"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
+- !private ["s23CustomStringConvertibleP", "shadowColor"]
+- !private ["s23CustomStringConvertibleP", "shadowOffset"]
+- !private ["s23CustomStringConvertibleP", "shadowOpacity"]
+- !private ["s23CustomStringConvertibleP", "shadowRadius"]
+- !private ["s23CustomStringConvertibleP", "showsTouchWhenHighlighted"]
+- !private ["s23CustomStringConvertibleP", "submitBtn"]
 - !private ["s23CustomStringConvertibleP", "successMessage"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - ["s23CustomStringConvertibleP", "textField"]
@@ -142,6 +198,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "textFieldShouldClear"]
 - ["s23CustomStringConvertibleP", "textFieldShouldEndEditing"]
 - ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "topicInput"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
@@ -156,18 +213,19 @@ depends-member:
 - !private ["So17DatabaseReferenceC", "childByAutoId"]
 - !private ["So17DatabaseReferenceC", "key"]
 - !private ["So17DatabaseReferenceC", "setValue"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "Auth"]
+- !private ["s9EquatableP", "CGSize"]
 - !private ["s9EquatableP", "Database"]
-- !private ["s9EquatableP", "Error"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "UIColor"]
 - !private ["s9EquatableP", "addTopic"]
 - !private ["s9EquatableP", "auth"]
+- !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "cgColor"]
 - !private ["s9EquatableP", "child"]
 - !private ["s9EquatableP", "childByAutoId"]
+- !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "currentUser"]
 - !private ["s9EquatableP", "database"]
 - !private ["s9EquatableP", "delegate"]
@@ -178,9 +236,19 @@ depends-member:
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isHidden"]
 - !private ["s9EquatableP", "key"]
+- !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "masksToBounds"]
+- !private ["s9EquatableP", "navigationItem"]
 - !private ["s9EquatableP", "refTopics"]
 - !private ["s9EquatableP", "reference"]
+- !private ["s9EquatableP", "setNavigationBar"]
 - !private ["s9EquatableP", "setValue"]
+- !private ["s9EquatableP", "shadowColor"]
+- !private ["s9EquatableP", "shadowOffset"]
+- !private ["s9EquatableP", "shadowOpacity"]
+- !private ["s9EquatableP", "shadowRadius"]
+- !private ["s9EquatableP", "showsTouchWhenHighlighted"]
+- !private ["s9EquatableP", "submitBtn"]
 - !private ["s9EquatableP", "successMessage"]
 - !private ["s9EquatableP", "text"]
 - ["s9EquatableP", "textField"]
@@ -190,22 +258,25 @@ depends-member:
 - ["s9EquatableP", "textFieldShouldClear"]
 - ["s9EquatableP", "textFieldShouldEndEditing"]
 - ["s9EquatableP", "textFieldShouldReturn"]
+- !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "topicInput"]
 - !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s8HashableP", "Auth"]
+- !private ["s8HashableP", "CGSize"]
 - !private ["s8HashableP", "Database"]
-- !private ["s8HashableP", "Error"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "UIColor"]
 - !private ["s8HashableP", "addTopic"]
 - !private ["s8HashableP", "auth"]
+- !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "cgColor"]
 - !private ["s8HashableP", "child"]
 - !private ["s8HashableP", "childByAutoId"]
+- !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "currentUser"]
 - !private ["s8HashableP", "database"]
 - !private ["s8HashableP", "delegate"]
@@ -216,9 +287,19 @@ depends-member:
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "isHidden"]
 - !private ["s8HashableP", "key"]
+- !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "masksToBounds"]
+- !private ["s8HashableP", "navigationItem"]
 - !private ["s8HashableP", "refTopics"]
 - !private ["s8HashableP", "reference"]
+- !private ["s8HashableP", "setNavigationBar"]
 - !private ["s8HashableP", "setValue"]
+- !private ["s8HashableP", "shadowColor"]
+- !private ["s8HashableP", "shadowOffset"]
+- !private ["s8HashableP", "shadowOpacity"]
+- !private ["s8HashableP", "shadowRadius"]
+- !private ["s8HashableP", "showsTouchWhenHighlighted"]
+- !private ["s8HashableP", "submitBtn"]
 - !private ["s8HashableP", "successMessage"]
 - !private ["s8HashableP", "text"]
 - ["s8HashableP", "textField"]
@@ -228,24 +309,38 @@ depends-member:
 - ["s8HashableP", "textFieldShouldClear"]
 - ["s8HashableP", "textFieldShouldEndEditing"]
 - ["s8HashableP", "textFieldShouldReturn"]
+- !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "topicInput"]
 - !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "Auth"]
+- !private ["So8NSCodingP", "CGSize"]
 - !private ["So8NSCodingP", "Database"]
-- !private ["So8NSCodingP", "Error"]
+- !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "addTopic"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "endEditing"]
 - !private ["So8NSCodingP", "hideKeyboardWhenTappedAround"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isHidden"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "masksToBounds"]
+- !private ["So8NSCodingP", "navigationItem"]
 - !private ["So8NSCodingP", "refTopics"]
+- !private ["So8NSCodingP", "setNavigationBar"]
+- !private ["So8NSCodingP", "shadowColor"]
+- !private ["So8NSCodingP", "shadowOffset"]
+- !private ["So8NSCodingP", "shadowOpacity"]
+- !private ["So8NSCodingP", "shadowRadius"]
+- !private ["So8NSCodingP", "showsTouchWhenHighlighted"]
+- !private ["So8NSCodingP", "submitBtn"]
 - !private ["So8NSCodingP", "successMessage"]
 - !private ["So8NSCodingP", "text"]
 - ["So8NSCodingP", "textField"]
@@ -255,19 +350,26 @@ depends-member:
 - ["So8NSCodingP", "textFieldShouldClear"]
 - ["So8NSCodingP", "textFieldShouldEndEditing"]
 - ["So8NSCodingP", "textFieldShouldReturn"]
+- !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "topicInput"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "cgColor"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
+- !private ["So26NSExtensionRequestHandlingP", "CGSize"]
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
-- !private ["So26NSExtensionRequestHandlingP", "Error"]
+- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "addTopic"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "hideKeyboardWhenTappedAround"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - !private ["So26NSExtensionRequestHandlingP", "refTopics"]
+- !private ["So26NSExtensionRequestHandlingP", "setNavigationBar"]
+- !private ["So26NSExtensionRequestHandlingP", "submitBtn"]
 - !private ["So26NSExtensionRequestHandlingP", "successMessage"]
 - ["So26NSExtensionRequestHandlingP", "textField"]
 - ["So26NSExtensionRequestHandlingP", "textFieldDidBeginEditing"]
@@ -280,23 +382,31 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
 - !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "CGSize"]
 - !private ["So8NSObjectC", "Database"]
 - ["So8NSObjectC", "DatabaseReference"]
-- !private ["So8NSObjectC", "Error"]
 - !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UITextField"]
 - ["So8NSObjectC", "addTopic"]
 - !private ["So8NSObjectC", "auth"]
+- !private ["So8NSObjectC", "black"]
 - ["So8NSObjectC", "buttonAddTopic"]
+- !private ["So8NSObjectC", "cgColor"]
 - !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "childByAutoId"]
+- !private ["So8NSObjectC", "cornerRadius"]
 - !private ["So8NSObjectC", "currentUser"]
 - !private ["So8NSObjectC", "database"]
 - !private ["So8NSObjectC", "delegate"]
@@ -307,9 +417,19 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isHidden"]
 - !private ["So8NSObjectC", "key"]
+- !private ["So8NSObjectC", "layer"]
+- !private ["So8NSObjectC", "masksToBounds"]
+- !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "refTopics"]
 - !private ["So8NSObjectC", "reference"]
+- ["So8NSObjectC", "setNavigationBar"]
 - !private ["So8NSObjectC", "setValue"]
+- !private ["So8NSObjectC", "shadowColor"]
+- !private ["So8NSObjectC", "shadowOffset"]
+- !private ["So8NSObjectC", "shadowOpacity"]
+- !private ["So8NSObjectC", "shadowRadius"]
+- !private ["So8NSObjectC", "showsTouchWhenHighlighted"]
+- ["So8NSObjectC", "submitBtn"]
 - ["So8NSObjectC", "successMessage"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "textField"]
@@ -319,16 +439,21 @@ depends-member:
 - ["So8NSObjectC", "textFieldShouldClear"]
 - ["So8NSObjectC", "textFieldShouldEndEditing"]
 - ["So8NSObjectC", "textFieldShouldReturn"]
+- !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "topicInput"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "Auth"]
+- !private ["So16NSObjectProtocolP", "CGSize"]
 - !private ["So16NSObjectProtocolP", "Database"]
-- !private ["So16NSObjectProtocolP", "Error"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
 - !private ["So16NSObjectProtocolP", "addTopic"]
 - !private ["So16NSObjectProtocolP", "auth"]
+- !private ["So16NSObjectProtocolP", "black"]
+- !private ["So16NSObjectProtocolP", "cgColor"]
 - !private ["So16NSObjectProtocolP", "child"]
 - !private ["So16NSObjectProtocolP", "childByAutoId"]
+- !private ["So16NSObjectProtocolP", "cornerRadius"]
 - !private ["So16NSObjectProtocolP", "currentUser"]
 - !private ["So16NSObjectProtocolP", "database"]
 - !private ["So16NSObjectProtocolP", "delegate"]
@@ -339,9 +464,19 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isHidden"]
 - !private ["So16NSObjectProtocolP", "key"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "masksToBounds"]
+- !private ["So16NSObjectProtocolP", "navigationItem"]
 - !private ["So16NSObjectProtocolP", "refTopics"]
 - !private ["So16NSObjectProtocolP", "reference"]
+- !private ["So16NSObjectProtocolP", "setNavigationBar"]
 - !private ["So16NSObjectProtocolP", "setValue"]
+- !private ["So16NSObjectProtocolP", "shadowColor"]
+- !private ["So16NSObjectProtocolP", "shadowOffset"]
+- !private ["So16NSObjectProtocolP", "shadowOpacity"]
+- !private ["So16NSObjectProtocolP", "shadowRadius"]
+- !private ["So16NSObjectProtocolP", "showsTouchWhenHighlighted"]
+- !private ["So16NSObjectProtocolP", "submitBtn"]
 - !private ["So16NSObjectProtocolP", "successMessage"]
 - !private ["So16NSObjectProtocolP", "text"]
 - ["So16NSObjectProtocolP", "textField"]
@@ -351,11 +486,20 @@ depends-member:
 - ["So16NSObjectProtocolP", "textFieldShouldClear"]
 - ["So16NSObjectProtocolP", "textFieldShouldEndEditing"]
 - ["So16NSObjectProtocolP", "textFieldShouldReturn"]
+- !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "topicInput"]
 - !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "masksToBounds"]
+- !private ["So14NSSecureCodingP", "shadowColor"]
+- !private ["So14NSSecureCodingP", "shadowOffset"]
+- !private ["So14NSSecureCodingP", "shadowOpacity"]
+- !private ["So14NSSecureCodingP", "shadowRadius"]
 - !private ["So8NSStringC", "init"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s8SequenceP", "init"]
@@ -365,11 +509,12 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["12JustAThought13TopicCreateVCC", "Auth"]
 - ["12JustAThought13TopicCreateVCC", "Bool"]
+- !private ["12JustAThought13TopicCreateVCC", "CGSize"]
 - !private ["12JustAThought13TopicCreateVCC", "Database"]
 - ["12JustAThought13TopicCreateVCC", "DatabaseReference"]
-- !private ["12JustAThought13TopicCreateVCC", "Error"]
 - !private ["12JustAThought13TopicCreateVCC", "String"]
 - ["12JustAThought13TopicCreateVCC", "UIButton"]
+- !private ["12JustAThought13TopicCreateVCC", "UIColor"]
 - ["12JustAThought13TopicCreateVCC", "UILabel"]
 - ["12JustAThought13TopicCreateVCC", "UITextField"]
 - ["12JustAThought13TopicCreateVCC", "addTopic"]
@@ -378,7 +523,10 @@ depends-member:
 - ["12JustAThought13TopicCreateVCC", "didReceiveMemoryWarning"]
 - !private ["12JustAThought13TopicCreateVCC", "hideKeyboardWhenTappedAround"]
 - ["12JustAThought13TopicCreateVCC", "init"]
+- !private ["12JustAThought13TopicCreateVCC", "navigationItem"]
 - ["12JustAThought13TopicCreateVCC", "refTopics"]
+- ["12JustAThought13TopicCreateVCC", "setNavigationBar"]
+- ["12JustAThought13TopicCreateVCC", "submitBtn"]
 - ["12JustAThought13TopicCreateVCC", "successMessage"]
 - ["12JustAThought13TopicCreateVCC", "textField"]
 - ["12JustAThought13TopicCreateVCC", "textFieldDidBeginEditing"]
@@ -390,17 +538,25 @@ depends-member:
 - ["12JustAThought13TopicCreateVCC", "topicInput"]
 - !private ["12JustAThought13TopicCreateVCC", "view"]
 - ["12JustAThought13TopicCreateVCC", "viewDidLoad"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "showsTouchWhenHighlighted"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "endEditing"]
 - !private ["So29UIAccessibilityIdentificationP", "isHidden"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "showsTouchWhenHighlighted"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "endEditing"]
 - !private ["So12UIAppearanceP", "isHidden"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "showsTouchWhenHighlighted"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "Auth"]
+- !private ["So21UIAppearanceContainerP", "CGSize"]
 - !private ["So21UIAppearanceContainerP", "Database"]
-- !private ["So21UIAppearanceContainerP", "Error"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "addTopic"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
@@ -408,7 +564,12 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "hideKeyboardWhenTappedAround"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "isHidden"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "navigationItem"]
 - !private ["So21UIAppearanceContainerP", "refTopics"]
+- !private ["So21UIAppearanceContainerP", "setNavigationBar"]
+- !private ["So21UIAppearanceContainerP", "showsTouchWhenHighlighted"]
+- !private ["So21UIAppearanceContainerP", "submitBtn"]
 - !private ["So21UIAppearanceContainerP", "successMessage"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - ["So21UIAppearanceContainerP", "textField"]
@@ -422,14 +583,23 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "isHidden"]
+- !private ["So8UIButtonC", "layer"]
+- !private ["So8UIButtonC", "showsTouchWhenHighlighted"]
+- !private ["So7UIColorC", "black"]
+- !private ["So7UIColorC", "cgColor"]
 - !private ["So18UIContentContainerP", "Auth"]
+- !private ["So18UIContentContainerP", "CGSize"]
 - !private ["So18UIContentContainerP", "Database"]
-- !private ["So18UIContentContainerP", "Error"]
+- !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "addTopic"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "hideKeyboardWhenTappedAround"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "navigationItem"]
 - !private ["So18UIContentContainerP", "refTopics"]
+- !private ["So18UIContentContainerP", "setNavigationBar"]
+- !private ["So18UIContentContainerP", "submitBtn"]
 - !private ["So18UIContentContainerP", "successMessage"]
 - ["So18UIContentContainerP", "textField"]
 - ["So18UIContentContainerP", "textFieldDidBeginEditing"]
@@ -446,18 +616,26 @@ depends-member:
 - !private ["So30UIContentSizeCategoryAdjustingP", "isHidden"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "delegate"]
+- !private ["So9UIControlC", "isHidden"]
+- !private ["So9UIControlC", "layer"]
+- !private ["So9UIControlC", "showsTouchWhenHighlighted"]
 - !private ["So9UIControlC", "text"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "endEditing"]
 - !private ["So17UICoordinateSpaceP", "isHidden"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "showsTouchWhenHighlighted"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "endEditing"]
 - !private ["So13UIDynamicItemP", "isHidden"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "showsTouchWhenHighlighted"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "Auth"]
+- !private ["So18UIFocusEnvironmentP", "CGSize"]
 - !private ["So18UIFocusEnvironmentP", "Database"]
-- !private ["So18UIFocusEnvironmentP", "Error"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "addTopic"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
@@ -465,7 +643,12 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "hideKeyboardWhenTappedAround"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "isHidden"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - !private ["So18UIFocusEnvironmentP", "refTopics"]
+- !private ["So18UIFocusEnvironmentP", "setNavigationBar"]
+- !private ["So18UIFocusEnvironmentP", "showsTouchWhenHighlighted"]
+- !private ["So18UIFocusEnvironmentP", "submitBtn"]
 - !private ["So18UIFocusEnvironmentP", "successMessage"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - ["So18UIFocusEnvironmentP", "textField"]
@@ -482,14 +665,18 @@ depends-member:
 - !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "endEditing"]
 - !private ["So11UIFocusItemP", "isHidden"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "showsTouchWhenHighlighted"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So10UIKeyInputP", "delegate"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So7UILabelC", "isHidden"]
 - !private ["So7UILabelC", "text"]
+- !private ["So16UINavigationItemC", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
-- !private ["So30UIPasteConfigurationSupportingP", "Error"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "addTopic"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
@@ -497,7 +684,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "hideKeyboardWhenTappedAround"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "refTopics"]
+- !private ["So30UIPasteConfigurationSupportingP", "setNavigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "showsTouchWhenHighlighted"]
+- !private ["So30UIPasteConfigurationSupportingP", "submitBtn"]
 - !private ["So30UIPasteConfigurationSupportingP", "successMessage"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - ["So30UIPasteConfigurationSupportingP", "textField"]
@@ -513,11 +705,12 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So11UIResponderC", "Auth"]
 - ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "CGSize"]
 - !private ["So11UIResponderC", "Database"]
 - ["So11UIResponderC", "DatabaseReference"]
-- !private ["So11UIResponderC", "Error"]
 - !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UITextField"]
 - ["So11UIResponderC", "addTopic"]
@@ -528,7 +721,12 @@ depends-member:
 - !private ["So11UIResponderC", "hideKeyboardWhenTappedAround"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isHidden"]
+- !private ["So11UIResponderC", "layer"]
+- !private ["So11UIResponderC", "navigationItem"]
 - ["So11UIResponderC", "refTopics"]
+- ["So11UIResponderC", "setNavigationBar"]
+- !private ["So11UIResponderC", "showsTouchWhenHighlighted"]
+- ["So11UIResponderC", "submitBtn"]
 - ["So11UIResponderC", "successMessage"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "textField"]
@@ -542,8 +740,9 @@ depends-member:
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
+- !private ["So30UIResponderStandardEditActionsP", "CGSize"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
-- !private ["So30UIResponderStandardEditActionsP", "Error"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "addTopic"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
@@ -551,7 +750,12 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "hideKeyboardWhenTappedAround"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "isHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - !private ["So30UIResponderStandardEditActionsP", "refTopics"]
+- !private ["So30UIResponderStandardEditActionsP", "setNavigationBar"]
+- !private ["So30UIResponderStandardEditActionsP", "showsTouchWhenHighlighted"]
+- !private ["So30UIResponderStandardEditActionsP", "submitBtn"]
 - !private ["So30UIResponderStandardEditActionsP", "successMessage"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - ["So30UIResponderStandardEditActionsP", "textField"]
@@ -565,14 +769,21 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "showsTouchWhenHighlighted"]
 - !private ["So16UIStateRestoringP", "Auth"]
+- !private ["So16UIStateRestoringP", "CGSize"]
 - !private ["So16UIStateRestoringP", "Database"]
-- !private ["So16UIStateRestoringP", "Error"]
+- !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "addTopic"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "hideKeyboardWhenTappedAround"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "navigationItem"]
 - !private ["So16UIStateRestoringP", "refTopics"]
+- !private ["So16UIStateRestoringP", "setNavigationBar"]
+- !private ["So16UIStateRestoringP", "submitBtn"]
 - !private ["So16UIStateRestoringP", "successMessage"]
 - ["So16UIStateRestoringP", "textField"]
 - ["So16UIStateRestoringP", "textFieldDidBeginEditing"]
@@ -592,11 +803,15 @@ depends-member:
 - !private ["So11UITextFieldC", "delegate"]
 - !private ["So11UITextFieldC", "text"]
 - !private ["So19UITextFieldDelegateP", "Auth"]
+- !private ["So19UITextFieldDelegateP", "CGSize"]
 - !private ["So19UITextFieldDelegateP", "Database"]
-- !private ["So19UITextFieldDelegateP", "Error"]
+- !private ["So19UITextFieldDelegateP", "UIColor"]
 - !private ["So19UITextFieldDelegateP", "addTopic"]
 - !private ["So19UITextFieldDelegateP", "hideKeyboardWhenTappedAround"]
+- !private ["So19UITextFieldDelegateP", "navigationItem"]
 - !private ["So19UITextFieldDelegateP", "refTopics"]
+- !private ["So19UITextFieldDelegateP", "setNavigationBar"]
+- !private ["So19UITextFieldDelegateP", "submitBtn"]
 - !private ["So19UITextFieldDelegateP", "successMessage"]
 - ["So19UITextFieldDelegateP", "textField"]
 - ["So19UITextFieldDelegateP", "textFieldDidBeginEditing"]
@@ -615,8 +830,9 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "delegate"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So18UITraitEnvironmentP", "Auth"]
+- !private ["So18UITraitEnvironmentP", "CGSize"]
 - !private ["So18UITraitEnvironmentP", "Database"]
-- !private ["So18UITraitEnvironmentP", "Error"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "addTopic"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
@@ -624,7 +840,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "hideKeyboardWhenTappedAround"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "isHidden"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "navigationItem"]
 - !private ["So18UITraitEnvironmentP", "refTopics"]
+- !private ["So18UITraitEnvironmentP", "setNavigationBar"]
+- !private ["So18UITraitEnvironmentP", "showsTouchWhenHighlighted"]
+- !private ["So18UITraitEnvironmentP", "submitBtn"]
 - !private ["So18UITraitEnvironmentP", "successMessage"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - ["So18UITraitEnvironmentP", "textField"]
@@ -641,14 +862,17 @@ depends-member:
 - !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "endEditing"]
 - !private ["So6UIViewC", "isHidden"]
+- !private ["So6UIViewC", "layer"]
+- !private ["So6UIViewC", "showsTouchWhenHighlighted"]
 - !private ["So6UIViewC", "text"]
 - !private ["So16UIViewControllerC", "Auth"]
 - ["So16UIViewControllerC", "Bool"]
+- !private ["So16UIViewControllerC", "CGSize"]
 - !private ["So16UIViewControllerC", "Database"]
 - ["So16UIViewControllerC", "DatabaseReference"]
-- !private ["So16UIViewControllerC", "Error"]
 - !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UIColor"]
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UITextField"]
 - ["So16UIViewControllerC", "addTopic"]
@@ -656,7 +880,10 @@ depends-member:
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - !private ["So16UIViewControllerC", "hideKeyboardWhenTappedAround"]
 - ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "refTopics"]
+- ["So16UIViewControllerC", "setNavigationBar"]
+- ["So16UIViewControllerC", "submitBtn"]
 - ["So16UIViewControllerC", "successMessage"]
 - ["So16UIViewControllerC", "textField"]
 - ["So16UIViewControllerC", "textFieldDidBeginEditing"]
@@ -675,23 +902,30 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "endEditing"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "showsTouchWhenHighlighted"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "init"]
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Error"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTopic"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "childByAutoId"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
@@ -702,9 +936,19 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "key"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "masksToBounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "refTopics"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNavigationBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOffset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "showsTouchWhenHighlighted"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "submitBtn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "successMessage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
@@ -714,19 +958,21 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldClear"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldEndEditing"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "topicInput"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "So4AuthC"
 - !private "s23BidirectionalCollectionP"
-- !private "Sb"
+- !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- !private "SC6CGSizeV"
 - "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
@@ -740,7 +986,6 @@ depends-nominal:
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
-- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -764,9 +1009,12 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "12JustAThought13TopicCreateVCC"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So9UIControlC"
@@ -776,9 +1024,11 @@ depends-nominal:
 - !private "So11UIFocusItemP"
 - !private "So10UIKeyInputP"
 - !private "So7UILabelC"
+- !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - !private "So15UITextDraggableP"
 - !private "So15UITextDroppableP"
@@ -794,11 +1044,11 @@ depends-nominal:
 - !private "So8UserInfoP"
 - !private "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s10_IndexableP"
@@ -827,14 +1077,21 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
@@ -855,6 +1112,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -867,28 +1125,45 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "4c226e92971f02f10d5f6185153967b8"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
+interface-hash: "45079bfdc6d1469b6d1bf1b30bd6e330"

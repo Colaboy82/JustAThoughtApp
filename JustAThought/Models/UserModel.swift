@@ -14,10 +14,12 @@ class UserModel{
     var firstName: String?
     var lastName: String?
     var middleName: String?
+    var uid: String?
     
-    init(userEmail: String?, username: String?){//, firstName: String?, middleName: String?, lastName:String?){
+    init(userEmail: String?, username: String?, uid: String?){//, firstName: String?, middleName: String?, lastName:String?){
         self.userEmail = userEmail
         self.username = username
+        self.uid = uid
         //self.firstName = firstName
         //self.middleName = middleName
         //self.lastName = lastName

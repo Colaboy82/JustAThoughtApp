@@ -45,7 +45,7 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             cell.numOfLikes.adjustsFontSizeToFitWidth = true
         
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userName
+            cell.userLbl.text = thought.userID
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -81,7 +81,7 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         let numToString = (thought._likes).toString()
         mainInstance.thought = thought.typedThought!
-        mainInstance.username = thought.userName!
+        mainInstance.username = thought.userID!
         mainInstance.location = thought.city! + ", " + thought.country!
         mainInstance.timeStamps = thought.timeStamp!
         mainInstance.topic = thought.typedTopic!
@@ -112,7 +112,7 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                     let thoughtObject = thoughts.value as? [String: AnyObject]
                     let thoughtText  = thoughtObject?["thought"]
                     let topicText = thoughtObject?["topic"]
-                    let userName = thoughtObject?["users"]
+                    let userID = thoughtObject?["UID"]
                     let timeStamp = thoughtObject?["time"]
                     let city = thoughtObject?["city"]
                     let country = thoughtObject?["country"]
@@ -120,7 +120,7 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                     let id = thoughtObject?["id"]
                     
                     //creating artist object with model and fetched values
-                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userName: userName as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
+                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userID: userID as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
                     
                     //appending it to list
                     //self.thoughtList.append(thought)

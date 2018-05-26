@@ -19,6 +19,8 @@ provides-dynamic-lookup:
 - "unlikePressed"
 - "userLbl"
 depends-top-level:
+- !private "+"
+- !private "-"
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
@@ -33,32 +35,43 @@ depends-top-level:
 - "UITableViewCell"
 - "VCTableViewCell"
 - "ViewController"
+- !private "mainInstance"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["s13BinaryIntegerP", "toString"]
 - ["So15CALayerDelegateP", "Database"]
+- !private ["So15CALayerDelegateP", "Int"]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "mainInstance"]
 - !private ["So15CALayerDelegateP", "setSelected"]
 - !private ["So15CALayerDelegateP", "thought"]
 - ["So15CALayerDelegateP", ""]
 - ["s7CVarArgP", "Database"]
+- !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "awakeFromNib"]
 - !private ["s7CVarArgP", "child"]
 - ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "mainInstance"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
 - ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "setSelected"]
 - !private ["s7CVarArgP", "thought"]
+- !private ["s7CVarArgP", "toString"]
 - !private ["s7CVarArgP", "value"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "toString"]
 - ["s28CustomDebugStringConvertibleP", "Database"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "mainInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
 - ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "setSelected"]
@@ -66,16 +79,21 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "toString"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "toString"]
 - ["s23CustomStringConvertibleP", "Database"]
+- !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
 - !private ["s23CustomStringConvertibleP", "child"]
 - ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "mainInstance"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
 - ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "setSelected"]
 - !private ["s23CustomStringConvertibleP", "thought"]
+- !private ["s23CustomStringConvertibleP", "toString"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["SC13DataEventTypeO", "value"]
@@ -87,37 +105,56 @@ depends-member:
 - !private ["So17DatabaseReferenceC", "child"]
 - !private ["So17DatabaseReferenceC", "observeSingleEvent"]
 - !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "toString"]
 - !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "toString"]
 - ["s9EquatableP", "Database"]
+- !private ["s9EquatableP", "Int"]
 - !private ["s9EquatableP", "awakeFromNib"]
 - !private ["s9EquatableP", "child"]
 - ["s9EquatableP", "database"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "mainInstance"]
 - !private ["s9EquatableP", "observeSingleEvent"]
 - ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "setSelected"]
 - !private ["s9EquatableP", "thought"]
+- !private ["s9EquatableP", "toString"]
 - !private ["s9EquatableP", "value"]
 - ["s9EquatableP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "toString"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s17FixedWidthIntegerP", "toString"]
 - ["s8HashableP", "Database"]
+- !private ["s8HashableP", "Int"]
 - !private ["s8HashableP", "awakeFromNib"]
 - !private ["s8HashableP", "child"]
 - ["s8HashableP", "database"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "mainInstance"]
 - !private ["s8HashableP", "observeSingleEvent"]
 - ["s8HashableP", "reference"]
 - !private ["s8HashableP", "setSelected"]
 - !private ["s8HashableP", "thought"]
+- !private ["s8HashableP", "toString"]
 - !private ["s8HashableP", "value"]
 - ["s8HashableP", ""]
+- !private ["Si", "init"]
+- !private ["Si", "toString"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "toString"]
+- !private ["12JustAThought4MainC", "numLikes"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "toString"]
 - ["So8NSCodingP", "Database"]
+- !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "mainInstance"]
 - !private ["So8NSCodingP", "setSelected"]
 - !private ["So8NSCodingP", "thought"]
 - ["So8NSCodingP", ""]
@@ -143,6 +180,7 @@ depends-member:
 - ["So8NSObjectC", "likePressed"]
 - ["So8NSObjectC", "likeRef"]
 - ["So8NSObjectC", "locationLbl"]
+- !private ["So8NSObjectC", "mainInstance"]
 - ["So8NSObjectC", "numOfLikes"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
 - ["So8NSObjectC", "parentTableViewController"]
@@ -157,10 +195,12 @@ depends-member:
 - ["So8NSObjectC", "userLbl"]
 - !private ["So8NSObjectC", "value"]
 - ["So16NSObjectProtocolP", "Database"]
+- !private ["So16NSObjectProtocolP", "Int"]
 - !private ["So16NSObjectProtocolP", "awakeFromNib"]
 - !private ["So16NSObjectProtocolP", "child"]
 - ["So16NSObjectProtocolP", "database"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "mainInstance"]
 - !private ["So16NSObjectProtocolP", "observeSingleEvent"]
 - ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "setSelected"]
@@ -169,9 +209,17 @@ depends-member:
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["s7NumericP", "toString"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "value"]
 - !private ["s8SequenceP", "init"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedIntegerP", "toString"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "toString"]
+- !private ["s10StrideableP", "init"]
+- !private ["s10StrideableP", "toString"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
@@ -179,56 +227,74 @@ depends-member:
 - !private ["12JustAThought12ThoughtModelC", "adjustLikes"]
 - !private ["12JustAThought12ThoughtModelC", "uid"]
 - ["So29UIAccessibilityIdentificationP", "Database"]
+- !private ["So29UIAccessibilityIdentificationP", "Int"]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "mainInstance"]
 - !private ["So29UIAccessibilityIdentificationP", "setSelected"]
 - !private ["So29UIAccessibilityIdentificationP", "thought"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - ["So12UIAppearanceP", "Database"]
+- !private ["So12UIAppearanceP", "Int"]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "mainInstance"]
 - !private ["So12UIAppearanceP", "setSelected"]
 - !private ["So12UIAppearanceP", "thought"]
 - ["So12UIAppearanceP", ""]
 - ["So21UIAppearanceContainerP", "Database"]
+- !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "mainInstance"]
 - !private ["So21UIAppearanceContainerP", "setSelected"]
 - !private ["So21UIAppearanceContainerP", "thought"]
 - ["So21UIAppearanceContainerP", ""]
 - ["So17UICoordinateSpaceP", "Database"]
+- !private ["So17UICoordinateSpaceP", "Int"]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "mainInstance"]
 - !private ["So17UICoordinateSpaceP", "setSelected"]
 - !private ["So17UICoordinateSpaceP", "thought"]
 - ["So17UICoordinateSpaceP", ""]
 - ["So13UIDynamicItemP", "Database"]
+- !private ["So13UIDynamicItemP", "Int"]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "mainInstance"]
 - !private ["So13UIDynamicItemP", "setSelected"]
 - !private ["So13UIDynamicItemP", "thought"]
 - ["So13UIDynamicItemP", ""]
 - ["So18UIFocusEnvironmentP", "Database"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "mainInstance"]
 - !private ["So18UIFocusEnvironmentP", "setSelected"]
 - !private ["So18UIFocusEnvironmentP", "thought"]
 - ["So18UIFocusEnvironmentP", ""]
 - ["So11UIFocusItemP", "Database"]
+- !private ["So11UIFocusItemP", "Int"]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "mainInstance"]
 - !private ["So11UIFocusItemP", "setSelected"]
 - !private ["So11UIFocusItemP", "thought"]
 - ["So11UIFocusItemP", ""]
 - ["So27UIGestureRecognizerDelegateP", "Database"]
+- !private ["So27UIGestureRecognizerDelegateP", "Int"]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "mainInstance"]
 - !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
 - !private ["So27UIGestureRecognizerDelegateP", "thought"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - ["So30UIPasteConfigurationSupportingP", "Database"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "mainInstance"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - !private ["So30UIPasteConfigurationSupportingP", "thought"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -248,6 +314,7 @@ depends-member:
 - ["So11UIResponderC", "likePressed"]
 - ["So11UIResponderC", "likeRef"]
 - ["So11UIResponderC", "locationLbl"]
+- !private ["So11UIResponderC", "mainInstance"]
 - ["So11UIResponderC", "numOfLikes"]
 - ["So11UIResponderC", "parentTableViewController"]
 - ["So11UIResponderC", "setSelected"]
@@ -259,8 +326,10 @@ depends-member:
 - ["So11UIResponderC", "unlikePressed"]
 - ["So11UIResponderC", "userLbl"]
 - ["So30UIResponderStandardEditActionsP", "Database"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "mainInstance"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
 - !private ["So30UIResponderStandardEditActionsP", "thought"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -280,6 +349,7 @@ depends-member:
 - ["So15UITableViewCellC", "likePressed"]
 - ["So15UITableViewCellC", "likeRef"]
 - ["So15UITableViewCellC", "locationLbl"]
+- !private ["So15UITableViewCellC", "mainInstance"]
 - ["So15UITableViewCellC", "numOfLikes"]
 - ["So15UITableViewCellC", "parentTableViewController"]
 - ["So15UITableViewCellC", "setSelected"]
@@ -292,8 +362,10 @@ depends-member:
 - ["So15UITableViewCellC", "userLbl"]
 - ["So15UITableViewCellC", ""]
 - ["So18UITraitEnvironmentP", "Database"]
+- !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "mainInstance"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
 - !private ["So18UITraitEnvironmentP", "thought"]
 - ["So18UITraitEnvironmentP", ""]
@@ -313,6 +385,7 @@ depends-member:
 - ["So6UIViewC", "likePressed"]
 - ["So6UIViewC", "likeRef"]
 - ["So6UIViewC", "locationLbl"]
+- !private ["So6UIViewC", "mainInstance"]
 - ["So6UIViewC", "numOfLikes"]
 - ["So6UIViewC", "parentTableViewController"]
 - ["So6UIViewC", "setSelected"]
@@ -340,6 +413,7 @@ depends-member:
 - ["12JustAThought15VCTableViewCellC", "likePressed"]
 - ["12JustAThought15VCTableViewCellC", "likeRef"]
 - ["12JustAThought15VCTableViewCellC", "locationLbl"]
+- !private ["12JustAThought15VCTableViewCellC", "mainInstance"]
 - ["12JustAThought15VCTableViewCellC", "numOfLikes"]
 - ["12JustAThought15VCTableViewCellC", "parentTableViewController"]
 - ["12JustAThought15VCTableViewCellC", "setSelected"]
@@ -351,13 +425,19 @@ depends-member:
 - ["12JustAThought15VCTableViewCellC", "unlikePressed"]
 - ["12JustAThought15VCTableViewCellC", "userLbl"]
 - !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s18_BitwiseOperationsP", "toString"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "Database"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Int"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "mainInstance"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "thought"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "toString"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -366,10 +446,12 @@ depends-member:
 - !private ["s10_IndexableP", "init"]
 - !private ["s14_IndexableBaseP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mainInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
@@ -377,10 +459,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "toString"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s11_StrideableP", "toString"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "s10CollectionP"
@@ -398,10 +484,14 @@ depends-nominal:
 - !private "s9EncodableP"
 - "s9EquatableP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
+- !private "Si"
 - !private "s25LosslessStringConvertibleP"
+- !private "12JustAThought4MainC"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
@@ -412,9 +502,13 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "s7NumericP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
@@ -436,8 +530,10 @@ depends-nominal:
 - "So6UIViewC"
 - "12JustAThought15VCTableViewCellC"
 - !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
@@ -448,6 +544,7 @@ depends-nominal:
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

@@ -76,6 +76,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
+        setToolbar()
         configureSearchController()
         dropDownConstraint.constant = -200
         dropDownShowing = false
@@ -105,6 +106,14 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
         subtopicSearchView.layer.cornerRadius = 5
         subtopicSearchView.layer.borderWidth = 1
         subtopicSearchView.layer.borderColor = UIColor.black.cgColor
+        
+        BackToMainTopicBtn.layer.shadowColor = UIColor.black.cgColor
+        BackToMainTopicBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        BackToMainTopicBtn.layer.masksToBounds = false
+        BackToMainTopicBtn.layer.shadowRadius = 1.0
+        BackToMainTopicBtn.layer.shadowOpacity = 0.5
+        BackToMainTopicBtn.layer.cornerRadius = 7
+        BackToMainTopicBtn.showsTouchWhenHighlighted = true
         
         loadMostLikedAllTime()
         loadCities()
@@ -315,7 +324,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userName
+            cell.userLbl.text = thought.userID
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -353,7 +362,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userName
+            cell.userLbl.text = thought.userID
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -391,7 +400,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userName
+            cell.userLbl.text = thought.userID
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -429,7 +438,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userName
+            cell.userLbl.text = thought.userID
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -467,7 +476,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userName
+            cell.userLbl.text = thought.userID
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -592,7 +601,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
                 let numToString = (thought._likes).toString()
                 mainInstance.thought = thought.typedThought!
-                mainInstance.username = thought.userName!
+                mainInstance.username = thought.userID!
                 mainInstance.location = thought.city! + ", " + thought.country!
                 mainInstance.timeStamps = thought.timeStamp!
                 mainInstance.topic = thought.typedTopic!
@@ -610,7 +619,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
             let numToString = (thought._likes).toString()
             mainInstance.thought = thought.typedThought!
-            mainInstance.username = thought.userName!
+            mainInstance.username = thought.userID!
             mainInstance.location = thought.city! + ", " + thought.country!
             mainInstance.timeStamps = thought.timeStamp!
             mainInstance.topic = thought.typedTopic!
@@ -628,7 +637,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
             let numToString = (thought._likes).toString()
             mainInstance.thought = thought.typedThought!
-            mainInstance.username = thought.userName!
+            mainInstance.username = thought.userID!
             mainInstance.location = thought.city! + ", " + thought.country!
             mainInstance.timeStamps = thought.timeStamp!
             mainInstance.topic = thought.typedTopic!
@@ -646,7 +655,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
             let numToString = (thought._likes).toString()
             mainInstance.thought = thought.typedThought!
-            mainInstance.username = thought.userName!
+            mainInstance.username = thought.userID!
             mainInstance.location = thought.city! + ", " + thought.country!
             mainInstance.timeStamps = thought.timeStamp!
             mainInstance.topic = thought.typedTopic!
@@ -680,7 +689,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     let thoughtObject = thoughts.value as? [String: AnyObject]
                     let thoughtText  = thoughtObject?["thought"]
                     let topicText = thoughtObject?["topic"]
-                    let userName = thoughtObject?["users"]
+                    let userID = thoughtObject?["UID"]
                     let timeStamp = thoughtObject?["time"]
                     let city = thoughtObject?["city"]
                     let country = thoughtObject?["country"]
@@ -688,7 +697,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     let id = thoughtObject?["id"]
                     
                     //creating artist object with model and fetched values
-                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userName: userName as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
+                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userID: userID as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
                     
                     //appending it to list
                     //self.thoughtList.append(thought)
@@ -733,7 +742,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     let thoughtObject = thoughts.value as? [String: AnyObject]
                     let thoughtText  = thoughtObject?["thought"]
                     let topicText = thoughtObject?["topic"]
-                    let userName = thoughtObject?["users"]
+                    let userID = thoughtObject?["UID"]
                     let timeStamp = thoughtObject?["time"]
                     let city = thoughtObject?["city"]
                     let country = thoughtObject?["country"]
@@ -741,7 +750,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     let id = thoughtObject?["id"]
                     
                     //creating artist object with model and fetched values
-                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userName: userName as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
+                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userID: userID as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
                     
                     //appending it to list
                     self.thoughtList.insert(thought, at: 0)
@@ -805,7 +814,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     let thoughtObject = thoughts.value as? [String: AnyObject]
                     let thoughtText  = thoughtObject?["thought"]
                     let topicText = thoughtObject?["topic"]
-                    let userName = thoughtObject?["users"]
+                    let userID = thoughtObject?["UID"]
                     let timeStamp = thoughtObject?["time"]
                     let city = thoughtObject?["city"]
                     let country = thoughtObject?["country"]
@@ -813,7 +822,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     let id = thoughtObject?["id"]
                     
                     //creating artist object with model and fetched values
-                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userName: userName as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
+                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userID: userID as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
                     
                     //appending it to list
                     self.thoughtList.insert(thought, at: 0)
@@ -862,7 +871,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     let thoughtObject = thoughts.value as? [String: AnyObject]
                     let thoughtText  = thoughtObject?["thought"]
                     let topicText = thoughtObject?["topic"]
-                    let userName = thoughtObject?["users"]
+                    let userID = thoughtObject?["UID"]
                     let timeStamp = thoughtObject?["time"]
                     let city = thoughtObject?["city"]
                     let country = thoughtObject?["country"]
@@ -870,7 +879,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
                     let id = thoughtObject?["id"]
                     
                     //creating artist object with model and fetched values
-                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userName: userName as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
+                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userID: userID as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
                     
                     //appending it to list
                     self.thoughtList.insert(thought, at: 0)
@@ -977,5 +986,9 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
     }
     func setNavigationBar() {
         self.navigationItem.title = "Leaderboards"
+    }
+    func setToolbar(){
+        self.toolbarView.layer.borderWidth = 2
+        self.toolbarView.layer.borderColor = UIColor(red:77/255, green:46/255, blue:113/255, alpha: 1).cgColor
     }
 }

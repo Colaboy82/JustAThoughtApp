@@ -18,7 +18,7 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var phoneNumTextField: UITextField!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var middleNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -31,7 +31,7 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
         self.hideKeyboardWhenTappedAround()
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
-        self.usernameTextField.delegate = self
+        self.phoneNumTextField.delegate = self
         self.firstNameTextField.delegate = self
         self.middleNameTextField.delegate = self
         self.lastNameTextField.delegate = self
@@ -103,8 +103,8 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
             alertController.addAction(defaultAction)
             
             present(alertController, animated: true, completion: nil)
-        } else if usernameTextField.text == ""{
-            let alertController = UIAlertController(title: "Error", message: "Please enter your username", preferredStyle: .alert)
+        } else if phoneNumTextField.text == ""{
+            let alertController = UIAlertController(title: "Error", message: "Please enter your phone number", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -118,11 +118,45 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
             
             present(alertController, animated: true, completion: nil)
         }else {
-            let ref = Database.database().reference()
+            Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
+                if error == nil {
+                    print("You have successfully signed up")
+                    
+                    guard let uid = user?.uid else{
+                        return
+                    }
+                    let userRef = self.databaseRef.child("users").child(uid)
+                    let values = ["phoneNumber": self.phoneNumTextField.text,
+                                  "email": self.emailTextField.text,
+                                  "firstName": self.firstNameTextField.text,
+                                  "middleName": self.middleNameTextField.text,
+                                  "lastName": self.lastNameTextField.text,
+                                  "UID": Auth.auth().currentUser?.uid]
+                    userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
+                        if error != nil{
+                            print(error!)
+                            return
+                        }
+                    })
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Feed")
+                    self.present(vc!, animated: true, completion: nil)
+                    
+                }else {
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+            /*let ref = Database.database().reference()
         
-            ref.child("users").queryOrdered(byChild: "username").queryEqual(toValue: usernameTextField.text).observeSingleEvent(of: .value, with: { snapshot in
-                if !snapshot.exists() && ((self.usernameTextField.text?.count)! < 15){                        //do stuff with unique username
-                        print("username doesn't exist")
+            ref.child("users").queryOrdered(byChild: "userID").queryEqual(toValue: userIDTextField.text).observeSingleEvent(of: .value, with: { snapshot in
+                if !snapshot.exists() && ((self.userIDTextField.text?.count)! < 15){                        //do stuff with unique userID
+                        print("userID doesn't exist")
                         Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
                             if error == nil {
                                 print("You have successfully signed up")
@@ -131,7 +165,7 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
                                     return
                                 }
                                 let userRef = self.databaseRef.child("users").child(uid)
-                                let values = ["username": self.usernameTextField.text,
+                                let values = ["userID": self.userIDTextField.text,
                                               "email": self.emailTextField.text,
                                               "firstName": self.firstNameTextField.text,
                                               "middleName": self.middleNameTextField.text,
@@ -155,8 +189,8 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
                                 self.present(alertController, animated: true, completion: nil)
                             }
                         }
-                    }else if !snapshot.exists() && ((self.usernameTextField.text?.count)! > 15){
-                        print("username exists")
+                    }else if !snapshot.exists() && ((self.userIDTextField.text?.count)! > 15){
+                        print("userID exists")
                         let alertController = UIAlertController(title: "Error", message: "Username must be 15 or less characters. Choose a shorter one.", preferredStyle: .alert)
                         
                         let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -164,7 +198,7 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
                         
                         self.present(alertController, animated: true, completion: nil)
                     }else{
-                        print("username exists")
+                        print("userID exists")
                         let alertController = UIAlertController(title: "Error", message: "That username is taken already. Choose a new one.", preferredStyle: .alert)
                         
                         let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -174,10 +208,10 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
         
                 }
             })
-        }
-    }/*else{//not unique username
-                        print("username exists")
-                        let alertController = UIAlertController(title: "Error", message: "That username is taken already. Choose a new one.", preferredStyle: .alert)
+        }*/
+    }/*else{//not unique userID
+                        print("userID exists")
+                        let alertController = UIAlertController(title: "Error", message: "That userID is taken already. Choose a new one.", preferredStyle: .alert)
                         
                         let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         alertController.addAction(defaultAction)
@@ -191,10 +225,10 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
             
             Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).observeSingleEvent(of: .value, with: { (snapshot) in
                 
-                if snapshot.hasChild("username"){
+                if snapshot.hasChild("userID"){
                     
-                    print("username exists")
-                    let alertController = UIAlertController(title: "Error", message: "That username is taken already. Choose a new one.", preferredStyle: .alert)
+                    print("userID exists")
+                    let alertController = UIAlertController(title: "Error", message: "That userID is taken already. Choose a new one.", preferredStyle: .alert)
                     
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
@@ -203,7 +237,7 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
                     
                 }else{
                     
-                    print("username doesn't exist")
+                    print("userID doesn't exist")
                     Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
                         if error == nil {
                             print("You have successfully signed up")
@@ -212,7 +246,7 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
                                 return
                             }
                             let userRef = self.databaseRef.child("users").child(uid)
-                            let values = ["username": self.usernameTextField.text, "email": self.emailTextField.text]
+                            let values = ["userID": self.userIDTextField.text, "email": self.emailTextField.text]
                             userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
                                 if error != nil{
                                     print(error!)
@@ -238,5 +272,3 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
             })*/
     
     //}
-
-}

@@ -14,7 +14,7 @@ import FirebaseAuth
 class ThoughtModel{
     var typedThought: String?
     var typedTopic: String?
-    var userName: String?
+    var userID: String?
     var timeStamp: String?
     var city: String?
     var country: String?
@@ -26,14 +26,14 @@ class ThoughtModel{
     var likes: Int!{
         return _likes
     }
-    init(uid: String?, typedThought: String?, typedTopic: String?, userName: String?, timeStamp: String?, city: String?, country: String?, _likes: Int?){
+    init(uid: String?, typedThought: String?, typedTopic: String?, userID: String?, timeStamp: String?, city: String?, country: String?, _likes: Int?){
         self.typedThought = typedThought
         self.typedTopic = typedTopic
-        self.userName = userName
         self.timeStamp = timeStamp
         self.city = city
         self.country = country
         self._likes = _likes
+        self.userID = userID
         self.uid = uid
     }
     func adjustLikes(addLike: Bool, thoughtID: String){

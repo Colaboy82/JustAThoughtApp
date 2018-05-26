@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "toolbarView"
 - "viewDidLoad"
 depends-top-level:
+- !private "=="
 - "AboutPages"
 - "AssignmentPrecedence"
 - !private "StringLiteralType"
@@ -40,11 +41,13 @@ depends-member:
 - ["12JustAThought10AboutPagesC", "scrollViewWillBeginZooming"]
 - ["12JustAThought10AboutPagesC", "scrollViewWillEndDragging"]
 - ["12JustAThought10AboutPagesC", "setNavigationBar"]
+- !private ["12JustAThought10AboutPagesC", "title"]
 - ["12JustAThought10AboutPagesC", "toolbarView"]
 - ["12JustAThought10AboutPagesC", "viewDidLoad"]
 - ["12JustAThought10AboutPagesC", "viewForZooming"]
 - ["12JustAThought10AboutPagesC", "viewForZoomingInScrollView"]
 - !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
@@ -96,8 +99,11 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -122,8 +128,11 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "didReceiveMemoryWarning"]
 - !private ["s9EquatableP", "init"]
@@ -148,9 +157,11 @@ depends-member:
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
 - ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "delegate"]
 - !private ["s8HashableP", "didReceiveMemoryWarning"]
 - !private ["s8HashableP", "init"]
@@ -175,6 +186,7 @@ depends-member:
 - ["s8HashableP", "viewForZooming"]
 - ["s8HashableP", "viewForZoomingInScrollView"]
 - ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "delegate"]
@@ -220,6 +232,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "scrollViewWillBeginZooming"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewWillEndDragging"]
 - !private ["So26NSExtensionRequestHandlingP", "setNavigationBar"]
+- !private ["So26NSExtensionRequestHandlingP", "title"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
@@ -306,6 +319,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "scrollViewWillBeginZooming"]
 - ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
 - !private ["So21UIAppearanceContainerP", "setNavigationBar"]
+- !private ["So21UIAppearanceContainerP", "title"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
@@ -328,6 +342,7 @@ depends-member:
 - ["So18UIContentContainerP", "scrollViewWillBeginZooming"]
 - ["So18UIContentContainerP", "scrollViewWillEndDragging"]
 - !private ["So18UIContentContainerP", "setNavigationBar"]
+- !private ["So18UIContentContainerP", "title"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
@@ -353,6 +368,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "scrollViewWillBeginZooming"]
 - ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
 - !private ["So18UIFocusEnvironmentP", "setNavigationBar"]
+- !private ["So18UIFocusEnvironmentP", "title"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
@@ -378,6 +394,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginZooming"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
 - !private ["So30UIPasteConfigurationSupportingP", "setNavigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
@@ -403,6 +420,7 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillBeginZooming"]
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
 - ["So11UIResponderC", "setNavigationBar"]
+- !private ["So11UIResponderC", "title"]
 - ["So11UIResponderC", "toolbarView"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
@@ -426,6 +444,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginZooming"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
 - !private ["So30UIResponderStandardEditActionsP", "setNavigationBar"]
+- !private ["So30UIResponderStandardEditActionsP", "title"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
@@ -447,6 +466,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "scrollViewWillBeginZooming"]
 - ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
 - !private ["So20UIScrollViewDelegateP", "setNavigationBar"]
+- !private ["So20UIScrollViewDelegateP", "title"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - ["So20UIScrollViewDelegateP", ""]
@@ -468,6 +488,7 @@ depends-member:
 - ["So16UIStateRestoringP", "scrollViewWillBeginZooming"]
 - ["So16UIStateRestoringP", "scrollViewWillEndDragging"]
 - !private ["So16UIStateRestoringP", "setNavigationBar"]
+- !private ["So16UIStateRestoringP", "title"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
@@ -491,6 +512,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "scrollViewWillBeginZooming"]
 - ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
 - !private ["So18UITraitEnvironmentP", "setNavigationBar"]
+- !private ["So18UITraitEnvironmentP", "title"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
@@ -516,6 +538,7 @@ depends-member:
 - ["So16UIViewControllerC", "scrollViewWillBeginZooming"]
 - ["So16UIViewControllerC", "scrollViewWillEndDragging"]
 - ["So16UIViewControllerC", "setNavigationBar"]
+- !private ["So16UIViewControllerC", "title"]
 - ["So16UIViewControllerC", "toolbarView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
@@ -523,6 +546,7 @@ depends-member:
 - ["So16UIViewControllerC", ""]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -555,12 +579,14 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "12JustAThought10AboutPagesC"
 - !private "s23BidirectionalCollectionP"
+- !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "s10CollectionP"
@@ -572,6 +598,7 @@ depends-nominal:
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -614,6 +641,7 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"

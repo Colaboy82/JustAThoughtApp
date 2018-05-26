@@ -17,6 +17,7 @@ depends-member:
 - ["12JustAThought9UserModelC", "init"]
 - ["12JustAThought9UserModelC", "lastName"]
 - ["12JustAThought9UserModelC", "middleName"]
+- ["12JustAThought9UserModelC", "uid"]
 - ["12JustAThought9UserModelC", "userEmail"]
 - ["12JustAThought9UserModelC", "username"]
 depends-nominal:
@@ -116,4 +117,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "cd85ffd24b41d55065662e650b6c5b7a"
+interface-hash: "b281c8bb8f835c7b79f58bbde78e52e8"

@@ -19,13 +19,13 @@ depends-top-level:
 - "Int"
 - !private "IntegerLiteralType"
 - "String"
-- !private "StringLiteralType"
 - "ThoughtModel"
 - !private "mainInstance"
 depends-member:
 - !private ["So4AuthC", "auth"]
 - !private ["So4AuthC", "currentUser"]
 - !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "toString"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "child"]
@@ -34,10 +34,12 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "root"]
+- !private ["s7CVarArgP", "toString"]
 - !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "updateChildValues"]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "toString"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
@@ -49,8 +51,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "updateChildValues"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "toString"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "toString"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "child"]
@@ -59,6 +63,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "root"]
+- !private ["s23CustomStringConvertibleP", "toString"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "updateChildValues"]
 - !private ["So8DatabaseC", "database"]
@@ -71,8 +76,10 @@ depends-member:
 - !private ["So17DatabaseReferenceC", "updateChildValues"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "toString"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "toString"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "child"]
@@ -81,12 +88,15 @@ depends-member:
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "root"]
+- !private ["s9EquatableP", "toString"]
 - !private ["s9EquatableP", "uid"]
 - !private ["s9EquatableP", "updateChildValues"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "toString"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "toString"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "child"]
@@ -95,12 +105,17 @@ depends-member:
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "reference"]
 - !private ["s8HashableP", "root"]
+- !private ["s8HashableP", "toString"]
 - !private ["s8HashableP", "uid"]
 - !private ["s8HashableP", "updateChildValues"]
+- !private ["Si", "toString"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "toString"]
+- !private ["12JustAThought4MainC", "numLikes"]
 - !private ["12JustAThought4MainC", "refreshLeaderboard"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "toString"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "init"]
@@ -125,8 +140,12 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "updateChildValues"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "toString"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s8SequenceP", "init"]
+- !private ["s13SignedIntegerP", "toString"]
+- !private ["s13SignedNumericP", "toString"]
+- !private ["s10StrideableP", "toString"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
@@ -150,12 +169,14 @@ depends-member:
 - ["12JustAThought12ThoughtModelC", "typedThought"]
 - ["12JustAThought12ThoughtModelC", "typedTopic"]
 - ["12JustAThought12ThoughtModelC", "uid"]
-- ["12JustAThought12ThoughtModelC", "userName"]
+- ["12JustAThought12ThoughtModelC", "userID"]
 - !private ["So4UserC", "uid"]
 - !private ["So8UserInfoP", "uid"]
 - !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s18_BitwiseOperationsP", "toString"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "toString"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -174,11 +195,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "toString"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "toString"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "So4AuthC"
 - !private "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
 - !private "Sb"
 - !private "s7CVarArgP"
 - !private "s10CollectionP"
@@ -195,9 +219,12 @@ depends-nominal:
 - !private "s9EquatableP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - !private "s8HashableP"
+- !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "12JustAThought4MainC"
 - !private "s10MirrorPathP"
@@ -210,8 +237,12 @@ depends-nominal:
 - !private "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "s7NumericP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
@@ -220,8 +251,10 @@ depends-nominal:
 - !private "So4UserC"
 - !private "So8UserInfoP"
 - !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
@@ -232,6 +265,7 @@ depends-nominal:
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -317,4 +351,4 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "14dce76bd3ba9fb924c314d6c9adfea9"
+interface-hash: "d66c1e1d5506b9a2b49f50765e5cfe39"

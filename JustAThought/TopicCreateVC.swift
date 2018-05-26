@@ -26,6 +26,14 @@ class TopicCreateVC: UIViewController, UITextFieldDelegate {
         self.hideKeyboardWhenTappedAround()
         self.topicInput.delegate = self
         submitBtn.isHidden = false
+        
+        submitBtn.layer.shadowColor = UIColor.black.cgColor
+        submitBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        submitBtn.layer.masksToBounds = false
+        submitBtn.layer.shadowRadius = 1.0
+        submitBtn.layer.shadowOpacity = 0.5
+        submitBtn.layer.cornerRadius = 7
+        submitBtn.showsTouchWhenHighlighted = true
     }
 
     override func didReceiveMemoryWarning() {

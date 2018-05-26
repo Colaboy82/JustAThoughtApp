@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseAuth
 import FirebaseStorage
 import CoreLocation
-
+//import GooglePlaces
 
 extension Int
 {
@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var refMainTopics: DatabaseReference!
         var topicRef = Database.database().reference()
         var refLocation = Database.database().reference()
-    
+ 
         //Main Bar Buttons
         @IBOutlet weak var menuBtn: UIButton!
         @IBOutlet weak var profileBtn: UIButton!
@@ -38,6 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         @IBOutlet weak var enterThoughtBtn: UIButton!
     
+        @IBOutlet weak var searchTopicBtn: UIButton!
+        @IBOutlet weak var searchCityBtn: UIButton!
+        @IBOutlet weak var requestTopicBtn: UIButton!
     
         @IBOutlet weak var mainBar: UIView!
         @IBOutlet weak var searchMenuView: UIView!
@@ -99,7 +102,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var numOfPosts: Int!
         var mainTopicChosen: Bool!
     
-        //location constants
+    //location constants
         let locationManager = CLLocationManager()
         var location: CLLocation?
         let geocoder = CLGeocoder()
@@ -279,7 +282,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
                 let numToString = (thought._likes).toString()
                 mainInstance.thought = thought.typedThought!
-                mainInstance.username = thought.userName!
+                mainInstance.username = thought.userID!
                 mainInstance.location = thought.city! + ", " + thought.country!
                 mainInstance.timeStamps = thought.timeStamp!
                 mainInstance.topic = thought.typedTopic!
@@ -372,10 +375,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.layer.borderColor = UIColor.black.cgColor
                 let numToString = (thought._likes).toString()
                 
+                cell.topicLbl.adjustsFontSizeToFitWidth = true
+                cell.userLbl.adjustsFontSizeToFitWidth = true
+                cell.locationLbl.adjustsFontSizeToFitWidth = true
+                cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+                cell.numOfLikes.adjustsFontSizeToFitWidth = true
+                
                 //adding values to labels
                 //cell.thoughtLbl.text = thought.typedThought
                 cell.topicLbl.text = thought.typedTopic
-                cell.userLbl.text = thought.userName
+                cell.userLbl.text = convertToShortUserName(s: thought.userID!)
                 cell.timeStampLbl.text = thought.timeStamp
                 cell.locationLbl.text = thought.city! + ", " + thought.country!
                 cell.numOfLikes.text = numToString
@@ -752,7 +761,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 location = latestLocation //lastLocation
                 // stop location manager
                 stopLocationManager()
-                
                 // Here is the place you want to start reverseGeocoding
                 geocoder.reverseGeocodeLocation(latestLocation, completionHandler: { (placemarks, error) in //lastLocation
                     // always good to check if no error
@@ -762,9 +770,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                 })
             }
+            
         }
         func parsePlacemarksCity() -> String {
             // here we check if location manager is not nil using a _ wild card
+            
+            
             if let _ = location {
                 // unwrap the placemark
                 if let placemark = placemark {
@@ -848,17 +859,57 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         override func viewDidLoad() {
             super.viewDidLoad()
             setNavigationBar()
+            setToolbar()
             self.hideKeyboardWhenTappedAround()
             self.thoughtInput.delegate = self
+            //location google
+            /*locationManager = CLLocationManager()
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.distanceFilter = 50
+            locationManager.startUpdatingLocation()
+            locationManager.delegate = self
             
-            var image = UIImage(named: "searchMenu.png")
-            image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(openSearchMenu(_:)))
+            placesClient = GMSPlacesClient.shared()
+            */
+            let authStatus = CLLocationManager.authorizationStatus()
+            if authStatus == .notDetermined {
+                locationManager.requestWhenInUseAuthorization()
+            }
+            if authStatus == .denied || authStatus == .restricted {
+                showLocationDisabledPopUp()
+            }
+            startLocationManager()
+
             
             menuBtn.showsTouchWhenHighlighted = true
             diaryBtn.showsTouchWhenHighlighted = true
             locationBtn.showsTouchWhenHighlighted = true
             profileBtn.showsTouchWhenHighlighted = true
+            
+            searchTopicBtn.layer.shadowColor = UIColor.black.cgColor
+            searchTopicBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            searchTopicBtn.layer.masksToBounds = false
+            searchTopicBtn.layer.shadowRadius = 1.0
+            searchTopicBtn.layer.shadowOpacity = 0.5
+            searchTopicBtn.layer.cornerRadius = 7
+            searchTopicBtn.showsTouchWhenHighlighted = true
+            
+            searchCityBtn.layer.shadowColor = UIColor.black.cgColor
+            searchCityBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            searchCityBtn.layer.masksToBounds = false
+            searchCityBtn.layer.shadowRadius = 1.0
+            searchCityBtn.layer.shadowOpacity = 0.5
+            searchCityBtn.layer.cornerRadius = 7
+            searchCityBtn.showsTouchWhenHighlighted = true
+            
+            requestTopicBtn.layer.shadowColor = UIColor.black.cgColor
+            requestTopicBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            requestTopicBtn.layer.masksToBounds = false
+            requestTopicBtn.layer.shadowRadius = 1.0
+            requestTopicBtn.layer.shadowOpacity = 0.5
+            requestTopicBtn.layer.cornerRadius = 7
+            requestTopicBtn.showsTouchWhenHighlighted = true
             
             enterThoughtBtn.layer.shadowColor = UIColor.black.cgColor
             enterThoughtBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
@@ -868,7 +919,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             enterThoughtBtn.layer.cornerRadius = 7
             enterThoughtBtn.showsTouchWhenHighlighted = true
         
-
+            thoughtInput.layer.shadowColor = UIColor.black.cgColor
+            thoughtInput.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            thoughtInput.layer.masksToBounds = false
+            thoughtInput.layer.shadowRadius = 1.0
+            thoughtInput.layer.shadowOpacity = 0.5
+            thoughtInput.layer.cornerRadius = 7
+            
             //var leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes(sender:)))//Selector("handleSwipes:"))
             //var rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes(sender:)))//Selector("handleSwipes:"))
             var upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipes(sender:)))
@@ -901,16 +958,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             toolbarView.isHidden = true
             
             configureSearchController()
-            let authStatus = CLLocationManager.authorizationStatus()
-            if authStatus == .notDetermined {
-                locationManager.requestWhenInUseAuthorization()
-            }
             
-            if authStatus == .denied || authStatus == .restricted {
-                showLocationDisabledPopUp()
-            }
-            startLocationManager()
-
             searchMenuView.layer.opacity = 1.0
             searchMenuView.layer.shadowRadius = 6
             
@@ -933,14 +981,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         let thoughtObject = thoughts.value as? [String: AnyObject]
                         let thoughtText  = thoughtObject?["thought"]
                         let topicText = thoughtObject?["topic"]
-                        let userName = thoughtObject?["users"]
+                        let userID = thoughtObject?["UID"]
                         let timeStamp = thoughtObject?["time"]
                         let city = thoughtObject?["city"]
                         let country = thoughtObject?["country"]
                         let likes = thoughtObject?["likes"]
                         let id = thoughtObject?["id"]
                         //creating artist object with model and fetched values
-                        let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userName: userName as! String?, timeStamp: timeStamp as! String?, city: city as! String?, country: country as! String?, _likes: likes as! Int?)
+                        let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userID: userID as! String?, timeStamp: timeStamp as! String?, city: city as! String?, country: country as! String?, _likes: likes as! Int?)
                         
                         //adding it to list
                         self.thoughtList.insert(thought, at: 0)
@@ -952,13 +1000,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             })
             loadMainTopics()
             loadCities()
-            createUsersUsername()
+            createUsersuserID()
         }
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
             self.view.endEditing(true)
             return false
         }
-        func createUsersUsername(){
+        func createUsersuserID(){
             if Auth.auth().currentUser?.uid == nil{
                 do {
                     try Auth.auth().signOut()
@@ -972,10 +1020,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 refUsers.child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
                     if let dict = snapshot.value as? [String: AnyObject]
                     {
-                        self.userNameText = dict["username"] as? String
+                        self.userNameText = dict["UID"] as? String
                         self.userNameTextHolder =  Auth.auth().currentUser?.displayName
                         self.userNameTextHolder = self.userNameText
-                        mainInstance.currentUsername = self.userNameText
+                        mainInstance.currentUsername = uid//self.userNameText
                         
                     }
                 })
@@ -1033,7 +1081,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let thought = ["id":key,
                           "thought": thoughtInput.text! as String,//thoughtText
                           "topic": selectedSubtopicThought,
-                          "users": self.userNameText as String,
+                          "UID": Auth.auth().currentUser?.uid,//self.userNameText as String,
                           "time": getTimeStamp(),
                           "city": parsePlacemarksCity(),
                           "country": parsePlacemarksCountry(),
@@ -1067,5 +1115,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func setNavigationBar() {
         self.navigationItem.title = "Main Feed"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)
+        navigationItem.backBarButtonItem = backButton
+    }
+    func setToolbar(){
+        self.toolbarView.layer.borderWidth = 2
+        self.toolbarView.layer.borderColor = UIColor(red:77/255, green:46/255, blue:113/255, alpha: 1).cgColor
+    }
+    func setUpShortUserName() -> String{
+        let result = String(mainInstance.currentUsername.characters.prefix(10))
+        return result
+    }
+    func convertToShortUserName(s: String) -> String{
+        let result = String(s.characters.prefix(10))
+        return result
     }
 }

@@ -238,7 +238,7 @@ SWIFT_CLASS("_TtC12JustAThought15CreateAccountVC")
 @interface CreateAccountVC : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified phoneNumTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified firstNameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified middleNameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified lastNameTextField;
@@ -357,8 +357,9 @@ SWIFT_CLASS("_TtC12JustAThought15ResetPasswordVC")
 - (BOOL)textField:(UITextField * _Nonnull)textFieldToChange shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (void)didReceiveMemoryWarning;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
-- (IBAction)backTo;
 - (IBAction)submitAction:(id _Nonnull)sender;
+- (IBAction)backToFeed:(id _Nonnull)sender;
+- (IBAction)backtoUserProf:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -479,6 +480,8 @@ SWIFT_CLASS("_TtC12JustAThought13UserProfileVC")
 @interface UserProfileVC : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLbl;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signOutB;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified resetB;
 - (void)viewDidLoad;
 - (IBAction)movetoResetVWithSender:(id _Nonnull)sender;
 - (IBAction)logOutActionWithSender:(id _Nonnull)sender;
@@ -517,6 +520,9 @@ SWIFT_CLASS("_TtC12JustAThought14ViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified diaryBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified locationBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified enterThoughtBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified searchTopicBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified searchCityBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified requestTopicBtn;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified mainBar;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified searchMenuView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified searchView;

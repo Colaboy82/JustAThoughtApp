@@ -169,7 +169,7 @@ depends-member:
 - ["12JustAThought12ThoughtModelC", "typedThought"]
 - ["12JustAThought12ThoughtModelC", "typedTopic"]
 - ["12JustAThought12ThoughtModelC", "uid"]
-- ["12JustAThought12ThoughtModelC", "userName"]
+- ["12JustAThought12ThoughtModelC", "userID"]
 - !private ["So4UserC", "uid"]
 - !private ["So8UserInfoP", "uid"]
 - !private ["s23_BidirectionalIndexableP", "init"]
@@ -362,4 +362,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "14dce76bd3ba9fb924c314d6c9adfea9"
+interface-hash: "d66c1e1d5506b9a2b49f50765e5cfe39"

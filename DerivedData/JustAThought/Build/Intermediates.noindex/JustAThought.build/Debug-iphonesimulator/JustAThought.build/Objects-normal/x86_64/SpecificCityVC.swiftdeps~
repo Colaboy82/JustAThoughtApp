@@ -95,6 +95,7 @@ depends-member:
 - !private ["s7CVarArgP", "locationLbl"]
 - !private ["s7CVarArgP", "mainInstance"]
 - !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "navigationItem"]
 - !private ["s7CVarArgP", "numOfLikes"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
@@ -121,11 +122,13 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
+- !private ["s7CVarArgP", "setNavigationBar"]
 - !private ["s7CVarArgP", "subscript"]
 - ["s7CVarArgP", "tableView"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "thoughtList"]
 - !private ["s7CVarArgP", "timeStampLbl"]
+- !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "toString"]
 - !private ["s7CVarArgP", "topicLbl"]
 - !private ["s7CVarArgP", "uid"]
@@ -171,6 +174,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "locationLbl"]
 - !private ["s28CustomDebugStringConvertibleP", "mainInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - !private ["s28CustomDebugStringConvertibleP", "numOfLikes"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
@@ -198,11 +202,13 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "setNavigationBar"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "thoughtList"]
 - !private ["s28CustomDebugStringConvertibleP", "timeStampLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "topicLbl"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "userLbl"]
@@ -250,6 +256,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "locationLbl"]
 - !private ["s23CustomStringConvertibleP", "mainInstance"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "navigationItem"]
 - !private ["s23CustomStringConvertibleP", "numOfLikes"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
@@ -277,11 +284,13 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s23CustomStringConvertibleP", "setNavigationBar"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", "tableView"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "thoughtList"]
 - !private ["s23CustomStringConvertibleP", "timeStampLbl"]
+- !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "toString"]
 - !private ["s23CustomStringConvertibleP", "topicLbl"]
 - !private ["s23CustomStringConvertibleP", "uid"]
@@ -346,6 +355,7 @@ depends-member:
 - !private ["s9EquatableP", "locationLbl"]
 - !private ["s9EquatableP", "mainInstance"]
 - !private ["s9EquatableP", "navigationController"]
+- !private ["s9EquatableP", "navigationItem"]
 - !private ["s9EquatableP", "numOfLikes"]
 - ["s9EquatableP", "numberOfSections"]
 - ["s9EquatableP", "numberOfSectionsInTableView"]
@@ -372,10 +382,12 @@ depends-member:
 - ["s9EquatableP", "scrollViewWillEndDragging"]
 - ["s9EquatableP", "sectionIndexTitles"]
 - ["s9EquatableP", "sectionIndexTitlesForTableView"]
+- !private ["s9EquatableP", "setNavigationBar"]
 - ["s9EquatableP", "tableView"]
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "thoughtList"]
 - !private ["s9EquatableP", "timeStampLbl"]
+- !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "toString"]
 - !private ["s9EquatableP", "topicLbl"]
 - !private ["s9EquatableP", "uid"]
@@ -424,6 +436,7 @@ depends-member:
 - !private ["s8HashableP", "locationLbl"]
 - !private ["s8HashableP", "mainInstance"]
 - !private ["s8HashableP", "navigationController"]
+- !private ["s8HashableP", "navigationItem"]
 - !private ["s8HashableP", "numOfLikes"]
 - ["s8HashableP", "numberOfSections"]
 - ["s8HashableP", "numberOfSectionsInTableView"]
@@ -450,10 +463,12 @@ depends-member:
 - ["s8HashableP", "scrollViewWillEndDragging"]
 - ["s8HashableP", "sectionIndexTitles"]
 - ["s8HashableP", "sectionIndexTitlesForTableView"]
+- !private ["s8HashableP", "setNavigationBar"]
 - ["s8HashableP", "tableView"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "thoughtList"]
 - !private ["s8HashableP", "timeStampLbl"]
+- !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "toString"]
 - !private ["s8HashableP", "topicLbl"]
 - !private ["s8HashableP", "uid"]
@@ -501,6 +516,7 @@ depends-member:
 - !private ["So8NSCodingP", "locationLbl"]
 - !private ["So8NSCodingP", "mainInstance"]
 - !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "navigationItem"]
 - !private ["So8NSCodingP", "numOfLikes"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
@@ -523,10 +539,12 @@ depends-member:
 - ["So8NSCodingP", "scrollViewWillEndDragging"]
 - ["So8NSCodingP", "sectionIndexTitles"]
 - ["So8NSCodingP", "sectionIndexTitlesForTableView"]
+- !private ["So8NSCodingP", "setNavigationBar"]
 - ["So8NSCodingP", "tableView"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "thoughtList"]
 - !private ["So8NSCodingP", "timeStampLbl"]
+- !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "topicLbl"]
 - !private ["So8NSCodingP", "userLbl"]
 - !private ["So8NSCodingP", "viewDidLoad"]
@@ -547,6 +565,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "mainInstance"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
@@ -567,6 +586,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "scrollViewWillEndDragging"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitles"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitlesForTableView"]
+- !private ["So26NSExtensionRequestHandlingP", "setNavigationBar"]
 - ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "thoughtList"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -614,6 +634,7 @@ depends-member:
 - !private ["So8NSObjectC", "locationLbl"]
 - !private ["So8NSObjectC", "mainInstance"]
 - !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "navigationItem"]
 - !private ["So8NSObjectC", "numOfLikes"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
@@ -639,10 +660,12 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
+- ["So8NSObjectC", "setNavigationBar"]
 - ["So8NSObjectC", "tableView"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "thoughtList"]
 - !private ["So8NSObjectC", "timeStampLbl"]
+- !private ["So8NSObjectC", "title"]
 - !private ["So8NSObjectC", "topicLbl"]
 - !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "userLbl"]
@@ -675,6 +698,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "locationLbl"]
 - !private ["So16NSObjectProtocolP", "mainInstance"]
 - !private ["So16NSObjectProtocolP", "navigationController"]
+- !private ["So16NSObjectProtocolP", "navigationItem"]
 - !private ["So16NSObjectProtocolP", "numOfLikes"]
 - ["So16NSObjectProtocolP", "numberOfSections"]
 - ["So16NSObjectProtocolP", "numberOfSectionsInTableView"]
@@ -700,10 +724,12 @@ depends-member:
 - ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
 - ["So16NSObjectProtocolP", "sectionIndexTitles"]
 - ["So16NSObjectProtocolP", "sectionIndexTitlesForTableView"]
+- !private ["So16NSObjectProtocolP", "setNavigationBar"]
 - ["So16NSObjectProtocolP", "tableView"]
 - !private ["So16NSObjectProtocolP", "text"]
 - !private ["So16NSObjectProtocolP", "thoughtList"]
 - !private ["So16NSObjectProtocolP", "timeStampLbl"]
+- !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "topicLbl"]
 - !private ["So16NSObjectProtocolP", "uid"]
 - !private ["So16NSObjectProtocolP", "userLbl"]
@@ -762,6 +788,7 @@ depends-member:
 - ["12JustAThought14SpecificCityVCC", "init"]
 - !private ["12JustAThought14SpecificCityVCC", "mainInstance"]
 - !private ["12JustAThought14SpecificCityVCC", "navigationController"]
+- !private ["12JustAThought14SpecificCityVCC", "navigationItem"]
 - ["12JustAThought14SpecificCityVCC", "numberOfSections"]
 - ["12JustAThought14SpecificCityVCC", "numberOfSectionsInTableView"]
 - !private ["12JustAThought14SpecificCityVCC", "print"]
@@ -781,6 +808,7 @@ depends-member:
 - ["12JustAThought14SpecificCityVCC", "scrollViewWillEndDragging"]
 - ["12JustAThought14SpecificCityVCC", "sectionIndexTitles"]
 - ["12JustAThought14SpecificCityVCC", "sectionIndexTitlesForTableView"]
+- ["12JustAThought14SpecificCityVCC", "setNavigationBar"]
 - ["12JustAThought14SpecificCityVCC", "tableView"]
 - ["12JustAThought14SpecificCityVCC", "thoughtList"]
 - ["12JustAThought14SpecificCityVCC", "viewDidLoad"]
@@ -799,7 +827,7 @@ depends-member:
 - !private ["12JustAThought12ThoughtModelC", "typedThought"]
 - !private ["12JustAThought12ThoughtModelC", "typedTopic"]
 - !private ["12JustAThought12ThoughtModelC", "uid"]
-- !private ["12JustAThought12ThoughtModelC", "userName"]
+- !private ["12JustAThought12ThoughtModelC", "userID"]
 - !private ["So29UIAccessibilityIdentificationP", "adjustsFontSizeToFitWidth"]
 - !private ["So29UIAccessibilityIdentificationP", "cellForRow"]
 - !private ["So29UIAccessibilityIdentificationP", "configCell"]
@@ -839,6 +867,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "locationLbl"]
 - !private ["So21UIAppearanceContainerP", "mainInstance"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "navigationItem"]
 - !private ["So21UIAppearanceContainerP", "numOfLikes"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
@@ -861,6 +890,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitles"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitlesForTableView"]
+- !private ["So21UIAppearanceContainerP", "setNavigationBar"]
 - ["So21UIAppearanceContainerP", "tableView"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "thoughtList"]
@@ -883,6 +913,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "mainInstance"]
 - !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "navigationItem"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
 - !private ["So18UIContentContainerP", "print"]
@@ -903,6 +934,7 @@ depends-member:
 - ["So18UIContentContainerP", "scrollViewWillEndDragging"]
 - ["So18UIContentContainerP", "sectionIndexTitles"]
 - ["So18UIContentContainerP", "sectionIndexTitlesForTableView"]
+- !private ["So18UIContentContainerP", "setNavigationBar"]
 - ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "thoughtList"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -953,6 +985,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "locationLbl"]
 - !private ["So18UIFocusEnvironmentP", "mainInstance"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - !private ["So18UIFocusEnvironmentP", "numOfLikes"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
@@ -975,6 +1008,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitles"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitlesForTableView"]
+- !private ["So18UIFocusEnvironmentP", "setNavigationBar"]
 - ["So18UIFocusEnvironmentP", "tableView"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "thoughtList"]
@@ -1005,6 +1039,7 @@ depends-member:
 - !private ["So7UILabelC", "adjustsFontSizeToFitWidth"]
 - !private ["So7UILabelC", "text"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So16UINavigationItemC", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "DataEventType"]
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
@@ -1022,6 +1057,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "locationLbl"]
 - !private ["So30UIPasteConfigurationSupportingP", "mainInstance"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "numOfLikes"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
@@ -1044,6 +1080,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitles"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitlesForTableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "setNavigationBar"]
 - ["So30UIPasteConfigurationSupportingP", "tableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "thoughtList"]
@@ -1083,6 +1120,7 @@ depends-member:
 - !private ["So11UIResponderC", "locationLbl"]
 - !private ["So11UIResponderC", "mainInstance"]
 - !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "navigationItem"]
 - !private ["So11UIResponderC", "numOfLikes"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
@@ -1105,6 +1143,7 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
+- ["So11UIResponderC", "setNavigationBar"]
 - ["So11UIResponderC", "tableView"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "thoughtList"]
@@ -1131,6 +1170,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "locationLbl"]
 - !private ["So30UIResponderStandardEditActionsP", "mainInstance"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - !private ["So30UIResponderStandardEditActionsP", "numOfLikes"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
@@ -1153,6 +1193,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitles"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitlesForTableView"]
+- !private ["So30UIResponderStandardEditActionsP", "setNavigationBar"]
 - ["So30UIResponderStandardEditActionsP", "tableView"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "thoughtList"]
@@ -1176,6 +1217,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So20UIScrollViewDelegateP", "mainInstance"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
+- !private ["So20UIScrollViewDelegateP", "navigationItem"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So20UIScrollViewDelegateP", "print"]
@@ -1195,6 +1237,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitles"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitlesForTableView"]
+- !private ["So20UIScrollViewDelegateP", "setNavigationBar"]
 - ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "thoughtList"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
@@ -1215,6 +1258,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "mainInstance"]
 - !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "navigationItem"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
 - !private ["So16UIStateRestoringP", "print"]
@@ -1235,6 +1279,7 @@ depends-member:
 - ["So16UIStateRestoringP", "scrollViewWillEndDragging"]
 - ["So16UIStateRestoringP", "sectionIndexTitles"]
 - ["So16UIStateRestoringP", "sectionIndexTitlesForTableView"]
+- !private ["So16UIStateRestoringP", "setNavigationBar"]
 - ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "thoughtList"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -1262,6 +1307,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So21UITableViewDataSourceP", "mainInstance"]
 - !private ["So21UITableViewDataSourceP", "navigationController"]
+- !private ["So21UITableViewDataSourceP", "navigationItem"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
 - !private ["So21UITableViewDataSourceP", "print"]
@@ -1281,6 +1327,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "scrollViewWillEndDragging"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitles"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitlesForTableView"]
+- !private ["So21UITableViewDataSourceP", "setNavigationBar"]
 - ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "thoughtList"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
@@ -1296,6 +1343,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So19UITableViewDelegateP", "mainInstance"]
 - !private ["So19UITableViewDelegateP", "navigationController"]
+- !private ["So19UITableViewDelegateP", "navigationItem"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So19UITableViewDelegateP", "print"]
@@ -1315,6 +1363,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "scrollViewWillEndDragging"]
 - ["So19UITableViewDelegateP", "sectionIndexTitles"]
 - ["So19UITableViewDelegateP", "sectionIndexTitlesForTableView"]
+- !private ["So19UITableViewDelegateP", "setNavigationBar"]
 - ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "thoughtList"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
@@ -1337,6 +1386,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "locationLbl"]
 - !private ["So18UITraitEnvironmentP", "mainInstance"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "navigationItem"]
 - !private ["So18UITraitEnvironmentP", "numOfLikes"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
@@ -1359,6 +1409,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitles"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitlesForTableView"]
+- !private ["So18UITraitEnvironmentP", "setNavigationBar"]
 - ["So18UITraitEnvironmentP", "tableView"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "thoughtList"]
@@ -1404,6 +1455,7 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "mainInstance"]
 - !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - !private ["So16UIViewControllerC", "print"]
@@ -1424,6 +1476,7 @@ depends-member:
 - ["So16UIViewControllerC", "scrollViewWillEndDragging"]
 - ["So16UIViewControllerC", "sectionIndexTitles"]
 - ["So16UIViewControllerC", "sectionIndexTitlesForTableView"]
+- ["So16UIViewControllerC", "setNavigationBar"]
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "thoughtList"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -1511,6 +1564,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locationLbl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mainInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "numOfLikes"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
@@ -1536,10 +1590,12 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNavigationBar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "thoughtList"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeStampLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "topicLbl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userLbl"]
@@ -1653,6 +1709,7 @@ depends-nominal:
 - !private "So27UIGestureRecognizerDelegateP"
 - !private "So7UILabelC"
 - !private "So22UINavigationControllerC"
+- !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -1713,14 +1770,21 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
@@ -1741,6 +1805,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -1753,30 +1818,47 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -1788,4 +1870,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "59e54cb2e69d38115716442894cbbd1e"
+interface-hash: "9dc69f9de5ac2510416a73579cc714c8"

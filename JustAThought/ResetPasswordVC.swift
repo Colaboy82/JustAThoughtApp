@@ -25,6 +25,7 @@ class ResetPasswordVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
+        setToolbar()
         self.hideKeyboardWhenTappedAround()
         self.emailTextField.delegate = self
         if(mainInstance.profile == true){
@@ -51,6 +52,22 @@ class ResetPasswordVC: UIViewController, UITextFieldDelegate {
         resetB.layer.shadowOpacity = 0.5
         resetB.layer.cornerRadius = 7
         resetB.showsTouchWhenHighlighted = true
+        
+        BacktoFeed.layer.shadowColor = UIColor.black.cgColor
+        BacktoFeed.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        BacktoFeed.layer.masksToBounds = false
+        BacktoFeed.layer.shadowRadius = 1.0
+        BacktoFeed.layer.shadowOpacity = 0.5
+        BacktoFeed.layer.cornerRadius = 7
+        BacktoFeed.showsTouchWhenHighlighted = true
+
+        BackToProf.layer.shadowColor = UIColor.black.cgColor
+        BackToProf.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        BackToProf.layer.masksToBounds = false
+        BackToProf.layer.shadowRadius = 1.0
+        BackToProf.layer.shadowOpacity = 0.5
+        BackToProf.layer.cornerRadius = 7
+        BackToProf.showsTouchWhenHighlighted = true
         
     }
     func containsSwearWord(text: String, swearWords: [String]) -> Bool {
@@ -85,8 +102,6 @@ class ResetPasswordVC: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
-    @IBAction func backTo(){//presssing back when logged in
-    }    
     // Reset Password Action
     @IBAction func submitAction(_ sender: AnyObject) {
         
@@ -124,5 +139,17 @@ class ResetPasswordVC: UIViewController, UITextFieldDelegate {
     }
     func setNavigationBar() {
         self.navigationItem.title = "Reset Password"
+    }
+    func setToolbar(){
+        self.ToolbarView.layer.borderWidth = 2
+        self.ToolbarView.layer.borderColor = UIColor(red:77/255, green:46/255, blue:113/255, alpha: 1).cgColor
+    }
+    @IBAction func backToFeed(_ sender: AnyObject){
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Feed")
+        present(vc, animated: true, completion: nil)
+    }
+    @IBAction func backtoUserProf(_ sender:AnyObject){
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserProfileVC")
+        present(vc, animated: true, completion: nil)
     }
 }

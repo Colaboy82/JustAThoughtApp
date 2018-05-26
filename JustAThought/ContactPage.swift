@@ -21,6 +21,16 @@ class ContactPage: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
+        
+        submitBtn.layer.shadowColor = UIColor.black.cgColor
+        submitBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        submitBtn.layer.masksToBounds = false
+        submitBtn.layer.shadowRadius = 1.0
+        submitBtn.layer.shadowOpacity = 0.5
+        submitBtn.layer.cornerRadius = 7
+        submitBtn.showsTouchWhenHighlighted = true
+        
         successMessage.isHidden = true
         self.hideKeyboardWhenTappedAround()
         self.messageInput.delegate = self
@@ -64,6 +74,9 @@ class ContactPage: UIViewController, UITextFieldDelegate {
         sendMsg()
     }
     
+    func setNavigationBar() {
+        self.navigationItem.title = "Contact Us"
+    }
     
 }
 

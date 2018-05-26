@@ -827,7 +827,7 @@ depends-member:
 - !private ["12JustAThought12ThoughtModelC", "typedThought"]
 - !private ["12JustAThought12ThoughtModelC", "typedTopic"]
 - !private ["12JustAThought12ThoughtModelC", "uid"]
-- !private ["12JustAThought12ThoughtModelC", "userName"]
+- !private ["12JustAThought12ThoughtModelC", "userID"]
 - !private ["So29UIAccessibilityIdentificationP", "adjustsFontSizeToFitWidth"]
 - !private ["So29UIAccessibilityIdentificationP", "cellForRow"]
 - !private ["So29UIAccessibilityIdentificationP", "configCell"]

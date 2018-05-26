@@ -29,7 +29,7 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - !private "NSError"
-- !private "String"
+- "String"
 - "ThoughtModel"
 - "UILabel"
 - !private "UIStoryboard"
@@ -52,9 +52,11 @@ depends-member:
 - !private ["So4AuthC", "auth"]
 - !private ["So4AuthC", "currentUser"]
 - !private ["So4AuthC", "signOut"]
+- !private ["s23BidirectionalCollectionP", "characters"]
 - !private ["s23BidirectionalCollectionP", "count"]
 - ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "insert"]
+- !private ["s23BidirectionalCollectionP", "prefix"]
 - !private ["s23BidirectionalCollectionP", "removeAll"]
 - !private ["s23BidirectionalCollectionP", "row"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
@@ -75,6 +77,7 @@ depends-member:
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "DataEventType"]
 - ["s7CVarArgP", "Database"]
+- !private ["s7CVarArgP", "String"]
 - ["s7CVarArgP", "ThoughtModel"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - ["s7CVarArgP", "UserModel"]
@@ -82,6 +85,7 @@ depends-member:
 - !private ["s7CVarArgP", "allObjects"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "cellForRow"]
+- !private ["s7CVarArgP", "characters"]
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "children"]
 - !private ["s7CVarArgP", "childrenCount"]
@@ -130,6 +134,7 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
+- !private ["s7CVarArgP", "setUpShortUserName"]
 - !private ["s7CVarArgP", "signOut"]
 - !private ["s7CVarArgP", "subscript"]
 - ["s7CVarArgP", "tableView"]
@@ -146,18 +151,23 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - ["s7CVarArgP", ""]
+- !private ["SS13CharacterViewV", "prefix"]
+- !private ["s10CollectionP", "characters"]
 - !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "insert"]
+- !private ["s10CollectionP", "prefix"]
 - !private ["s10CollectionP", "removeAll"]
 - !private ["s10CollectionP", "row"]
 - !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "characters"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "row"]
 - !private ["s10ComparableP", "toString"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "DataEventType"]
 - ["s28CustomDebugStringConvertibleP", "Database"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
 - ["s28CustomDebugStringConvertibleP", "ThoughtModel"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - ["s28CustomDebugStringConvertibleP", "UserModel"]
@@ -165,6 +175,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "allObjects"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "cellForRow"]
+- !private ["s28CustomDebugStringConvertibleP", "characters"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "children"]
 - !private ["s28CustomDebugStringConvertibleP", "childrenCount"]
@@ -214,6 +225,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "setUpShortUserName"]
 - !private ["s28CustomDebugStringConvertibleP", "signOut"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "tableView"]
@@ -230,9 +242,11 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "characters"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "toString"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "characters"]
 - !private ["s17CustomReflectableP", "count"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "insert"]
@@ -243,6 +257,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "DataEventType"]
 - ["s23CustomStringConvertibleP", "Database"]
+- !private ["s23CustomStringConvertibleP", "String"]
 - ["s23CustomStringConvertibleP", "ThoughtModel"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - ["s23CustomStringConvertibleP", "UserModel"]
@@ -251,6 +266,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "allObjects"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "cellForRow"]
+- !private ["s23CustomStringConvertibleP", "characters"]
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "children"]
 - !private ["s23CustomStringConvertibleP", "childrenCount"]
@@ -300,6 +316,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s23CustomStringConvertibleP", "setUpShortUserName"]
 - !private ["s23CustomStringConvertibleP", "signOut"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", "tableView"]
@@ -329,6 +346,7 @@ depends-member:
 - !private ["So17DatabaseReferenceC", "observe"]
 - !private ["So17DatabaseReferenceC", "observeSingleEvent"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "characters"]
 - !private ["s9DecodableP", "count"]
 - ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "insert"]
@@ -338,6 +356,7 @@ depends-member:
 - !private ["s9DecodableP", "toString"]
 - !private ["s10DictionaryV", "subscript"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "characters"]
 - !private ["s9EncodableP", "count"]
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "insert"]
@@ -348,6 +367,7 @@ depends-member:
 - !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "DataEventType"]
 - ["s9EquatableP", "Database"]
+- !private ["s9EquatableP", "String"]
 - ["s9EquatableP", "ThoughtModel"]
 - !private ["s9EquatableP", "UIStoryboard"]
 - ["s9EquatableP", "UserModel"]
@@ -356,6 +376,7 @@ depends-member:
 - !private ["s9EquatableP", "allObjects"]
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "cellForRow"]
+- !private ["s9EquatableP", "characters"]
 - !private ["s9EquatableP", "child"]
 - !private ["s9EquatableP", "children"]
 - !private ["s9EquatableP", "childrenCount"]
@@ -402,6 +423,7 @@ depends-member:
 - ["s9EquatableP", "scrollViewWillEndDragging"]
 - ["s9EquatableP", "sectionIndexTitles"]
 - ["s9EquatableP", "sectionIndexTitlesForTableView"]
+- !private ["s9EquatableP", "setUpShortUserName"]
 - !private ["s9EquatableP", "signOut"]
 - ["s9EquatableP", "tableView"]
 - !private ["s9EquatableP", "text"]
@@ -426,14 +448,18 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "characters"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "toString"]
+- !private ["s26ExpressibleByStringLiteralP", "characters"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "characters"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "toString"]
 - !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "DataEventType"]
 - ["s8HashableP", "Database"]
+- !private ["s8HashableP", "String"]
 - ["s8HashableP", "ThoughtModel"]
 - !private ["s8HashableP", "UIStoryboard"]
 - ["s8HashableP", "UserModel"]
@@ -442,6 +468,7 @@ depends-member:
 - !private ["s8HashableP", "allObjects"]
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "cellForRow"]
+- !private ["s8HashableP", "characters"]
 - !private ["s8HashableP", "child"]
 - !private ["s8HashableP", "children"]
 - !private ["s8HashableP", "childrenCount"]
@@ -488,6 +515,7 @@ depends-member:
 - ["s8HashableP", "scrollViewWillEndDragging"]
 - ["s8HashableP", "sectionIndexTitles"]
 - ["s8HashableP", "sectionIndexTitlesForTableView"]
+- !private ["s8HashableP", "setUpShortUserName"]
 - !private ["s8HashableP", "signOut"]
 - ["s8HashableP", "tableView"]
 - !private ["s8HashableP", "text"]
@@ -506,6 +534,7 @@ depends-member:
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["Si", "toString"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "characters"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "toString"]
 - !private ["12JustAThought4MainC", "currentUsername"]
@@ -516,6 +545,7 @@ depends-member:
 - !private ["12JustAThought4MainC", "topic"]
 - !private ["12JustAThought4MainC", "uid"]
 - !private ["12JustAThought4MainC", "username"]
+- !private ["s10MirrorPathP", "characters"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "toString"]
 - !private ["s17MutableCollectionP", "count"]
@@ -527,11 +557,13 @@ depends-member:
 - !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "DataEventType"]
 - ["So8NSCodingP", "Database"]
+- !private ["So8NSCodingP", "String"]
 - ["So8NSCodingP", "ThoughtModel"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - ["So8NSCodingP", "UserModel"]
 - !private ["So8NSCodingP", "adjustsFontSizeToFitWidth"]
 - !private ["So8NSCodingP", "cellForRow"]
+- !private ["So8NSCodingP", "characters"]
 - !private ["So8NSCodingP", "configCell"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
@@ -568,6 +600,7 @@ depends-member:
 - ["So8NSCodingP", "scrollViewWillEndDragging"]
 - ["So8NSCodingP", "sectionIndexTitles"]
 - ["So8NSCodingP", "sectionIndexTitlesForTableView"]
+- !private ["So8NSCodingP", "setUpShortUserName"]
 - ["So8NSCodingP", "tableView"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "thoughtList"]
@@ -579,6 +612,7 @@ depends-member:
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "characters"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "localizedDescription"]
 - !private ["So12NSEnumeratorC", "allObjects"]
@@ -586,6 +620,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "DataEventType"]
 - ["So26NSExtensionRequestHandlingP", "Database"]
+- !private ["So26NSExtensionRequestHandlingP", "String"]
 - ["So26NSExtensionRequestHandlingP", "ThoughtModel"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - ["So26NSExtensionRequestHandlingP", "UserModel"]
@@ -618,6 +653,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "scrollViewWillEndDragging"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitles"]
 - ["So26NSExtensionRequestHandlingP", "sectionIndexTitlesForTableView"]
+- !private ["So26NSExtensionRequestHandlingP", "setUpShortUserName"]
 - ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "thoughtList"]
 - !private ["So26NSExtensionRequestHandlingP", "userNameLbl"]
@@ -626,8 +662,11 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So17NSFastEnumerationP", "allObjects"]
+- !private ["So21NSItemProviderReadingP", "characters"]
 - !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "characters"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "characters"]
 - !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "AnyObject"]
 - !private ["So8NSObjectC", "Auth"]
@@ -639,7 +678,7 @@ depends-member:
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSError"]
-- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "ThoughtModel"]
 - ["So8NSObjectC", "UILabel"]
 - !private ["So8NSObjectC", "UIStoryboard"]
@@ -651,6 +690,7 @@ depends-member:
 - !private ["So8NSObjectC", "allObjects"]
 - !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "cellForRow"]
+- !private ["So8NSObjectC", "characters"]
 - !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "children"]
 - !private ["So8NSObjectC", "childrenCount"]
@@ -699,6 +739,7 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
+- ["So8NSObjectC", "setUpShortUserName"]
 - !private ["So8NSObjectC", "signOut"]
 - ["So8NSObjectC", "sortedLikeArray"]
 - ["So8NSObjectC", "tableView"]
@@ -716,6 +757,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Auth"]
 - !private ["So16NSObjectProtocolP", "DataEventType"]
 - ["So16NSObjectProtocolP", "Database"]
+- !private ["So16NSObjectProtocolP", "String"]
 - ["So16NSObjectProtocolP", "ThoughtModel"]
 - !private ["So16NSObjectProtocolP", "UIStoryboard"]
 - ["So16NSObjectProtocolP", "UserModel"]
@@ -723,6 +765,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "allObjects"]
 - !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "cellForRow"]
+- !private ["So16NSObjectProtocolP", "characters"]
 - !private ["So16NSObjectProtocolP", "child"]
 - !private ["So16NSObjectProtocolP", "children"]
 - !private ["So16NSObjectProtocolP", "childrenCount"]
@@ -768,6 +811,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
 - ["So16NSObjectProtocolP", "sectionIndexTitles"]
 - ["So16NSObjectProtocolP", "sectionIndexTitlesForTableView"]
+- !private ["So16NSObjectProtocolP", "setUpShortUserName"]
 - !private ["So16NSObjectProtocolP", "signOut"]
 - ["So16NSObjectProtocolP", "tableView"]
 - !private ["So16NSObjectProtocolP", "text"]
@@ -782,8 +826,10 @@ depends-member:
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
 - ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "characters"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "localizedDescription"]
+- !private ["So8NSStringC", "characters"]
 - !private ["So8NSStringC", "init"]
 - !private ["s7NumericP", "toString"]
 - !private ["s22RandomAccessCollectionP", "count"]
@@ -792,26 +838,34 @@ depends-member:
 - !private ["s22RandomAccessCollectionP", "removeAll"]
 - !private ["s22RandomAccessCollectionP", "row"]
 - !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "characters"]
 - !private ["s26RangeReplaceableCollectionP", "count"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "insert"]
+- !private ["s26RangeReplaceableCollectionP", "prefix"]
 - !private ["s26RangeReplaceableCollectionP", "removeAll"]
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["s16RawRepresentableP", "value"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["s8SequenceP", "allObjects"]
+- !private ["s8SequenceP", "characters"]
 - !private ["s8SequenceP", "count"]
 - ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "insert"]
+- !private ["s8SequenceP", "prefix"]
 - !private ["s8SequenceP", "removeAll"]
 - !private ["s8SequenceP", "row"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s13SignedIntegerP", "toString"]
 - !private ["s13SignedNumericP", "toString"]
 - !private ["s10StrideableP", "toString"]
+- !private ["SS", "characters"]
 - !private ["SS", "init"]
+- !private ["s14StringProtocolP", "characters"]
 - !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "characters"]
 - !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "characters"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["12JustAThought12ThoughtModelC", "_likes"]
 - !private ["12JustAThought12ThoughtModelC", "city"]
@@ -821,7 +875,7 @@ depends-member:
 - !private ["12JustAThought12ThoughtModelC", "typedThought"]
 - !private ["12JustAThought12ThoughtModelC", "typedTopic"]
 - !private ["12JustAThought12ThoughtModelC", "uid"]
-- !private ["12JustAThought12ThoughtModelC", "userName"]
+- !private ["12JustAThought12ThoughtModelC", "userID"]
 - !private ["So29UIAccessibilityIdentificationP", "adjustsFontSizeToFitWidth"]
 - !private ["So29UIAccessibilityIdentificationP", "cellForRow"]
 - !private ["So29UIAccessibilityIdentificationP", "configCell"]
@@ -849,6 +903,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "DataEventType"]
 - ["So21UIAppearanceContainerP", "Database"]
+- !private ["So21UIAppearanceContainerP", "String"]
 - ["So21UIAppearanceContainerP", "ThoughtModel"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - ["So21UIAppearanceContainerP", "UserModel"]
@@ -889,6 +944,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitles"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitlesForTableView"]
+- !private ["So21UIAppearanceContainerP", "setUpShortUserName"]
 - ["So21UIAppearanceContainerP", "tableView"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "thoughtList"]
@@ -903,6 +959,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "DataEventType"]
 - ["So18UIContentContainerP", "Database"]
+- !private ["So18UIContentContainerP", "String"]
 - ["So18UIContentContainerP", "ThoughtModel"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - ["So18UIContentContainerP", "UserModel"]
@@ -935,6 +992,7 @@ depends-member:
 - ["So18UIContentContainerP", "scrollViewWillEndDragging"]
 - ["So18UIContentContainerP", "sectionIndexTitles"]
 - ["So18UIContentContainerP", "sectionIndexTitlesForTableView"]
+- !private ["So18UIContentContainerP", "setUpShortUserName"]
 - ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "thoughtList"]
 - !private ["So18UIContentContainerP", "userNameLbl"]
@@ -975,6 +1033,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "DataEventType"]
 - ["So18UIFocusEnvironmentP", "Database"]
+- !private ["So18UIFocusEnvironmentP", "String"]
 - ["So18UIFocusEnvironmentP", "ThoughtModel"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - ["So18UIFocusEnvironmentP", "UserModel"]
@@ -1015,6 +1074,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitles"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitlesForTableView"]
+- !private ["So18UIFocusEnvironmentP", "setUpShortUserName"]
 - ["So18UIFocusEnvironmentP", "tableView"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "thoughtList"]
@@ -1050,6 +1110,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "DataEventType"]
 - ["So30UIPasteConfigurationSupportingP", "Database"]
+- !private ["So30UIPasteConfigurationSupportingP", "String"]
 - ["So30UIPasteConfigurationSupportingP", "ThoughtModel"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - ["So30UIPasteConfigurationSupportingP", "UserModel"]
@@ -1090,6 +1151,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitles"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitlesForTableView"]
+- !private ["So30UIPasteConfigurationSupportingP", "setUpShortUserName"]
 - ["So30UIPasteConfigurationSupportingP", "tableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "thoughtList"]
@@ -1111,7 +1173,7 @@ depends-member:
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSError"]
-- !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "ThoughtModel"]
 - ["So11UIResponderC", "UILabel"]
 - !private ["So11UIResponderC", "UIStoryboard"]
@@ -1159,6 +1221,7 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
+- ["So11UIResponderC", "setUpShortUserName"]
 - ["So11UIResponderC", "sortedLikeArray"]
 - ["So11UIResponderC", "tableView"]
 - !private ["So11UIResponderC", "text"]
@@ -1173,6 +1236,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "DataEventType"]
 - ["So30UIResponderStandardEditActionsP", "Database"]
+- !private ["So30UIResponderStandardEditActionsP", "String"]
 - ["So30UIResponderStandardEditActionsP", "ThoughtModel"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - ["So30UIResponderStandardEditActionsP", "UserModel"]
@@ -1213,6 +1277,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitles"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitlesForTableView"]
+- !private ["So30UIResponderStandardEditActionsP", "setUpShortUserName"]
 - ["So30UIResponderStandardEditActionsP", "tableView"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "thoughtList"]
@@ -1231,6 +1296,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Auth"]
 - !private ["So20UIScrollViewDelegateP", "DataEventType"]
 - ["So20UIScrollViewDelegateP", "Database"]
+- !private ["So20UIScrollViewDelegateP", "String"]
 - ["So20UIScrollViewDelegateP", "ThoughtModel"]
 - !private ["So20UIScrollViewDelegateP", "UIStoryboard"]
 - ["So20UIScrollViewDelegateP", "UserModel"]
@@ -1260,6 +1326,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitles"]
 - ["So20UIScrollViewDelegateP", "sectionIndexTitlesForTableView"]
+- !private ["So20UIScrollViewDelegateP", "setUpShortUserName"]
 - ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "thoughtList"]
 - !private ["So20UIScrollViewDelegateP", "userNameLbl"]
@@ -1273,6 +1340,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Auth"]
 - !private ["So16UIStateRestoringP", "DataEventType"]
 - ["So16UIStateRestoringP", "Database"]
+- !private ["So16UIStateRestoringP", "String"]
 - ["So16UIStateRestoringP", "ThoughtModel"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - ["So16UIStateRestoringP", "UserModel"]
@@ -1305,6 +1373,7 @@ depends-member:
 - ["So16UIStateRestoringP", "scrollViewWillEndDragging"]
 - ["So16UIStateRestoringP", "sectionIndexTitles"]
 - ["So16UIStateRestoringP", "sectionIndexTitlesForTableView"]
+- !private ["So16UIStateRestoringP", "setUpShortUserName"]
 - ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "thoughtList"]
 - !private ["So16UIStateRestoringP", "userNameLbl"]
@@ -1327,6 +1396,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "Auth"]
 - !private ["So21UITableViewDataSourceP", "DataEventType"]
 - ["So21UITableViewDataSourceP", "Database"]
+- !private ["So21UITableViewDataSourceP", "String"]
 - ["So21UITableViewDataSourceP", "ThoughtModel"]
 - !private ["So21UITableViewDataSourceP", "UIStoryboard"]
 - ["So21UITableViewDataSourceP", "UserModel"]
@@ -1356,6 +1426,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "scrollViewWillEndDragging"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitles"]
 - ["So21UITableViewDataSourceP", "sectionIndexTitlesForTableView"]
+- !private ["So21UITableViewDataSourceP", "setUpShortUserName"]
 - ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "thoughtList"]
 - !private ["So21UITableViewDataSourceP", "userNameLbl"]
@@ -1365,6 +1436,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "Auth"]
 - !private ["So19UITableViewDelegateP", "DataEventType"]
 - ["So19UITableViewDelegateP", "Database"]
+- !private ["So19UITableViewDelegateP", "String"]
 - ["So19UITableViewDelegateP", "ThoughtModel"]
 - !private ["So19UITableViewDelegateP", "UIStoryboard"]
 - ["So19UITableViewDelegateP", "UserModel"]
@@ -1394,6 +1466,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "scrollViewWillEndDragging"]
 - ["So19UITableViewDelegateP", "sectionIndexTitles"]
 - ["So19UITableViewDelegateP", "sectionIndexTitlesForTableView"]
+- !private ["So19UITableViewDelegateP", "setUpShortUserName"]
 - ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "thoughtList"]
 - !private ["So19UITableViewDelegateP", "userNameLbl"]
@@ -1403,6 +1476,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "DataEventType"]
 - ["So18UITraitEnvironmentP", "Database"]
+- !private ["So18UITraitEnvironmentP", "String"]
 - ["So18UITraitEnvironmentP", "ThoughtModel"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - ["So18UITraitEnvironmentP", "UserModel"]
@@ -1443,6 +1517,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitles"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitlesForTableView"]
+- !private ["So18UITraitEnvironmentP", "setUpShortUserName"]
 - ["So18UITraitEnvironmentP", "tableView"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "thoughtList"]
@@ -1476,7 +1551,7 @@ depends-member:
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "NSError"]
-- !private ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "ThoughtModel"]
 - ["So16UIViewControllerC", "UILabel"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
@@ -1516,6 +1591,7 @@ depends-member:
 - ["So16UIViewControllerC", "scrollViewWillEndDragging"]
 - ["So16UIViewControllerC", "sectionIndexTitles"]
 - ["So16UIViewControllerC", "sectionIndexTitlesForTableView"]
+- ["So16UIViewControllerC", "setUpShortUserName"]
 - ["So16UIViewControllerC", "sortedLikeArray"]
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "thoughtList"]
@@ -1535,7 +1611,7 @@ depends-member:
 - ["12JustAThought11UserDiaryVCC", "IndexPath"]
 - ["12JustAThought11UserDiaryVCC", "Int"]
 - !private ["12JustAThought11UserDiaryVCC", "NSError"]
-- !private ["12JustAThought11UserDiaryVCC", "String"]
+- ["12JustAThought11UserDiaryVCC", "String"]
 - ["12JustAThought11UserDiaryVCC", "ThoughtModel"]
 - ["12JustAThought11UserDiaryVCC", "UILabel"]
 - !private ["12JustAThought11UserDiaryVCC", "UIStoryboard"]
@@ -1575,6 +1651,7 @@ depends-member:
 - ["12JustAThought11UserDiaryVCC", "scrollViewWillEndDragging"]
 - ["12JustAThought11UserDiaryVCC", "sectionIndexTitles"]
 - ["12JustAThought11UserDiaryVCC", "sectionIndexTitlesForTableView"]
+- ["12JustAThought11UserDiaryVCC", "setUpShortUserName"]
 - ["12JustAThought11UserDiaryVCC", "sortedLikeArray"]
 - ["12JustAThought11UserDiaryVCC", "tableView"]
 - ["12JustAThought11UserDiaryVCC", "thoughtList"]
@@ -1594,9 +1671,11 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "insert"]
 - !private ["s14_ArrayProtocolP", "removeAll"]
 - !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "characters"]
 - !private ["s23_BidirectionalIndexableP", "count"]
 - ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "insert"]
+- !private ["s23_BidirectionalIndexableP", "prefix"]
 - !private ["s23_BidirectionalIndexableP", "removeAll"]
 - !private ["s23_BidirectionalIndexableP", "row"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
@@ -1619,28 +1698,39 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "removeAll"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "characters"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "toString"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "characters"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "characters"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "characters"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "characters"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "characters"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "characters"]
 - !private ["s10_IndexableP", "count"]
 - ["s10_IndexableP", "init"]
 - !private ["s10_IndexableP", "insert"]
+- !private ["s10_IndexableP", "prefix"]
 - !private ["s10_IndexableP", "removeAll"]
 - !private ["s10_IndexableP", "row"]
 - !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "characters"]
 - !private ["s14_IndexableBaseP", "count"]
 - ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "insert"]
+- !private ["s14_IndexableBaseP", "prefix"]
 - !private ["s14_IndexableBaseP", "removeAll"]
 - !private ["s14_IndexableBaseP", "row"]
 - !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DataEventType"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ThoughtModel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UserModel"]
@@ -1648,6 +1738,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "allObjects"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellForRow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "characters"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "children"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "childrenCount"]
@@ -1693,6 +1784,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setUpShortUserName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "signOut"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
@@ -1714,6 +1806,7 @@ depends-member:
 - !private ["s17_MutableIndexableP", "row"]
 - !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "characters"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "insert"]
@@ -1727,13 +1820,17 @@ depends-member:
 - !private ["s22_RandomAccessIndexableP", "removeAll"]
 - !private ["s22_RandomAccessIndexableP", "row"]
 - !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "characters"]
 - !private ["s26_RangeReplaceableIndexableP", "count"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "insert"]
+- !private ["s26_RangeReplaceableIndexableP", "prefix"]
 - !private ["s26_RangeReplaceableIndexableP", "removeAll"]
 - !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s11_StrideableP", "toString"]
+- !private ["s16_SwiftStringViewP", "characters"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "prefix"]
 depends-nominal:
 - "Sa"
 - !private "So4AuthC"
@@ -1742,6 +1839,7 @@ depends-nominal:
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "SS13CharacterViewV"
 - "s10CollectionP"
 - !private "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
@@ -1874,14 +1972,21 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
@@ -1902,6 +2007,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -1914,30 +2020,47 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -1949,4 +2072,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "3c371b20f30b07eef1698ca809ae6898"
+interface-hash: "89bbfe726e80173a283c5789d23efae9"

@@ -30,7 +30,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
-        let currentCell = tableView.cellForRow(at: indexPath!) as! UITableViewCell
+        _ = tableView.cellForRow(at: indexPath!) as! UITableViewCell
         let currentThoughtCell = tableView.cellForRow(at: indexPath!) as! VCTableViewCell
         let thought: ThoughtModel
         //getting the thought of selected position
@@ -39,7 +39,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let numToString = (thought._likes).toString()
         mainInstance.thought = thought.typedThought!
-        mainInstance.username = thought.userName!
+        mainInstance.username = thought.userID!
         mainInstance.location = thought.city! + ", " + thought.country!
         mainInstance.timeStamps = thought.timeStamp!
         mainInstance.topic = thought.typedTopic!
@@ -65,7 +65,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         //adding values to labels
         //cell.thoughtLbl.text = thought.typedThought
         cell.topicLbl.text = thought.typedTopic
-        cell.userLbl.text = thought.userName
+        cell.userLbl.text = thought.userID
         cell.timeStampLbl.text = thought.timeStamp
         cell.locationLbl.text = thought.city! + ", " + thought.country!
         cell.numOfLikes.text = numToString
@@ -98,7 +98,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         super.viewDidLoad()
         print("global class is " + mainInstance.currentUsername)
         userNameLbl.adjustsFontSizeToFitWidth = true
-        userNameLbl.text = mainInstance.currentUsername
+        userNameLbl.text = setUpShortUserName()//mainInstance.currentUsername
         navigationController?.isNavigationBarHidden = false
 
         refThoughts = Database.database().reference().child("thoughts");
@@ -115,7 +115,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                     let thoughtObject = thoughts.value as? [String: AnyObject]
                     let thoughtText  = thoughtObject?["thought"]
                     let topicText = thoughtObject?["topic"]
-                    let userName = thoughtObject?["users"]
+                    let userID = thoughtObject?["UID"]
                     let timeStamp = thoughtObject?["time"]
                     let city = thoughtObject?["city"]
                     let country = thoughtObject?["country"]
@@ -123,11 +123,11 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                     let id = thoughtObject?["id"]
                     
                     //creating artist object with model and fetched values
-                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userName: userName as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
+                    let thought = ThoughtModel(uid: id as! String?, typedThought: thoughtText as! String?, typedTopic: topicText as! String?, userID: userID as! String?, timeStamp: timeStamp as! String?, city: city as! String, country: country as! String, _likes: likes as! Int?)
                     
                     //appending it to list
                     //self.loadNumOfLikes(thoughtID: (id as! String?)!)
-                    if userName as! String? == mainInstance.currentUsername{
+                    if userID as! String? == mainInstance.currentUsername{
                         self.thoughtList.insert(thought, at: 0)
                         let s = (self.thoughtList.count).toString()
                         self.postCount.text = "Num of Posts: \(s)"
@@ -154,5 +154,8 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             }
         }
     }
-
+    func setUpShortUserName() -> String{
+        let result = String(mainInstance.currentUsername.characters.prefix(10))
+        return result
+    }
 }
