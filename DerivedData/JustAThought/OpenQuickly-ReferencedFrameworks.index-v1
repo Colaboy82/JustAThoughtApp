@@ -13,9 +13,9 @@
 	<string>FirebaseDatabase</string>
 	<string>Fabric</string>
 	<string>FirebaseAnalytics</string>
+	<string>FirebasePerformance</string>
 	<string>sys</string>
 	<string>UIKit</string>
-	<string>FirebasePerformance</string>
 	<string>FirebaseRemoteConfig</string>
 	<string>Crashlytics</string>
 	<string>CoreLocation</string>

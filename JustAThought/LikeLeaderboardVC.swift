@@ -311,6 +311,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
         }else if tableView == tblLeaderboardList{
             let cell = tableView.dequeueReusableCell(withIdentifier: "DropDownCell", for: indexPath) as UITableViewCell
             cell.textLabel?.text = arrayLeaderboards[indexPath.row] as? String
+            cell.detailTextLabel?.text = ""
             return cell
         }else if tableView == tenThoughtsTableView && selectedItem == "Most Liked Thought (Topic)"{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ThoughtCells", for: indexPath) as! VCTableViewCell
@@ -324,7 +325,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userID
+            cell.userLbl.text = convertToShortUserName(s:thought.userID!)
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -362,7 +363,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userID
+            cell.userLbl.text = convertToShortUserName(s:thought.userID!)
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -400,7 +401,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userID
+            cell.userLbl.text = convertToShortUserName(s:thought.userID!)
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -438,7 +439,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userID
+            cell.userLbl.text = convertToShortUserName(s:thought.userID!)
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -476,7 +477,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userID
+            cell.userLbl.text = convertToShortUserName(s:thought.userID!)
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -601,7 +602,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
                 let numToString = (thought._likes).toString()
                 mainInstance.thought = thought.typedThought!
-                mainInstance.username = thought.userID!
+                mainInstance.username = convertToShortUserName(s:thought.userID!)
                 mainInstance.location = thought.city! + ", " + thought.country!
                 mainInstance.timeStamps = thought.timeStamp!
                 mainInstance.topic = thought.typedTopic!
@@ -619,7 +620,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
             let numToString = (thought._likes).toString()
             mainInstance.thought = thought.typedThought!
-            mainInstance.username = thought.userID!
+            mainInstance.username = convertToShortUserName(s:thought.userID!)
             mainInstance.location = thought.city! + ", " + thought.country!
             mainInstance.timeStamps = thought.timeStamp!
             mainInstance.topic = thought.typedTopic!
@@ -637,7 +638,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
             let numToString = (thought._likes).toString()
             mainInstance.thought = thought.typedThought!
-            mainInstance.username = thought.userID!
+            mainInstance.username = convertToShortUserName(s:thought.userID!)
             mainInstance.location = thought.city! + ", " + thought.country!
             mainInstance.timeStamps = thought.timeStamp!
             mainInstance.topic = thought.typedTopic!
@@ -655,7 +656,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             
             let numToString = (thought._likes).toString()
             mainInstance.thought = thought.typedThought!
-            mainInstance.username = thought.userID!
+            mainInstance.username = convertToShortUserName(s:thought.userID!)
             mainInstance.location = thought.city! + ", " + thought.country!
             mainInstance.timeStamps = thought.timeStamp!
             mainInstance.topic = thought.typedTopic!
@@ -985,7 +986,19 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
         subtopicSearchView.tableHeaderView = subtopicSearchController.searchBar
     }
     func setNavigationBar() {
-        self.navigationItem.title = "Leaderboards"
+        self.navigationItem.title = "Main Feed"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)
+        navigationItem.backBarButtonItem = backButton
+    }
+    func setUpShortUserName() -> String{
+        let result = String(mainInstance.currentUsername.characters.prefix(10))
+        return result
+    }
+    func convertToShortUserName(s: String) -> String{
+        let result = String(s.characters.prefix(10))
+        return result
     }
     func setToolbar(){
         self.toolbarView.layer.borderWidth = 2

@@ -39,7 +39,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let numToString = (thought._likes).toString()
         mainInstance.thought = thought.typedThought!
-        mainInstance.username = thought.userID!
+        mainInstance.username = convertToShortUserName(s:thought.userID!)
         mainInstance.location = thought.city! + ", " + thought.country!
         mainInstance.timeStamps = thought.timeStamp!
         mainInstance.topic = thought.typedTopic!
@@ -65,7 +65,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         //adding values to labels
         //cell.thoughtLbl.text = thought.typedThought
         cell.topicLbl.text = thought.typedTopic
-        cell.userLbl.text = thought.userID
+        cell.userLbl.text = convertToShortUserName(s:thought.userID!)
         cell.timeStampLbl.text = thought.timeStamp
         cell.locationLbl.text = thought.city! + ", " + thought.country!
         cell.numOfLikes.text = numToString
@@ -96,8 +96,10 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         print("global class is " + mainInstance.currentUsername)
         userNameLbl.adjustsFontSizeToFitWidth = true
+        postCount.adjustsFontSizeToFitWidth = true
         userNameLbl.text = setUpShortUserName()//mainInstance.currentUsername
         navigationController?.isNavigationBarHidden = false
 
@@ -127,7 +129,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                     
                     //appending it to list
                     //self.loadNumOfLikes(thoughtID: (id as! String?)!)
-                    if userID as! String? == mainInstance.currentUsername{
+                    if userID as! String? == Auth.auth().currentUser?.uid{
                         self.thoughtList.insert(thought, at: 0)
                         let s = (self.thoughtList.count).toString()
                         self.postCount.text = "Num of Posts: \(s)"
@@ -154,8 +156,19 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             }
         }
     }
+    func setNavigationBar() {
+        self.navigationItem.title = "Main Feed"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)
+        navigationItem.backBarButtonItem = backButton
+    }
     func setUpShortUserName() -> String{
         let result = String(mainInstance.currentUsername.characters.prefix(10))
+        return result
+    }
+    func convertToShortUserName(s: String) -> String{
+        let result = String(s.characters.prefix(10))
         return result
     }
 }

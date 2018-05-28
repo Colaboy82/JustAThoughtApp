@@ -67,7 +67,6 @@ depends-top-level:
 - "Bool"
 - "BooleanLiteralType"
 - !private "CGSize"
-- "CLAuthorizationStatus"
 - "CLGeocoder"
 - "CLLocation"
 - "CLLocationManager"
@@ -82,13 +81,8 @@ depends-top-level:
 - !private "DateFormatter"
 - "Dictionary"
 - "Error"
-- "Float"
-- !private "GMSCameraPosition"
-- "GMSPlace"
-- "GMSPlacesClient"
 - "IndexPath"
 - "Int"
-- "MapViewController"
 - !private "NSAttributedStringKey"
 - "NSDictionary"
 - !private "NSError"
@@ -129,12 +123,8 @@ depends-top-level:
 - !private "VCTableViewCell"
 - "ViewController"
 - !private "kCLLocationAccuracyBest"
-- !private "listLikelyPlaces"
-- !private "locationManager"
 - !private "mainInstance"
-- !private "mapView"
 - !private "print"
-- !private "zoomLevel"
 - !private "||"
 depends-member:
 - !private ["Sa", "append"]
@@ -210,21 +200,17 @@ depends-member:
 - !private ["So13CAMediaTimingP", "shadowOpacity"]
 - !private ["So13CAMediaTimingP", "shadowRadius"]
 - !private ["SC6CGSizeV", "init"]
-- ["SC21CLAuthorizationStatusO", "authorizedAlways"]
-- ["SC21CLAuthorizationStatusO", "authorizedWhenInUse"]
-- ["SC21CLAuthorizationStatusO", "denied"]
-- ["SC21CLAuthorizationStatusO", "notDetermined"]
-- ["SC21CLAuthorizationStatusO", "restricted"]
+- !private ["SC21CLAuthorizationStatusO", "denied"]
+- !private ["SC21CLAuthorizationStatusO", "notDetermined"]
+- !private ["SC21CLAuthorizationStatusO", "restricted"]
 - ["So10CLGeocoderC", "init"]
 - !private ["So10CLGeocoderC", "reverseGeocodeLocation"]
 - !private ["So10CLLocationC", "horizontalAccuracy"]
 - !private ["So17CLLocationManagerC", "authorizationStatus"]
 - !private ["So17CLLocationManagerC", "delegate"]
 - !private ["So17CLLocationManagerC", "desiredAccuracy"]
-- !private ["So17CLLocationManagerC", "distanceFilter"]
 - ["So17CLLocationManagerC", "init"]
 - !private ["So17CLLocationManagerC", "locationServicesEnabled"]
-- !private ["So17CLLocationManagerC", "requestAlwaysAuthorization"]
 - !private ["So17CLLocationManagerC", "requestWhenInUseAuthorization"]
 - !private ["So17CLLocationManagerC", "startUpdatingLocation"]
 - !private ["So17CLLocationManagerC", "stopUpdatingLocation"]
@@ -236,7 +222,6 @@ depends-member:
 - ["So25CLLocationManagerDelegateP", "Database"]
 - !private ["So25CLLocationManagerDelegateP", "Date"]
 - !private ["So25CLLocationManagerDelegateP", "DateFormatter"]
-- !private ["So25CLLocationManagerDelegateP", "GMSPlacesClient"]
 - !private ["So25CLLocationManagerDelegateP", "IndexPath"]
 - !private ["So25CLLocationManagerDelegateP", "NSAttributedStringKey"]
 - ["So25CLLocationManagerDelegateP", "NSDictionary"]
@@ -302,7 +287,6 @@ depends-member:
 - !private ["So25CLLocationManagerDelegateP", "parsePlacemarksCountry"]
 - !private ["So25CLLocationManagerDelegateP", "performSegue"]
 - !private ["So25CLLocationManagerDelegateP", "placemark"]
-- !private ["So25CLLocationManagerDelegateP", "placesClient"]
 - ["So25CLLocationManagerDelegateP", "position"]
 - ["So25CLLocationManagerDelegateP", "positionForBar"]
 - !private ["So25CLLocationManagerDelegateP", "present"]
@@ -402,7 +386,6 @@ depends-member:
 - ["s7CVarArgP", "Database"]
 - !private ["s7CVarArgP", "Date"]
 - !private ["s7CVarArgP", "DateFormatter"]
-- !private ["s7CVarArgP", "GMSPlacesClient"]
 - !private ["s7CVarArgP", "IndexPath"]
 - !private ["s7CVarArgP", "NSAttributedStringKey"]
 - ["s7CVarArgP", "NSDictionary"]
@@ -469,7 +452,6 @@ depends-member:
 - !private ["s7CVarArgP", "dimsBackgroundDuringPresentation"]
 - !private ["s7CVarArgP", "direction"]
 - !private ["s7CVarArgP", "displayName"]
-- !private ["s7CVarArgP", "distanceFilter"]
 - !private ["s7CVarArgP", "endEditing"]
 - !private ["s7CVarArgP", "enterThoughtBtn"]
 - !private ["s7CVarArgP", "enterThoughtShowing"]
@@ -532,7 +514,6 @@ depends-member:
 - !private ["s7CVarArgP", "parsePlacemarksCountry"]
 - !private ["s7CVarArgP", "performSegue"]
 - !private ["s7CVarArgP", "placemark"]
-- !private ["s7CVarArgP", "placesClient"]
 - ["s7CVarArgP", "position"]
 - ["s7CVarArgP", "positionForBar"]
 - !private ["s7CVarArgP", "present"]
@@ -549,7 +530,6 @@ depends-member:
 - !private ["s7CVarArgP", "region"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "removeAll"]
-- !private ["s7CVarArgP", "requestAlwaysAuthorization"]
 - !private ["s7CVarArgP", "requestTopicBtn"]
 - !private ["s7CVarArgP", "requestWhenInUseAuthorization"]
 - !private ["s7CVarArgP", "reverseGeocodeLocation"]
@@ -690,7 +670,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "Database"]
 - !private ["s28CustomDebugStringConvertibleP", "Date"]
 - !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
-- !private ["s28CustomDebugStringConvertibleP", "GMSPlacesClient"]
 - !private ["s28CustomDebugStringConvertibleP", "IndexPath"]
 - !private ["s28CustomDebugStringConvertibleP", "NSAttributedStringKey"]
 - ["s28CustomDebugStringConvertibleP", "NSDictionary"]
@@ -757,7 +736,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "dimsBackgroundDuringPresentation"]
 - !private ["s28CustomDebugStringConvertibleP", "direction"]
 - !private ["s28CustomDebugStringConvertibleP", "displayName"]
-- !private ["s28CustomDebugStringConvertibleP", "distanceFilter"]
 - !private ["s28CustomDebugStringConvertibleP", "endEditing"]
 - !private ["s28CustomDebugStringConvertibleP", "enterThoughtBtn"]
 - !private ["s28CustomDebugStringConvertibleP", "enterThoughtShowing"]
@@ -820,7 +798,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "parsePlacemarksCountry"]
 - !private ["s28CustomDebugStringConvertibleP", "performSegue"]
 - !private ["s28CustomDebugStringConvertibleP", "placemark"]
-- !private ["s28CustomDebugStringConvertibleP", "placesClient"]
 - ["s28CustomDebugStringConvertibleP", "position"]
 - ["s28CustomDebugStringConvertibleP", "positionForBar"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
@@ -837,7 +814,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "region"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "removeAll"]
-- !private ["s28CustomDebugStringConvertibleP", "requestAlwaysAuthorization"]
 - !private ["s28CustomDebugStringConvertibleP", "requestTopicBtn"]
 - !private ["s28CustomDebugStringConvertibleP", "requestWhenInUseAuthorization"]
 - !private ["s28CustomDebugStringConvertibleP", "reverseGeocodeLocation"]
@@ -979,7 +955,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "Database"]
 - !private ["s23CustomStringConvertibleP", "Date"]
 - !private ["s23CustomStringConvertibleP", "DateFormatter"]
-- !private ["s23CustomStringConvertibleP", "GMSPlacesClient"]
 - !private ["s23CustomStringConvertibleP", "IndexPath"]
 - !private ["s23CustomStringConvertibleP", "NSAttributedStringKey"]
 - ["s23CustomStringConvertibleP", "NSDictionary"]
@@ -1047,7 +1022,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "dimsBackgroundDuringPresentation"]
 - !private ["s23CustomStringConvertibleP", "direction"]
 - !private ["s23CustomStringConvertibleP", "displayName"]
-- !private ["s23CustomStringConvertibleP", "distanceFilter"]
 - !private ["s23CustomStringConvertibleP", "endEditing"]
 - !private ["s23CustomStringConvertibleP", "enterThoughtBtn"]
 - !private ["s23CustomStringConvertibleP", "enterThoughtShowing"]
@@ -1110,7 +1084,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "parsePlacemarksCountry"]
 - !private ["s23CustomStringConvertibleP", "performSegue"]
 - !private ["s23CustomStringConvertibleP", "placemark"]
-- !private ["s23CustomStringConvertibleP", "placesClient"]
 - ["s23CustomStringConvertibleP", "position"]
 - ["s23CustomStringConvertibleP", "positionForBar"]
 - !private ["s23CustomStringConvertibleP", "present"]
@@ -1127,7 +1100,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "region"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "removeAll"]
-- !private ["s23CustomStringConvertibleP", "requestAlwaysAuthorization"]
 - !private ["s23CustomStringConvertibleP", "requestTopicBtn"]
 - !private ["s23CustomStringConvertibleP", "requestWhenInUseAuthorization"]
 - !private ["s23CustomStringConvertibleP", "reverseGeocodeLocation"]
@@ -1307,7 +1279,6 @@ depends-member:
 - ["s9EquatableP", "Database"]
 - !private ["s9EquatableP", "Date"]
 - !private ["s9EquatableP", "DateFormatter"]
-- !private ["s9EquatableP", "GMSPlacesClient"]
 - !private ["s9EquatableP", "IndexPath"]
 - !private ["s9EquatableP", "NSAttributedStringKey"]
 - ["s9EquatableP", "NSDictionary"]
@@ -1338,8 +1309,6 @@ depends-member:
 - !private ["s9EquatableP", "animate"]
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "authorizationStatus"]
-- ["s9EquatableP", "authorizedAlways"]
-- ["s9EquatableP", "authorizedWhenInUse"]
 - !private ["s9EquatableP", "automatic"]
 - !private ["s9EquatableP", "backBarButtonItem"]
 - !private ["s9EquatableP", "backToMainTopicBtn"]
@@ -1372,7 +1341,7 @@ depends-member:
 - !private ["s9EquatableP", "dateStyle"]
 - !private ["s9EquatableP", "default"]
 - !private ["s9EquatableP", "delegate"]
-- ["s9EquatableP", "denied"]
+- !private ["s9EquatableP", "denied"]
 - !private ["s9EquatableP", "dequeueReusableCell"]
 - !private ["s9EquatableP", "desiredAccuracy"]
 - !private ["s9EquatableP", "detailTextLabel"]
@@ -1381,7 +1350,6 @@ depends-member:
 - !private ["s9EquatableP", "dimsBackgroundDuringPresentation"]
 - !private ["s9EquatableP", "direction"]
 - !private ["s9EquatableP", "displayName"]
-- !private ["s9EquatableP", "distanceFilter"]
 - !private ["s9EquatableP", "down"]
 - !private ["s9EquatableP", "endEditing"]
 - !private ["s9EquatableP", "enterThoughtBtn"]
@@ -1434,7 +1402,7 @@ depends-member:
 - !private ["s9EquatableP", "navigationBar"]
 - !private ["s9EquatableP", "navigationController"]
 - !private ["s9EquatableP", "navigationItem"]
-- ["s9EquatableP", "notDetermined"]
+- !private ["s9EquatableP", "notDetermined"]
 - !private ["s9EquatableP", "numOfLikes"]
 - ["s9EquatableP", "numberOfSections"]
 - ["s9EquatableP", "numberOfSectionsInTableView"]
@@ -1446,7 +1414,6 @@ depends-member:
 - !private ["s9EquatableP", "parsePlacemarksCountry"]
 - !private ["s9EquatableP", "performSegue"]
 - !private ["s9EquatableP", "placemark"]
-- !private ["s9EquatableP", "placesClient"]
 - !private ["s9EquatableP", "plain"]
 - ["s9EquatableP", "position"]
 - ["s9EquatableP", "positionForBar"]
@@ -1463,10 +1430,9 @@ depends-member:
 - ["s9EquatableP", "reference"]
 - !private ["s9EquatableP", "region"]
 - !private ["s9EquatableP", "reloadData"]
-- !private ["s9EquatableP", "requestAlwaysAuthorization"]
 - !private ["s9EquatableP", "requestTopicBtn"]
 - !private ["s9EquatableP", "requestWhenInUseAuthorization"]
-- ["s9EquatableP", "restricted"]
+- !private ["s9EquatableP", "restricted"]
 - !private ["s9EquatableP", "reverseGeocodeLocation"]
 - !private ["s9EquatableP", "right"]
 - !private ["s9EquatableP", "row"]
@@ -1618,7 +1584,6 @@ depends-member:
 - !private ["So9FormatterC", "init"]
 - !private ["So9FormatterC", "string"]
 - !private ["So9FormatterC", "timeStyle"]
-- !private ["So15GMSPlacesClientC", "shared"]
 - !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "CGSize"]
 - ["s8HashableP", "CLGeocoder"]
@@ -1627,7 +1592,6 @@ depends-member:
 - ["s8HashableP", "Database"]
 - !private ["s8HashableP", "Date"]
 - !private ["s8HashableP", "DateFormatter"]
-- !private ["s8HashableP", "GMSPlacesClient"]
 - !private ["s8HashableP", "IndexPath"]
 - !private ["s8HashableP", "NSAttributedStringKey"]
 - ["s8HashableP", "NSDictionary"]
@@ -1658,8 +1622,6 @@ depends-member:
 - !private ["s8HashableP", "animate"]
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "authorizationStatus"]
-- ["s8HashableP", "authorizedAlways"]
-- ["s8HashableP", "authorizedWhenInUse"]
 - !private ["s8HashableP", "automatic"]
 - !private ["s8HashableP", "backBarButtonItem"]
 - !private ["s8HashableP", "backToMainTopicBtn"]
@@ -1692,7 +1654,7 @@ depends-member:
 - !private ["s8HashableP", "dateStyle"]
 - !private ["s8HashableP", "default"]
 - !private ["s8HashableP", "delegate"]
-- ["s8HashableP", "denied"]
+- !private ["s8HashableP", "denied"]
 - !private ["s8HashableP", "dequeueReusableCell"]
 - !private ["s8HashableP", "desiredAccuracy"]
 - !private ["s8HashableP", "detailTextLabel"]
@@ -1701,7 +1663,6 @@ depends-member:
 - !private ["s8HashableP", "dimsBackgroundDuringPresentation"]
 - !private ["s8HashableP", "direction"]
 - !private ["s8HashableP", "displayName"]
-- !private ["s8HashableP", "distanceFilter"]
 - !private ["s8HashableP", "endEditing"]
 - !private ["s8HashableP", "enterThoughtBtn"]
 - !private ["s8HashableP", "enterThoughtShowing"]
@@ -1752,7 +1713,7 @@ depends-member:
 - !private ["s8HashableP", "navigationBar"]
 - !private ["s8HashableP", "navigationController"]
 - !private ["s8HashableP", "navigationItem"]
-- ["s8HashableP", "notDetermined"]
+- !private ["s8HashableP", "notDetermined"]
 - !private ["s8HashableP", "numOfLikes"]
 - ["s8HashableP", "numberOfSections"]
 - ["s8HashableP", "numberOfSectionsInTableView"]
@@ -1764,7 +1725,6 @@ depends-member:
 - !private ["s8HashableP", "parsePlacemarksCountry"]
 - !private ["s8HashableP", "performSegue"]
 - !private ["s8HashableP", "placemark"]
-- !private ["s8HashableP", "placesClient"]
 - !private ["s8HashableP", "plain"]
 - ["s8HashableP", "position"]
 - ["s8HashableP", "positionForBar"]
@@ -1781,10 +1741,9 @@ depends-member:
 - ["s8HashableP", "reference"]
 - !private ["s8HashableP", "region"]
 - !private ["s8HashableP", "reloadData"]
-- !private ["s8HashableP", "requestAlwaysAuthorization"]
 - !private ["s8HashableP", "requestTopicBtn"]
 - !private ["s8HashableP", "requestWhenInUseAuthorization"]
-- ["s8HashableP", "restricted"]
+- !private ["s8HashableP", "restricted"]
 - !private ["s8HashableP", "reverseGeocodeLocation"]
 - !private ["s8HashableP", "row"]
 - ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1943,7 +1902,6 @@ depends-member:
 - ["So8NSCodingP", "Database"]
 - !private ["So8NSCodingP", "Date"]
 - !private ["So8NSCodingP", "DateFormatter"]
-- !private ["So8NSCodingP", "GMSPlacesClient"]
 - !private ["So8NSCodingP", "IndexPath"]
 - !private ["So8NSCodingP", "NSAttributedStringKey"]
 - ["So8NSCodingP", "NSDictionary"]
@@ -2047,7 +2005,6 @@ depends-member:
 - !private ["So8NSCodingP", "parsePlacemarksCountry"]
 - !private ["So8NSCodingP", "performSegue"]
 - !private ["So8NSCodingP", "placemark"]
-- !private ["So8NSCodingP", "placesClient"]
 - ["So8NSCodingP", "position"]
 - ["So8NSCodingP", "positionForBar"]
 - !private ["So8NSCodingP", "present"]
@@ -2186,7 +2143,6 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "Database"]
 - !private ["So26NSExtensionRequestHandlingP", "Date"]
 - !private ["So26NSExtensionRequestHandlingP", "DateFormatter"]
-- !private ["So26NSExtensionRequestHandlingP", "GMSPlacesClient"]
 - !private ["So26NSExtensionRequestHandlingP", "IndexPath"]
 - !private ["So26NSExtensionRequestHandlingP", "NSAttributedStringKey"]
 - ["So26NSExtensionRequestHandlingP", "NSDictionary"]
@@ -2258,7 +2214,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "parsePlacemarksCountry"]
 - !private ["So26NSExtensionRequestHandlingP", "performSegue"]
 - !private ["So26NSExtensionRequestHandlingP", "placemark"]
-- !private ["So26NSExtensionRequestHandlingP", "placesClient"]
 - ["So26NSExtensionRequestHandlingP", "position"]
 - ["So26NSExtensionRequestHandlingP", "positionForBar"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
@@ -2391,9 +2346,6 @@ depends-member:
 - !private ["So8NSObjectC", "Date"]
 - !private ["So8NSObjectC", "DateFormatter"]
 - ["So8NSObjectC", "Error"]
-- ["So8NSObjectC", "Float"]
-- ["So8NSObjectC", "GMSPlace"]
-- ["So8NSObjectC", "GMSPlacesClient"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSAttributedStringKey"]
@@ -2463,7 +2415,6 @@ depends-member:
 - ["So8NSObjectC", "country"]
 - ["So8NSObjectC", "countryShortName"]
 - ["So8NSObjectC", "createUsersuserID"]
-- ["So8NSObjectC", "currentLocation"]
 - !private ["So8NSObjectC", "currentUser"]
 - ["So8NSObjectC", "database"]
 - !private ["So8NSObjectC", "dateStyle"]
@@ -2476,7 +2427,6 @@ depends-member:
 - !private ["So8NSObjectC", "dimsBackgroundDuringPresentation"]
 - !private ["So8NSObjectC", "direction"]
 - !private ["So8NSObjectC", "displayName"]
-- !private ["So8NSObjectC", "distanceFilter"]
 - !private ["So8NSObjectC", "endEditing"]
 - ["So8NSObjectC", "enterThoughtBtn"]
 - ["So8NSObjectC", "enterThoughtShowing"]
@@ -2509,7 +2459,6 @@ depends-member:
 - !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "layoutIfNeeded"]
 - ["So8NSObjectC", "leadingConstraint"]
-- ["So8NSObjectC", "likelyPlaces"]
 - ["So8NSObjectC", "loadCities"]
 - ["So8NSObjectC", "loadMainTopics"]
 - ["So8NSObjectC", "loadSubTopics"]
@@ -2550,7 +2499,6 @@ depends-member:
 - ["So8NSObjectC", "parsePlacemarksState"]
 - !private ["So8NSObjectC", "performSegue"]
 - ["So8NSObjectC", "placemark"]
-- ["So8NSObjectC", "placesClient"]
 - ["So8NSObjectC", "position"]
 - ["So8NSObjectC", "positionForBar"]
 - !private ["So8NSObjectC", "present"]
@@ -2566,7 +2514,6 @@ depends-member:
 - ["So8NSObjectC", "reference"]
 - ["So8NSObjectC", "region"]
 - !private ["So8NSObjectC", "reloadData"]
-- !private ["So8NSObjectC", "requestAlwaysAuthorization"]
 - ["So8NSObjectC", "requestTopicBtn"]
 - !private ["So8NSObjectC", "requestWhenInUseAuthorization"]
 - !private ["So8NSObjectC", "reverseGeocodeLocation"]
@@ -2605,7 +2552,6 @@ depends-member:
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
 - ["So8NSObjectC", "selectedCity"]
-- ["So8NSObjectC", "selectedPlace"]
 - ["So8NSObjectC", "selectedSubtopicThought"]
 - ["So8NSObjectC", "selectedTopicThought"]
 - ["So8NSObjectC", "setNavigationBar"]
@@ -2681,7 +2627,6 @@ depends-member:
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - !private ["So8NSObjectC", "white"]
-- ["So8NSObjectC", "zoomLevel"]
 - !private ["So16NSObjectProtocolP", "Auth"]
 - !private ["So16NSObjectProtocolP", "CGSize"]
 - ["So16NSObjectProtocolP", "CLGeocoder"]
@@ -2690,7 +2635,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "Database"]
 - !private ["So16NSObjectProtocolP", "Date"]
 - !private ["So16NSObjectProtocolP", "DateFormatter"]
-- !private ["So16NSObjectProtocolP", "GMSPlacesClient"]
 - !private ["So16NSObjectProtocolP", "IndexPath"]
 - !private ["So16NSObjectProtocolP", "NSAttributedStringKey"]
 - ["So16NSObjectProtocolP", "NSDictionary"]
@@ -2755,7 +2699,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "dimsBackgroundDuringPresentation"]
 - !private ["So16NSObjectProtocolP", "direction"]
 - !private ["So16NSObjectProtocolP", "displayName"]
-- !private ["So16NSObjectProtocolP", "distanceFilter"]
 - !private ["So16NSObjectProtocolP", "endEditing"]
 - !private ["So16NSObjectProtocolP", "enterThoughtBtn"]
 - !private ["So16NSObjectProtocolP", "enterThoughtShowing"]
@@ -2815,7 +2758,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "parsePlacemarksCountry"]
 - !private ["So16NSObjectProtocolP", "performSegue"]
 - !private ["So16NSObjectProtocolP", "placemark"]
-- !private ["So16NSObjectProtocolP", "placesClient"]
 - ["So16NSObjectProtocolP", "position"]
 - ["So16NSObjectProtocolP", "positionForBar"]
 - !private ["So16NSObjectProtocolP", "present"]
@@ -2831,7 +2773,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "reference"]
 - !private ["So16NSObjectProtocolP", "region"]
 - !private ["So16NSObjectProtocolP", "reloadData"]
-- !private ["So16NSObjectProtocolP", "requestAlwaysAuthorization"]
 - !private ["So16NSObjectProtocolP", "requestTopicBtn"]
 - !private ["So16NSObjectProtocolP", "requestWhenInUseAuthorization"]
 - !private ["So16NSObjectProtocolP", "reverseGeocodeLocation"]
@@ -2997,20 +2938,18 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "removeAll"]
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["s16RawRepresentableP", "alert"]
-- ["s16RawRepresentableP", "authorizedAlways"]
-- ["s16RawRepresentableP", "authorizedWhenInUse"]
 - !private ["s16RawRepresentableP", "automatic"]
 - !private ["s16RawRepresentableP", "cancel"]
 - !private ["s16RawRepresentableP", "childAdded"]
 - !private ["s16RawRepresentableP", "default"]
-- ["s16RawRepresentableP", "denied"]
+- !private ["s16RawRepresentableP", "denied"]
 - !private ["s16RawRepresentableP", "down"]
 - !private ["s16RawRepresentableP", "font"]
 - !private ["s16RawRepresentableP", "foregroundColor"]
 - !private ["s16RawRepresentableP", "left"]
-- ["s16RawRepresentableP", "notDetermined"]
+- !private ["s16RawRepresentableP", "notDetermined"]
 - !private ["s16RawRepresentableP", "plain"]
-- ["s16RawRepresentableP", "restricted"]
+- !private ["s16RawRepresentableP", "restricted"]
 - !private ["s16RawRepresentableP", "right"]
 - !private ["s16RawRepresentableP", "short"]
 - !private ["s16RawRepresentableP", "up"]
@@ -3143,7 +3082,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "Database"]
 - !private ["So21UIAppearanceContainerP", "Date"]
 - !private ["So21UIAppearanceContainerP", "DateFormatter"]
-- !private ["So21UIAppearanceContainerP", "GMSPlacesClient"]
 - !private ["So21UIAppearanceContainerP", "IndexPath"]
 - !private ["So21UIAppearanceContainerP", "NSAttributedStringKey"]
 - ["So21UIAppearanceContainerP", "NSDictionary"]
@@ -3231,7 +3169,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "parsePlacemarksCountry"]
 - !private ["So21UIAppearanceContainerP", "performSegue"]
 - !private ["So21UIAppearanceContainerP", "placemark"]
-- !private ["So21UIAppearanceContainerP", "placesClient"]
 - ["So21UIAppearanceContainerP", "position"]
 - ["So21UIAppearanceContainerP", "positionForBar"]
 - !private ["So21UIAppearanceContainerP", "present"]
@@ -3351,7 +3288,6 @@ depends-member:
 - ["So24UIBarPositioningDelegateP", "Database"]
 - !private ["So24UIBarPositioningDelegateP", "Date"]
 - !private ["So24UIBarPositioningDelegateP", "DateFormatter"]
-- !private ["So24UIBarPositioningDelegateP", "GMSPlacesClient"]
 - !private ["So24UIBarPositioningDelegateP", "IndexPath"]
 - !private ["So24UIBarPositioningDelegateP", "NSAttributedStringKey"]
 - ["So24UIBarPositioningDelegateP", "NSDictionary"]
@@ -3417,7 +3353,6 @@ depends-member:
 - !private ["So24UIBarPositioningDelegateP", "parsePlacemarksCountry"]
 - !private ["So24UIBarPositioningDelegateP", "performSegue"]
 - !private ["So24UIBarPositioningDelegateP", "placemark"]
-- !private ["So24UIBarPositioningDelegateP", "placesClient"]
 - ["So24UIBarPositioningDelegateP", "position"]
 - ["So24UIBarPositioningDelegateP", "positionForBar"]
 - !private ["So24UIBarPositioningDelegateP", "present"]
@@ -3522,7 +3457,6 @@ depends-member:
 - ["So18UIContentContainerP", "Database"]
 - !private ["So18UIContentContainerP", "Date"]
 - !private ["So18UIContentContainerP", "DateFormatter"]
-- !private ["So18UIContentContainerP", "GMSPlacesClient"]
 - !private ["So18UIContentContainerP", "IndexPath"]
 - !private ["So18UIContentContainerP", "NSAttributedStringKey"]
 - ["So18UIContentContainerP", "NSDictionary"]
@@ -3594,7 +3528,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "parsePlacemarksCountry"]
 - !private ["So18UIContentContainerP", "performSegue"]
 - !private ["So18UIContentContainerP", "placemark"]
-- !private ["So18UIContentContainerP", "placesClient"]
 - ["So18UIContentContainerP", "position"]
 - ["So18UIContentContainerP", "positionForBar"]
 - !private ["So18UIContentContainerP", "present"]
@@ -3759,7 +3692,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "Database"]
 - !private ["So18UIFocusEnvironmentP", "Date"]
 - !private ["So18UIFocusEnvironmentP", "DateFormatter"]
-- !private ["So18UIFocusEnvironmentP", "GMSPlacesClient"]
 - !private ["So18UIFocusEnvironmentP", "IndexPath"]
 - !private ["So18UIFocusEnvironmentP", "NSAttributedStringKey"]
 - ["So18UIFocusEnvironmentP", "NSDictionary"]
@@ -3847,7 +3779,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "parsePlacemarksCountry"]
 - !private ["So18UIFocusEnvironmentP", "performSegue"]
 - !private ["So18UIFocusEnvironmentP", "placemark"]
-- !private ["So18UIFocusEnvironmentP", "placesClient"]
 - ["So18UIFocusEnvironmentP", "position"]
 - ["So18UIFocusEnvironmentP", "positionForBar"]
 - !private ["So18UIFocusEnvironmentP", "present"]
@@ -4004,7 +3935,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "Database"]
 - !private ["So30UIPasteConfigurationSupportingP", "Date"]
 - !private ["So30UIPasteConfigurationSupportingP", "DateFormatter"]
-- !private ["So30UIPasteConfigurationSupportingP", "GMSPlacesClient"]
 - !private ["So30UIPasteConfigurationSupportingP", "IndexPath"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSAttributedStringKey"]
 - ["So30UIPasteConfigurationSupportingP", "NSDictionary"]
@@ -4093,7 +4023,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "parsePlacemarksCountry"]
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
 - !private ["So30UIPasteConfigurationSupportingP", "placemark"]
-- !private ["So30UIPasteConfigurationSupportingP", "placesClient"]
 - ["So30UIPasteConfigurationSupportingP", "position"]
 - ["So30UIPasteConfigurationSupportingP", "positionForBar"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
@@ -4211,9 +4140,6 @@ depends-member:
 - !private ["So11UIResponderC", "Date"]
 - !private ["So11UIResponderC", "DateFormatter"]
 - ["So11UIResponderC", "Error"]
-- ["So11UIResponderC", "Float"]
-- ["So11UIResponderC", "GMSPlace"]
-- ["So11UIResponderC", "GMSPlacesClient"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSAttributedStringKey"]
@@ -4267,7 +4193,6 @@ depends-member:
 - ["So11UIResponderC", "country"]
 - ["So11UIResponderC", "countryShortName"]
 - ["So11UIResponderC", "createUsersuserID"]
-- ["So11UIResponderC", "currentLocation"]
 - !private ["So11UIResponderC", "delegate"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "detailTextLabel"]
@@ -4301,7 +4226,6 @@ depends-member:
 - !private ["So11UIResponderC", "layer"]
 - !private ["So11UIResponderC", "layoutIfNeeded"]
 - ["So11UIResponderC", "leadingConstraint"]
-- ["So11UIResponderC", "likelyPlaces"]
 - ["So11UIResponderC", "loadCities"]
 - ["So11UIResponderC", "loadMainTopics"]
 - ["So11UIResponderC", "loadSubTopics"]
@@ -4334,7 +4258,6 @@ depends-member:
 - ["So11UIResponderC", "parsePlacemarksState"]
 - !private ["So11UIResponderC", "performSegue"]
 - ["So11UIResponderC", "placemark"]
-- ["So11UIResponderC", "placesClient"]
 - ["So11UIResponderC", "position"]
 - ["So11UIResponderC", "positionForBar"]
 - !private ["So11UIResponderC", "present"]
@@ -4383,7 +4306,6 @@ depends-member:
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
 - ["So11UIResponderC", "selectedCity"]
-- ["So11UIResponderC", "selectedPlace"]
 - ["So11UIResponderC", "selectedSubtopicThought"]
 - ["So11UIResponderC", "selectedTopicThought"]
 - ["So11UIResponderC", "setNavigationBar"]
@@ -4443,7 +4365,6 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
-- ["So11UIResponderC", "zoomLevel"]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "CGSize"]
 - ["So30UIResponderStandardEditActionsP", "CLGeocoder"]
@@ -4452,7 +4373,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "Database"]
 - !private ["So30UIResponderStandardEditActionsP", "Date"]
 - !private ["So30UIResponderStandardEditActionsP", "DateFormatter"]
-- !private ["So30UIResponderStandardEditActionsP", "GMSPlacesClient"]
 - !private ["So30UIResponderStandardEditActionsP", "IndexPath"]
 - !private ["So30UIResponderStandardEditActionsP", "NSAttributedStringKey"]
 - ["So30UIResponderStandardEditActionsP", "NSDictionary"]
@@ -4541,7 +4461,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "parsePlacemarksCountry"]
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
 - !private ["So30UIResponderStandardEditActionsP", "placemark"]
-- !private ["So30UIResponderStandardEditActionsP", "placesClient"]
 - ["So30UIResponderStandardEditActionsP", "position"]
 - ["So30UIResponderStandardEditActionsP", "positionForBar"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
@@ -4662,7 +4581,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "Database"]
 - !private ["So20UIScrollViewDelegateP", "Date"]
 - !private ["So20UIScrollViewDelegateP", "DateFormatter"]
-- !private ["So20UIScrollViewDelegateP", "GMSPlacesClient"]
 - !private ["So20UIScrollViewDelegateP", "IndexPath"]
 - !private ["So20UIScrollViewDelegateP", "NSAttributedStringKey"]
 - ["So20UIScrollViewDelegateP", "NSDictionary"]
@@ -4728,7 +4646,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "parsePlacemarksCountry"]
 - !private ["So20UIScrollViewDelegateP", "performSegue"]
 - !private ["So20UIScrollViewDelegateP", "placemark"]
-- !private ["So20UIScrollViewDelegateP", "placesClient"]
 - ["So20UIScrollViewDelegateP", "position"]
 - ["So20UIScrollViewDelegateP", "positionForBar"]
 - !private ["So20UIScrollViewDelegateP", "present"]
@@ -4828,7 +4745,6 @@ depends-member:
 - ["So19UISearchBarDelegateP", "Database"]
 - !private ["So19UISearchBarDelegateP", "Date"]
 - !private ["So19UISearchBarDelegateP", "DateFormatter"]
-- !private ["So19UISearchBarDelegateP", "GMSPlacesClient"]
 - !private ["So19UISearchBarDelegateP", "IndexPath"]
 - !private ["So19UISearchBarDelegateP", "NSAttributedStringKey"]
 - ["So19UISearchBarDelegateP", "NSDictionary"]
@@ -4894,7 +4810,6 @@ depends-member:
 - !private ["So19UISearchBarDelegateP", "parsePlacemarksCountry"]
 - !private ["So19UISearchBarDelegateP", "performSegue"]
 - !private ["So19UISearchBarDelegateP", "placemark"]
-- !private ["So19UISearchBarDelegateP", "placesClient"]
 - ["So19UISearchBarDelegateP", "position"]
 - ["So19UISearchBarDelegateP", "positionForBar"]
 - !private ["So19UISearchBarDelegateP", "present"]
@@ -4997,7 +4912,6 @@ depends-member:
 - ["So23UISearchResultsUpdatingP", "Database"]
 - !private ["So23UISearchResultsUpdatingP", "Date"]
 - !private ["So23UISearchResultsUpdatingP", "DateFormatter"]
-- !private ["So23UISearchResultsUpdatingP", "GMSPlacesClient"]
 - !private ["So23UISearchResultsUpdatingP", "IndexPath"]
 - !private ["So23UISearchResultsUpdatingP", "NSAttributedStringKey"]
 - ["So23UISearchResultsUpdatingP", "NSDictionary"]
@@ -5063,7 +4977,6 @@ depends-member:
 - !private ["So23UISearchResultsUpdatingP", "parsePlacemarksCountry"]
 - !private ["So23UISearchResultsUpdatingP", "performSegue"]
 - !private ["So23UISearchResultsUpdatingP", "placemark"]
-- !private ["So23UISearchResultsUpdatingP", "placesClient"]
 - ["So23UISearchResultsUpdatingP", "position"]
 - ["So23UISearchResultsUpdatingP", "positionForBar"]
 - !private ["So23UISearchResultsUpdatingP", "present"]
@@ -5173,7 +5086,6 @@ depends-member:
 - ["So16UIStateRestoringP", "Database"]
 - !private ["So16UIStateRestoringP", "Date"]
 - !private ["So16UIStateRestoringP", "DateFormatter"]
-- !private ["So16UIStateRestoringP", "GMSPlacesClient"]
 - !private ["So16UIStateRestoringP", "IndexPath"]
 - !private ["So16UIStateRestoringP", "NSAttributedStringKey"]
 - ["So16UIStateRestoringP", "NSDictionary"]
@@ -5245,7 +5157,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "parsePlacemarksCountry"]
 - !private ["So16UIStateRestoringP", "performSegue"]
 - !private ["So16UIStateRestoringP", "placemark"]
-- !private ["So16UIStateRestoringP", "placesClient"]
 - ["So16UIStateRestoringP", "position"]
 - ["So16UIStateRestoringP", "positionForBar"]
 - !private ["So16UIStateRestoringP", "present"]
@@ -5370,7 +5281,6 @@ depends-member:
 - ["So21UITableViewDataSourceP", "Database"]
 - !private ["So21UITableViewDataSourceP", "Date"]
 - !private ["So21UITableViewDataSourceP", "DateFormatter"]
-- !private ["So21UITableViewDataSourceP", "GMSPlacesClient"]
 - !private ["So21UITableViewDataSourceP", "IndexPath"]
 - !private ["So21UITableViewDataSourceP", "NSAttributedStringKey"]
 - ["So21UITableViewDataSourceP", "NSDictionary"]
@@ -5436,7 +5346,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "parsePlacemarksCountry"]
 - !private ["So21UITableViewDataSourceP", "performSegue"]
 - !private ["So21UITableViewDataSourceP", "placemark"]
-- !private ["So21UITableViewDataSourceP", "placesClient"]
 - ["So21UITableViewDataSourceP", "position"]
 - ["So21UITableViewDataSourceP", "positionForBar"]
 - !private ["So21UITableViewDataSourceP", "present"]
@@ -5534,7 +5443,6 @@ depends-member:
 - ["So19UITableViewDelegateP", "Database"]
 - !private ["So19UITableViewDelegateP", "Date"]
 - !private ["So19UITableViewDelegateP", "DateFormatter"]
-- !private ["So19UITableViewDelegateP", "GMSPlacesClient"]
 - !private ["So19UITableViewDelegateP", "IndexPath"]
 - !private ["So19UITableViewDelegateP", "NSAttributedStringKey"]
 - ["So19UITableViewDelegateP", "NSDictionary"]
@@ -5600,7 +5508,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "parsePlacemarksCountry"]
 - !private ["So19UITableViewDelegateP", "performSegue"]
 - !private ["So19UITableViewDelegateP", "placemark"]
-- !private ["So19UITableViewDelegateP", "placesClient"]
 - ["So19UITableViewDelegateP", "position"]
 - ["So19UITableViewDelegateP", "positionForBar"]
 - !private ["So19UITableViewDelegateP", "present"]
@@ -5705,7 +5612,6 @@ depends-member:
 - ["So19UITextFieldDelegateP", "Database"]
 - !private ["So19UITextFieldDelegateP", "Date"]
 - !private ["So19UITextFieldDelegateP", "DateFormatter"]
-- !private ["So19UITextFieldDelegateP", "GMSPlacesClient"]
 - !private ["So19UITextFieldDelegateP", "IndexPath"]
 - !private ["So19UITextFieldDelegateP", "NSAttributedStringKey"]
 - ["So19UITextFieldDelegateP", "NSDictionary"]
@@ -5771,7 +5677,6 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "parsePlacemarksCountry"]
 - !private ["So19UITextFieldDelegateP", "performSegue"]
 - !private ["So19UITextFieldDelegateP", "placemark"]
-- !private ["So19UITextFieldDelegateP", "placesClient"]
 - ["So19UITextFieldDelegateP", "position"]
 - ["So19UITextFieldDelegateP", "positionForBar"]
 - !private ["So19UITextFieldDelegateP", "present"]
@@ -5881,7 +5786,6 @@ depends-member:
 - ["So18UITextViewDelegateP", "Database"]
 - !private ["So18UITextViewDelegateP", "Date"]
 - !private ["So18UITextViewDelegateP", "DateFormatter"]
-- !private ["So18UITextViewDelegateP", "GMSPlacesClient"]
 - !private ["So18UITextViewDelegateP", "IndexPath"]
 - !private ["So18UITextViewDelegateP", "NSAttributedStringKey"]
 - ["So18UITextViewDelegateP", "NSDictionary"]
@@ -5947,7 +5851,6 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "parsePlacemarksCountry"]
 - !private ["So18UITextViewDelegateP", "performSegue"]
 - !private ["So18UITextViewDelegateP", "placemark"]
-- !private ["So18UITextViewDelegateP", "placesClient"]
 - ["So18UITextViewDelegateP", "position"]
 - ["So18UITextViewDelegateP", "positionForBar"]
 - !private ["So18UITextViewDelegateP", "present"]
@@ -6045,7 +5948,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "Database"]
 - !private ["So18UITraitEnvironmentP", "Date"]
 - !private ["So18UITraitEnvironmentP", "DateFormatter"]
-- !private ["So18UITraitEnvironmentP", "GMSPlacesClient"]
 - !private ["So18UITraitEnvironmentP", "IndexPath"]
 - !private ["So18UITraitEnvironmentP", "NSAttributedStringKey"]
 - ["So18UITraitEnvironmentP", "NSDictionary"]
@@ -6133,7 +6035,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "parsePlacemarksCountry"]
 - !private ["So18UITraitEnvironmentP", "performSegue"]
 - !private ["So18UITraitEnvironmentP", "placemark"]
-- !private ["So18UITraitEnvironmentP", "placesClient"]
 - ["So18UITraitEnvironmentP", "position"]
 - ["So18UITraitEnvironmentP", "positionForBar"]
 - !private ["So18UITraitEnvironmentP", "present"]
@@ -6275,9 +6176,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "Date"]
 - !private ["So16UIViewControllerC", "DateFormatter"]
 - ["So16UIViewControllerC", "Error"]
-- ["So16UIViewControllerC", "Float"]
-- ["So16UIViewControllerC", "GMSPlace"]
-- ["So16UIViewControllerC", "GMSPlacesClient"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "NSAttributedStringKey"]
@@ -6326,7 +6224,6 @@ depends-member:
 - ["So16UIViewControllerC", "country"]
 - ["So16UIViewControllerC", "countryShortName"]
 - ["So16UIViewControllerC", "createUsersuserID"]
-- ["So16UIViewControllerC", "currentLocation"]
 - ["So16UIViewControllerC", "diaryBtn"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - !private ["So16UIViewControllerC", "dimsBackgroundDuringPresentation"]
@@ -6351,7 +6248,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "isActive"]
 - !private ["So16UIViewControllerC", "kCLLocationAccuracyBest"]
 - ["So16UIViewControllerC", "leadingConstraint"]
-- ["So16UIViewControllerC", "likelyPlaces"]
 - ["So16UIViewControllerC", "loadCities"]
 - ["So16UIViewControllerC", "loadMainTopics"]
 - ["So16UIViewControllerC", "loadSubTopics"]
@@ -6381,7 +6277,6 @@ depends-member:
 - ["So16UIViewControllerC", "parsePlacemarksState"]
 - !private ["So16UIViewControllerC", "performSegue"]
 - ["So16UIViewControllerC", "placemark"]
-- ["So16UIViewControllerC", "placesClient"]
 - ["So16UIViewControllerC", "position"]
 - ["So16UIViewControllerC", "positionForBar"]
 - !private ["So16UIViewControllerC", "present"]
@@ -6429,7 +6324,6 @@ depends-member:
 - ["So16UIViewControllerC", "sectionIndexTitles"]
 - ["So16UIViewControllerC", "sectionIndexTitlesForTableView"]
 - ["So16UIViewControllerC", "selectedCity"]
-- ["So16UIViewControllerC", "selectedPlace"]
 - ["So16UIViewControllerC", "selectedSubtopicThought"]
 - ["So16UIViewControllerC", "selectedTopicThought"]
 - ["So16UIViewControllerC", "setNavigationBar"]
@@ -6480,7 +6374,6 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
-- ["So16UIViewControllerC", "zoomLevel"]
 - ["So16UIViewControllerC", ""]
 - !private ["So37UIViewControllerAnimatedTransitioningP", "dimsBackgroundDuringPresentation"]
 - !private ["So37UIViewControllerAnimatedTransitioningP", "init"]
@@ -6519,9 +6412,6 @@ depends-member:
 - !private ["12JustAThought14ViewControllerC", "Date"]
 - !private ["12JustAThought14ViewControllerC", "DateFormatter"]
 - ["12JustAThought14ViewControllerC", "Error"]
-- ["12JustAThought14ViewControllerC", "Float"]
-- ["12JustAThought14ViewControllerC", "GMSPlace"]
-- ["12JustAThought14ViewControllerC", "GMSPlacesClient"]
 - ["12JustAThought14ViewControllerC", "IndexPath"]
 - ["12JustAThought14ViewControllerC", "Int"]
 - !private ["12JustAThought14ViewControllerC", "NSAttributedStringKey"]
@@ -6569,7 +6459,6 @@ depends-member:
 - ["12JustAThought14ViewControllerC", "country"]
 - ["12JustAThought14ViewControllerC", "countryShortName"]
 - ["12JustAThought14ViewControllerC", "createUsersuserID"]
-- ["12JustAThought14ViewControllerC", "currentLocation"]
 - ["12JustAThought14ViewControllerC", "deinit"]
 - ["12JustAThought14ViewControllerC", "diaryBtn"]
 - ["12JustAThought14ViewControllerC", "didReceiveMemoryWarning"]
@@ -6593,7 +6482,6 @@ depends-member:
 - ["12JustAThought14ViewControllerC", "init"]
 - !private ["12JustAThought14ViewControllerC", "kCLLocationAccuracyBest"]
 - ["12JustAThought14ViewControllerC", "leadingConstraint"]
-- ["12JustAThought14ViewControllerC", "likelyPlaces"]
 - ["12JustAThought14ViewControllerC", "loadCities"]
 - ["12JustAThought14ViewControllerC", "loadMainTopics"]
 - ["12JustAThought14ViewControllerC", "loadSubTopics"]
@@ -6622,7 +6510,6 @@ depends-member:
 - ["12JustAThought14ViewControllerC", "parsePlacemarksState"]
 - !private ["12JustAThought14ViewControllerC", "performSegue"]
 - ["12JustAThought14ViewControllerC", "placemark"]
-- ["12JustAThought14ViewControllerC", "placesClient"]
 - ["12JustAThought14ViewControllerC", "position"]
 - ["12JustAThought14ViewControllerC", "positionForBar"]
 - !private ["12JustAThought14ViewControllerC", "present"]
@@ -6668,7 +6555,6 @@ depends-member:
 - ["12JustAThought14ViewControllerC", "sectionIndexTitles"]
 - ["12JustAThought14ViewControllerC", "sectionIndexTitlesForTableView"]
 - ["12JustAThought14ViewControllerC", "selectedCity"]
-- ["12JustAThought14ViewControllerC", "selectedPlace"]
 - ["12JustAThought14ViewControllerC", "selectedSubtopicThought"]
 - ["12JustAThought14ViewControllerC", "selectedTopicThought"]
 - ["12JustAThought14ViewControllerC", "setNavigationBar"]
@@ -6719,7 +6605,6 @@ depends-member:
 - ["12JustAThought14ViewControllerC", "viewDidLoad"]
 - ["12JustAThought14ViewControllerC", "viewForZooming"]
 - ["12JustAThought14ViewControllerC", "viewForZoomingInScrollView"]
-- ["12JustAThought14ViewControllerC", "zoomLevel"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "filter"]
@@ -6853,7 +6738,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "GMSPlacesClient"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedStringKey"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "NSDictionary"]
@@ -6918,7 +6802,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dimsBackgroundDuringPresentation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "direction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "displayName"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "distanceFilter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "enterThoughtBtn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "enterThoughtShowing"]
@@ -6978,7 +6861,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "parsePlacemarksCountry"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placemark"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "placesClient"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "position"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "positionForBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
@@ -6994,7 +6876,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "region"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "requestAlwaysAuthorization"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "requestTopicBtn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "requestWhenInUseAuthorization"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reverseGeocodeLocation"]
@@ -7174,7 +7055,7 @@ depends-nominal:
 - !private "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
 - !private "SC6CGSizeV"
-- "SC21CLAuthorizationStatusO"
+- !private "SC21CLAuthorizationStatusO"
 - "So10CLGeocoderC"
 - !private "So10CLLocationC"
 - "So17CLLocationManagerC"
@@ -7209,7 +7090,6 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "So9FormatterC"
-- !private "So15GMSPlacesClientC"
 - "s8HashableP"
 - !private "10Foundation9IndexPathV"
 - "Si"
@@ -7237,7 +7117,7 @@ depends-nominal:
 - !private "s9OptionSetP"
 - "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
+- !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - "s8SequenceP"
 - !private "s10SetAlgebraP"
@@ -7364,21 +7244,14 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
@@ -7399,7 +7272,6 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -7412,47 +7284,30 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -7464,4 +7319,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "94f99a62ea098b9c2b2cdbf89f74e3a2"
+interface-hash: "8f8a849f45c66dbfbfaab0102ab29a71"
