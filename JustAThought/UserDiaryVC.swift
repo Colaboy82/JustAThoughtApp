@@ -17,7 +17,8 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var postCount: UILabel!
-    
+    @IBOutlet weak var likeLeaderboardBtn: UIButton!
+
     var thoughtList = [ThoughtModel]()//list to store all the thought
     var refThoughts: DatabaseReference!
     var refLikes = Database.database().reference()
@@ -70,6 +71,12 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         cell.locationLbl.text = thought.city! + ", " + thought.country!
         cell.numOfLikes.text = numToString
         
+        cell.topicLbl.adjustsFontSizeToFitWidth = true
+        cell.userLbl.adjustsFontSizeToFitWidth = true
+        cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+        cell.locationLbl.adjustsFontSizeToFitWidth = true
+        cell.numOfLikes.adjustsFontSizeToFitWidth = true
+        
         Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
             guard let dict = snapshot.value as? [String:Any] else {
                 print("Error")
@@ -100,9 +107,18 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         print("global class is " + mainInstance.currentUsername)
         userNameLbl.adjustsFontSizeToFitWidth = true
         postCount.adjustsFontSizeToFitWidth = true
+        
         userNameLbl.text = setUpShortUserName()//mainInstance.currentUsername
         navigationController?.isNavigationBarHidden = false
-
+        
+        likeLeaderboardBtn.layer.shadowColor = UIColor.black.cgColor
+        likeLeaderboardBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        likeLeaderboardBtn.layer.masksToBounds = false
+        likeLeaderboardBtn.layer.shadowRadius = 1.0
+        likeLeaderboardBtn.layer.shadowOpacity = 0.5
+        likeLeaderboardBtn.layer.cornerRadius = 7
+        likeLeaderboardBtn.showsTouchWhenHighlighted = true
+        
         refThoughts = Database.database().reference().child("thoughts");
         
         refThoughts.observe(DataEventType.value, with: { (snapshot) in
@@ -132,7 +148,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                     if userID as! String? == Auth.auth().currentUser?.uid{
                         self.thoughtList.insert(thought, at: 0)
                         let s = (self.thoughtList.count).toString()
-                        self.postCount.text = "Num of Posts: \(s)"
+                        self.postCount.text = "Posts: \(s)"
                     }
                 }
                 //reloading the tableview
@@ -157,7 +173,7 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         }
     }
     func setNavigationBar() {
-        self.navigationItem.title = "Main Feed"
+        self.navigationItem.title = "User Diary"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
         let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
         backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)

@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         //GMSPlacesClient.provideAPIKey("AIzaSyAN8TMQEdhX1_H6INXwHYHWhW37D-QnO5E")
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!
+        ]
         return true
     }
 

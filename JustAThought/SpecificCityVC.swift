@@ -45,10 +45,17 @@ class SpecificCityVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         //adding values to labels
         //cell.thoughtLbl.text = thought.typedThought
         cell.topicLbl.text = thought.typedTopic
-        cell.userLbl.text = thought.userID
+        cell.userLbl.text = convertToShortUserName(s:thought.userID!)
         cell.timeStampLbl.text = thought.timeStamp
         cell.locationLbl.text = thought.city! + ", " + thought.country!
         cell.numOfLikes.text = numToString
+        
+        cell.topicLbl.adjustsFontSizeToFitWidth = true
+        cell.userLbl.adjustsFontSizeToFitWidth = true
+        cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+        cell.locationLbl.adjustsFontSizeToFitWidth = true
+        cell.numOfLikes.adjustsFontSizeToFitWidth = true
+        
         Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
                 
                 guard let dict = snapshot.value as? [String:Any] else {
@@ -82,7 +89,7 @@ class SpecificCityVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         let numToString = (thought._likes).toString()
         mainInstance.thought = thought.typedThought!
-        mainInstance.username = thought.userID!
+        mainInstance.username = convertToShortUserName(s:thought.userID!)
         mainInstance.location = thought.city! + ", " + thought.country!
         mainInstance.timeStamps = thought.timeStamp!
         mainInstance.topic = thought.typedTopic!
@@ -143,7 +150,14 @@ class SpecificCityVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func setNavigationBar() {
         self.navigationItem.title = "City Feed"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)
+        navigationItem.backBarButtonItem = backButton
     }
-    
+    func convertToShortUserName(s: String) -> String{
+        let result = String(s.characters.prefix(10))
+        return result
+    }
 }
 

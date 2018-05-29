@@ -74,6 +74,10 @@ class TopicCreateVC: UIViewController, UITextFieldDelegate {
     }
     func setNavigationBar() {
         self.navigationItem.title = "Request Topic"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)
+        navigationItem.backBarButtonItem = backButton
     }
 
 }

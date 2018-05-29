@@ -30,10 +30,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rbp-E7-pwv">
-                                <rect key="frame" x="0.0" y="135" width="375" height="532"/>
+                                <rect key="frame" x="0.0" y="135" width="375" height="465"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="rbp-E7-pwv" secondAttribute="height" multiplier="375:532" id="Eia-z3-FYd"/>
+                                    <constraint firstAttribute="width" secondItem="rbp-E7-pwv" secondAttribute="height" multiplier="25:31" id="Qlf-RU-tzI"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="166" id="XJH-Dp-Yqu" customClass="VCTableViewCell" customModule="JustAThought" customModuleProvider="target">
@@ -117,7 +117,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KMJ-yG-e2J">
-                                        <rect key="frame" x="0.0" y="22" width="375" height="229"/>
+                                        <rect key="frame" x="0.0" y="22" width="375" height="228.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="KMJ-yG-e2J" secondAttribute="height" multiplier="375:229" id="qe7-JH-woe"/>
@@ -147,7 +147,7 @@
                                         </connections>
                                     </tableView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zn3-Lk-m53">
-                                        <rect key="frame" x="0.0" y="22" width="375" height="229"/>
+                                        <rect key="frame" x="0.0" y="22" width="375" height="228.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Zn3-Lk-m53" secondAttribute="height" multiplier="375:229" id="AjO-O1-kiY"/>
@@ -406,7 +406,7 @@
                                 <rect key="frame" x="0.0" y="600" width="375" height="67"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc3-TM-GPb">
-                                        <rect key="frame" x="96" y="0.0" width="76" height="67"/>
+                                        <rect key="frame" x="96" y="0.0" width="76" height="67.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Qc3-TM-GPb" secondAttribute="height" multiplier="76:67" id="an6-rd-kJr"/>
                                         </constraints>
@@ -525,13 +525,13 @@
                             <constraint firstItem="ch1-09-Vas" firstAttribute="trailing" secondItem="FRX-nb-tqL" secondAttribute="trailing" id="Sy2-O8-ore"/>
                             <constraint firstItem="vz0-0h-dG0" firstAttribute="top" secondItem="FRX-nb-tqL" secondAttribute="top" constant="360" id="TKW-oe-f3X"/>
                             <constraint firstItem="FRX-nb-tqL" firstAttribute="trailing" secondItem="fTL-Ko-yVH" secondAttribute="trailing" id="TYR-q3-Za4"/>
+                            <constraint firstItem="fTL-Ko-yVH" firstAttribute="top" secondItem="rbp-E7-pwv" secondAttribute="bottom" id="TZs-z2-7vh"/>
                             <constraint firstItem="53a-Qf-dly" firstAttribute="trailing" secondItem="FRX-nb-tqL" secondAttribute="trailing" id="U78-O7-cIK"/>
                             <constraint firstAttribute="bottom" secondItem="53a-Qf-dly" secondAttribute="bottom" constant="-406" id="XLD-ox-17e"/>
                             <constraint firstItem="fTL-Ko-yVH" firstAttribute="leading" secondItem="FRX-nb-tqL" secondAttribute="leading" id="Xu0-sA-bGU"/>
                             <constraint firstItem="C2Y-Mp-WFb" firstAttribute="leading" secondItem="FRX-nb-tqL" secondAttribute="leading" id="ZF4-VU-Hpz"/>
                             <constraint firstItem="ch1-09-Vas" firstAttribute="top" secondItem="FRX-nb-tqL" secondAttribute="top" constant="373" id="eXC-iC-5mr"/>
                             <constraint firstItem="53a-Qf-dly" firstAttribute="top" secondItem="FRX-nb-tqL" secondAttribute="top" constant="373" id="gcF-4d-7LY"/>
-                            <constraint firstAttribute="bottom" secondItem="rbp-E7-pwv" secondAttribute="bottom" id="gml-E2-o9D"/>
                             <constraint firstItem="C2Y-Mp-WFb" firstAttribute="trailing" secondItem="FRX-nb-tqL" secondAttribute="trailing" id="hHn-bv-guh"/>
                             <constraint firstItem="ch1-09-Vas" firstAttribute="leading" secondItem="FRX-nb-tqL" secondAttribute="leading" id="jbM-K9-Amk"/>
                             <constraint firstItem="rbp-E7-pwv" firstAttribute="trailing" secondItem="FRX-nb-tqL" secondAttribute="trailing" id="lH3-Qg-YgY"/>
@@ -1941,7 +1941,7 @@
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZm-F4-ii6">
                                 <rect key="frame" x="122" y="64" width="131" height="12"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1967,6 +1967,7 @@
                         <viewLayoutGuide key="safeArea" id="NPT-sn-XPu"/>
                     </view>
                     <connections>
+                        <outlet property="likeLeaderboardBtn" destination="350-95-fsb" id="ebj-IU-VhU"/>
                         <outlet property="postCount" destination="ano-JA-Vz6" id="Xt9-tj-aM7"/>
                         <outlet property="tableView" destination="hKH-1X-KCO" id="xbd-wR-XXk"/>
                         <outlet property="userNameLbl" destination="kZm-F4-ii6" id="VL2-ch-s4M"/>
@@ -2226,7 +2227,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="6sW-ue-rP4"/>
         <segue reference="MmZ-pX-UU7"/>
-        <segue reference="wSk-2z-Sy0"/>
+        <segue reference="QSY-Kn-Afy"/>
         <segue reference="lVa-4s-UCa"/>
         <segue reference="shr-wN-van"/>
     </inferredMetricsTieBreakers>

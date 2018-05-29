@@ -45,7 +45,7 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             cell.numOfLikes.adjustsFontSizeToFitWidth = true
         
             cell.topicLbl.text = thought.typedTopic
-            cell.userLbl.text = thought.userID
+            cell.userLbl.text = convertToShortUserName(s:thought.userID!)
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
@@ -81,7 +81,7 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         let numToString = (thought._likes).toString()
         mainInstance.thought = thought.typedThought!
-        mainInstance.username = thought.userID!
+        mainInstance.username = convertToShortUserName(s:thought.userID!)
         mainInstance.location = thought.city! + ", " + thought.country!
         mainInstance.timeStamps = thought.timeStamp!
         mainInstance.topic = thought.typedTopic!
@@ -141,5 +141,13 @@ class SpecificTopicVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     func setNavigationBar() {
         self.navigationItem.title = "Topic Feed"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)
+        navigationItem.backBarButtonItem = backButton
+    }
+    func convertToShortUserName(s: String) -> String{
+        let result = String(s.characters.prefix(10))
+        return result
     }
 }

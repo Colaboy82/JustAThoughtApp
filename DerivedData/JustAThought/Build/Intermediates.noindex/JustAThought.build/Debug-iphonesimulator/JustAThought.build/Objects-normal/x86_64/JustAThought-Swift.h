@@ -465,6 +465,7 @@ SWIFT_CLASS("_TtC12JustAThought11UserDiaryVC")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified userNameLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified postCount;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeLeaderboardBtn;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;

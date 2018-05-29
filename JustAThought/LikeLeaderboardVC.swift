@@ -329,6 +329,13 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             cell.timeStampLbl.text = thought.timeStamp
             cell.locationLbl.text = thought.city! + ", " + thought.country!
             cell.numOfLikes.text = numToString
+        
+            cell.topicLbl.adjustsFontSizeToFitWidth = true
+            cell.userLbl.adjustsFontSizeToFitWidth = true
+            cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+            cell.locationLbl.adjustsFontSizeToFitWidth = true
+            cell.numOfLikes.adjustsFontSizeToFitWidth = true
+            
             Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
                 guard let dict = snapshot.value as? [String:Any] else {
                     print("Error")
@@ -986,7 +993,7 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
         subtopicSearchView.tableHeaderView = subtopicSearchController.searchBar
     }
     func setNavigationBar() {
-        self.navigationItem.title = "Main Feed"
+        self.navigationItem.title = "Like Leaderboard"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
         let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
         backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)

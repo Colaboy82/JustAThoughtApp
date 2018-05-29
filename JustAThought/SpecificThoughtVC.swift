@@ -209,6 +209,10 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     func setNavigationBar() {
         self.navigationItem.title = "The Thought"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!]
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        backButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Menlo", size: 20)!], for: [])//UIControlState.Normal)
+        navigationItem.backBarButtonItem = backButton
     }
     func convertToShortUserName(s: String) -> String{
         let result = String(s.characters.prefix(10))
