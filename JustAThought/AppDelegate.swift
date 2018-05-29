@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        //GMSPlacesClient.provideAPIKey("AIzaSyAN8TMQEdhX1_H6INXwHYHWhW37D-QnO5E")
         UINavigationBar.appearance().titleTextAttributes = [
             NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!
         ]
