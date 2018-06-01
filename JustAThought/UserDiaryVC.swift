@@ -62,6 +62,8 @@ class UserDiaryVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         //getting the thought of selected position
         thought = thoughtList[indexPath.row]
         cell.configCell(thought: thought)
+        cell.layer.borderWidth = 1.0
+        cell.layer.borderColor = UIColor.black.cgColor
         let numToString = (thought._likes).toString()
         //adding values to labels
         //cell.thoughtLbl.text = thought.typedThought

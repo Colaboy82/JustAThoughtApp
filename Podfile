@@ -12,10 +12,10 @@ target 'JustAThought' do
   pod 'Firebase/Auth’
   pod 'Firebase/Database’
   pod 'Firebase/Storage’
-  pod ‘SwiftKeychainWrapper’
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps’
+  pod 'KeychainSwift'
   
   target 'JustAThoughtTests' do
     inherit! :search_paths

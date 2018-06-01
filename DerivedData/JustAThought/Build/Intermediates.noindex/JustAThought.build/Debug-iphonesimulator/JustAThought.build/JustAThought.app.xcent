@@ -4,6 +4,8 @@
 <dict>
 	<key>application-identifier</key>
 	<string>CRBSJ4DXMT.com.MuSquared.JustAThought</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array/>
 	<key>keychain-access-groups</key>
 	<array>
 		<string>CRBSJ4DXMT.com.MuSquared.JustAThought</string>

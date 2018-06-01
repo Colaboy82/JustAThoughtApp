@@ -5,7 +5,6 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Menlo.ttc</string>
-		<string>AvenirNext.ttc</string>
 	</array>
 </dict>
 </plist>

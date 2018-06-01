@@ -34,8 +34,19 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     var refUsers: DatabaseReference!
     
+    let service = "Just A Thought"
+    
+    override func viewDidAppear(_ animated: Bool){
+        //keychainService code
+        let keyChain = DataService().keyChain
+        if keyChain.get("uid") != nil {//if user existss automatically sign in
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Feed")
+            self.present(vc!, animated: true, completion: nil)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.hideKeyboardWhenTappedAround()
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
@@ -75,6 +86,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
+    func completeSignIn(id: String){
+        let keyChain = DataService().keyChain
+        keyChain.set(id, forKey: "uid")
+    }
     //Login Action
     @IBAction func loginAction(_ sender: AnyObject) {
         
@@ -92,7 +107,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         } else {
             Auth.auth().signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
                 if error == nil {
-                    
+                    self.completeSignIn(id: user!.uid)
                     //Print into the console if successfully logged in
                     print("You have successfully logged in")
                     

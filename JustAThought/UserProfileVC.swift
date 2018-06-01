@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import KeychainSwift
 
 extension String {
     
@@ -67,6 +68,7 @@ class UserProfileVC: UIViewController {
         if Auth.auth().currentUser != nil {
             do {
                 try Auth.auth().signOut()
+                KeychainSwift().delete("uid")
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginPage")
                 present(vc, animated: true, completion: nil)
                 

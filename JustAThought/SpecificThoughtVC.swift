@@ -131,6 +131,8 @@ class SpecificThoughtVC: UIViewController, UITableViewDelegate, UITableViewDataS
             //getting the thought of selected position
             thought = thoughtList[indexPath.row]
             cell.configCell(thought: thought)
+            cell.layer.borderWidth = 1.0
+            cell.layer.borderColor = UIColor.black.cgColor
         
             cell.thoughtLbl.adjustsFontSizeToFitWidth = true
             cell.topicLbl.adjustsFontSizeToFitWidth = true

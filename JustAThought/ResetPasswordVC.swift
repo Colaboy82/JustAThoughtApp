@@ -115,7 +115,6 @@ class ResetPasswordVC: UIViewController, UITextFieldDelegate {
             
         } else {
             Auth.auth().sendPasswordReset(withEmail: self.emailTextField.text!, completion: { (error) in
-                
                 var title = ""
                 var message = ""
                 

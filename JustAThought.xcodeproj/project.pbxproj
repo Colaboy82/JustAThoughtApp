@@ -38,6 +38,8 @@
 		3D5F2D6B20AA36E100617EE8 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5F2D6120AA36E000617EE8 /* settings.png */; };
 		3D5F2D6C20AA36E100617EE8 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5F2D6220AA36E000617EE8 /* add.png */; };
 		3D5F2D6E20AB969B00617EE8 /* upvote2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5F2D6D20AB969A00617EE8 /* upvote2.png */; };
+		3D62420320C0C1DA00D263CC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62420220C0C1DA00D263CC /* DataService.swift */; };
+		3D6A0F7220BE2B680077B67B /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A0F7120BE2B680077B67B /* KeychainService.swift */; };
 		3D9166A42020018200ED3D78 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9166A32020018200ED3D78 /* InfoVC.swift */; };
 		3DF2090A1FF1D82F0099908C /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF209091FF1D82F0099908C /* TopicModel.swift */; };
 		3DF2090C1FF1F0F40099908C /* FindTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2090B1FF1F0F40099908C /* FindTopicTableViewController.swift */; };
@@ -115,6 +117,8 @@
 		3D5F2D6120AA36E000617EE8 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		3D5F2D6220AA36E000617EE8 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		3D5F2D6D20AB969A00617EE8 /* upvote2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upvote2.png; sourceTree = "<group>"; };
+		3D62420220C0C1DA00D263CC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3D6A0F7120BE2B680077B67B /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		3D9166A32020018200ED3D78 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		3DF209091FF1D82F0099908C /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
 		3DF2090B1FF1F0F40099908C /* FindTopicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindTopicTableViewController.swift; path = "JustAThought/Not used/FindTopicTableViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -207,6 +211,7 @@
 				3DF2090F1FF350760099908C /* CellTypes */,
 				3D3807521FED8CEA003CED99 /* Models */,
 				3D3807401FEC92E1003CED99 /* AppDelegate.swift */,
+				3D6A0F7120BE2B680077B67B /* KeychainService.swift */,
 				3D4D65E620641E9D00F08BCF /* ContactPage.swift */,
 				3D4D65E820641EBE00F08BCF /* AboutPages.swift */,
 				3D4D65EA20641EF600F08BCF /* TutorialPage.swift */,
@@ -224,6 +229,7 @@
 				3DF2091E1FFD59A50099908C /* LikeLeaderboardVC.swift */,
 				3DF756A52007DC4C00890FA1 /* UserProfileVC.swift */,
 				3D9166A32020018200ED3D78 /* InfoVC.swift */,
+				3D62420220C0C1DA00D263CC /* DataService.swift */,
 				3D28CB901FEA1173006D046E /* Main.storyboard */,
 				3D28CB931FEA1173006D046E /* Assets.xcassets */,
 				3D28CB951FEA1173006D046E /* LaunchScreen.storyboard */,
@@ -341,8 +347,6 @@
 				3D28CB991FEA1173006D046E /* Sources */,
 				3D28CB9A1FEA1173006D046E /* Frameworks */,
 				3D28CB9B1FEA1173006D046E /* Resources */,
-				A1D0E0D32F3CF77C686F3CAF /* [CP] Embed Pods Frameworks */,
-				15D1AE1CBAB1082F9744811E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,8 +366,6 @@
 				3D28CBA41FEA1173006D046E /* Sources */,
 				3D28CBA51FEA1173006D046E /* Frameworks */,
 				3D28CBA61FEA1173006D046E /* Resources */,
-				A35442A7315FB77C0A8CB37E /* [CP] Embed Pods Frameworks */,
-				2CF9FD4FA83F09A1E65FCC6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,6 +393,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
 						};
@@ -471,36 +476,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15D1AE1CBAB1082F9744811E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustAThoughtTests/Pods-JustAThoughtTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2CF9FD4FA83F09A1E65FCC6E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustAThoughtUITests/Pods-JustAThoughtUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		85DD9A914CB9EEA9BE1B5037 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -532,41 +507,13 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustAThought/Pods-JustAThought-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A1D0E0D32F3CF77C686F3CAF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustAThoughtTests/Pods-JustAThoughtTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A35442A7315FB77C0A8CB37E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustAThoughtUITests/Pods-JustAThoughtUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A5EA9E8DB7CF0C09727F4928 /* [CP] Check Pods Manifest.lock */ = {
@@ -596,7 +543,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-JustAThought/Pods-JustAThought-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -604,7 +551,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -645,7 +592,9 @@
 				3D38074B1FED73BC003CED99 /* LoginVC.swift in Sources */,
 				3D9166A42020018200ED3D78 /* InfoVC.swift in Sources */,
 				3DF7569A2005384200890FA1 /* SpecificThoughtVC.swift in Sources */,
+				3D6A0F7220BE2B680077B67B /* KeychainService.swift in Sources */,
 				3DF2090E1FF337E80099908C /* SearchTopicViewCell.swift in Sources */,
+				3D62420320C0C1DA00D263CC /* DataService.swift in Sources */,
 				3DF209111FF478040099908C /* SpecificTopicVC.swift in Sources */,
 				3DF2091F1FFD59A50099908C /* LikeLeaderboardVC.swift in Sources */,
 				3DF209151FF58A850099908C /* CitiesModel.swift in Sources */,

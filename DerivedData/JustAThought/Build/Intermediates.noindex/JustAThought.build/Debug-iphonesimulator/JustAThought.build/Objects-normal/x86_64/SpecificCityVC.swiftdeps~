@@ -66,10 +66,13 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["s13BinaryIntegerP", "toString"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So7CALayerC", "borderColor"]
+- !private ["So7CALayerC", "borderWidth"]
 - !private ["So15CALayerDelegateP", "adjustsFontSizeToFitWidth"]
 - !private ["So15CALayerDelegateP", "cellForRow"]
 - !private ["So15CALayerDelegateP", "configCell"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
+- !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "locationLbl"]
 - !private ["So15CALayerDelegateP", "numOfLikes"]
 - !private ["So15CALayerDelegateP", "reloadData"]
@@ -78,6 +81,8 @@ depends-member:
 - !private ["So15CALayerDelegateP", "titleTextAttributes"]
 - !private ["So15CALayerDelegateP", "topicLbl"]
 - !private ["So15CALayerDelegateP", "userLbl"]
+- !private ["So13CAMediaTimingP", "borderColor"]
+- !private ["So13CAMediaTimingP", "borderWidth"]
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "DataEventType"]
 - !private ["s7CVarArgP", "Database"]
@@ -93,7 +98,11 @@ depends-member:
 - !private ["s7CVarArgP", "allObjects"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "backBarButtonItem"]
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "borderColor"]
+- !private ["s7CVarArgP", "borderWidth"]
 - !private ["s7CVarArgP", "cellForRow"]
+- !private ["s7CVarArgP", "cgColor"]
 - !private ["s7CVarArgP", "characters"]
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "children"]
@@ -111,6 +120,7 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "insert"]
 - !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "locationLbl"]
 - !private ["s7CVarArgP", "mainInstance"]
 - !private ["s7CVarArgP", "navigationBar"]
@@ -189,7 +199,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "allObjects"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "backBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "borderColor"]
+- !private ["s28CustomDebugStringConvertibleP", "borderWidth"]
 - !private ["s28CustomDebugStringConvertibleP", "cellForRow"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
 - !private ["s28CustomDebugStringConvertibleP", "characters"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "children"]
@@ -207,6 +221,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "insert"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "locationLbl"]
 - !private ["s28CustomDebugStringConvertibleP", "mainInstance"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
@@ -286,7 +301,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "allObjects"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "backBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "borderColor"]
+- !private ["s23CustomStringConvertibleP", "borderWidth"]
 - !private ["s23CustomStringConvertibleP", "cellForRow"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
 - !private ["s23CustomStringConvertibleP", "characters"]
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "children"]
@@ -304,6 +323,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "insert"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "locationLbl"]
 - !private ["s23CustomStringConvertibleP", "mainInstance"]
 - !private ["s23CustomStringConvertibleP", "navigationBar"]
@@ -402,7 +422,11 @@ depends-member:
 - !private ["s9EquatableP", "allObjects"]
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "backBarButtonItem"]
+- !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "borderColor"]
+- !private ["s9EquatableP", "borderWidth"]
 - !private ["s9EquatableP", "cellForRow"]
+- !private ["s9EquatableP", "cgColor"]
 - !private ["s9EquatableP", "characters"]
 - !private ["s9EquatableP", "child"]
 - !private ["s9EquatableP", "children"]
@@ -420,6 +444,7 @@ depends-member:
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "instantiateViewController"]
+- !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "locationLbl"]
 - !private ["s9EquatableP", "mainInstance"]
 - !private ["s9EquatableP", "navigationBar"]
@@ -502,7 +527,11 @@ depends-member:
 - !private ["s8HashableP", "allObjects"]
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "backBarButtonItem"]
+- !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "borderColor"]
+- !private ["s8HashableP", "borderWidth"]
 - !private ["s8HashableP", "cellForRow"]
+- !private ["s8HashableP", "cgColor"]
 - !private ["s8HashableP", "characters"]
 - !private ["s8HashableP", "child"]
 - !private ["s8HashableP", "children"]
@@ -520,6 +549,7 @@ depends-member:
 - ["s8HashableP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "instantiateViewController"]
+- !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "locationLbl"]
 - !private ["s8HashableP", "mainInstance"]
 - !private ["s8HashableP", "navigationBar"]
@@ -608,7 +638,11 @@ depends-member:
 - !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "adjustsFontSizeToFitWidth"]
 - !private ["So8NSCodingP", "backBarButtonItem"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "borderColor"]
+- !private ["So8NSCodingP", "borderWidth"]
 - !private ["So8NSCodingP", "cellForRow"]
+- !private ["So8NSCodingP", "cgColor"]
 - !private ["So8NSCodingP", "characters"]
 - !private ["So8NSCodingP", "cityLbl"]
 - !private ["So8NSCodingP", "configCell"]
@@ -618,6 +652,7 @@ depends-member:
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "locationLbl"]
 - !private ["So8NSCodingP", "mainInstance"]
 - !private ["So8NSCodingP", "navigationBar"]
@@ -660,6 +695,8 @@ depends-member:
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So8NSCodingP", "white"]
 - ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "cgColor"]
 - !private ["So9NSCopyingP", "characters"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "white"]
@@ -713,9 +750,13 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So17NSFastEnumerationP", "allObjects"]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
 - !private ["So21NSItemProviderReadingP", "characters"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "white"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
 - !private ["So21NSItemProviderWritingP", "characters"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "white"]
@@ -747,7 +788,11 @@ depends-member:
 - !private ["So8NSObjectC", "allObjects"]
 - !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "backBarButtonItem"]
+- !private ["So8NSObjectC", "black"]
+- !private ["So8NSObjectC", "borderColor"]
+- !private ["So8NSObjectC", "borderWidth"]
 - !private ["So8NSObjectC", "cellForRow"]
+- !private ["So8NSObjectC", "cgColor"]
 - !private ["So8NSObjectC", "characters"]
 - !private ["So8NSObjectC", "child"]
 - !private ["So8NSObjectC", "children"]
@@ -763,6 +808,7 @@ depends-member:
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "locationLbl"]
 - !private ["So8NSObjectC", "mainInstance"]
 - !private ["So8NSObjectC", "navigationBar"]
@@ -824,7 +870,11 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "allObjects"]
 - !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "backBarButtonItem"]
+- !private ["So16NSObjectProtocolP", "black"]
+- !private ["So16NSObjectProtocolP", "borderColor"]
+- !private ["So16NSObjectProtocolP", "borderWidth"]
 - !private ["So16NSObjectProtocolP", "cellForRow"]
+- !private ["So16NSObjectProtocolP", "cgColor"]
 - !private ["So16NSObjectProtocolP", "characters"]
 - !private ["So16NSObjectProtocolP", "child"]
 - !private ["So16NSObjectProtocolP", "children"]
@@ -840,6 +890,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateViewController"]
+- !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "locationLbl"]
 - !private ["So16NSObjectProtocolP", "mainInstance"]
 - !private ["So16NSObjectProtocolP", "navigationBar"]
@@ -887,6 +938,10 @@ depends-member:
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
 - !private ["So16NSObjectProtocolP", "white"]
 - ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "borderColor"]
+- !private ["So14NSSecureCodingP", "borderWidth"]
+- !private ["So14NSSecureCodingP", "cgColor"]
 - !private ["So14NSSecureCodingP", "characters"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "white"]
@@ -1002,6 +1057,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "configCell"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "locationLbl"]
 - !private ["So29UIAccessibilityIdentificationP", "numOfLikes"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
@@ -1016,6 +1072,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "configCell"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "locationLbl"]
 - !private ["So12UIAppearanceP", "numOfLikes"]
 - !private ["So12UIAppearanceP", "reloadData"]
@@ -1046,6 +1103,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "locationLbl"]
 - !private ["So21UIAppearanceContainerP", "mainInstance"]
 - !private ["So21UIAppearanceContainerP", "navigationBar"]
@@ -1091,6 +1149,8 @@ depends-member:
 - !private ["So9UIBarItemC", "init"]
 - !private ["So9UIBarItemC", "setTitleTextAttributes"]
 - !private ["So16UIBarPositioningP", "titleTextAttributes"]
+- !private ["So7UIColorC", "black"]
+- !private ["So7UIColorC", "cgColor"]
 - !private ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "DataEventType"]
@@ -1146,6 +1206,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "cellForRow"]
 - !private ["So17UICoordinateSpaceP", "configCell"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
+- !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "locationLbl"]
 - !private ["So17UICoordinateSpaceP", "numOfLikes"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
@@ -1161,6 +1222,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "cellForRow"]
 - !private ["So13UIDynamicItemP", "configCell"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
+- !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "locationLbl"]
 - !private ["So13UIDynamicItemP", "numOfLikes"]
 - !private ["So13UIDynamicItemP", "reloadData"]
@@ -1190,6 +1252,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "locationLbl"]
 - !private ["So18UIFocusEnvironmentP", "mainInstance"]
 - !private ["So18UIFocusEnvironmentP", "navigationBar"]
@@ -1233,6 +1296,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "cellForRow"]
 - !private ["So11UIFocusItemP", "configCell"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
+- !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "locationLbl"]
 - !private ["So11UIFocusItemP", "numOfLikes"]
 - !private ["So11UIFocusItemP", "reloadData"]
@@ -1243,6 +1307,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "userLbl"]
 - !private ["So6UIFontC", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "configCell"]
+- !private ["So27UIGestureRecognizerDelegateP", "layer"]
 - !private ["So27UIGestureRecognizerDelegateP", "locationLbl"]
 - !private ["So27UIGestureRecognizerDelegateP", "numOfLikes"]
 - !private ["So27UIGestureRecognizerDelegateP", "timeStampLbl"]
@@ -1276,6 +1341,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "locationLbl"]
 - !private ["So30UIPasteConfigurationSupportingP", "mainInstance"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
@@ -1347,6 +1413,7 @@ depends-member:
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
 - !private ["So11UIResponderC", "locationLbl"]
 - !private ["So11UIResponderC", "mainInstance"]
 - !private ["So11UIResponderC", "navigationBar"]
@@ -1406,6 +1473,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "locationLbl"]
 - !private ["So30UIResponderStandardEditActionsP", "mainInstance"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
@@ -1550,6 +1618,7 @@ depends-member:
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "reloadData"]
 - !private ["So15UITableViewCellC", "configCell"]
+- !private ["So15UITableViewCellC", "layer"]
 - !private ["So15UITableViewCellC", "locationLbl"]
 - !private ["So15UITableViewCellC", "numOfLikes"]
 - !private ["So15UITableViewCellC", "timeStampLbl"]
@@ -1662,6 +1731,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "locationLbl"]
 - !private ["So18UITraitEnvironmentP", "mainInstance"]
 - !private ["So18UITraitEnvironmentP", "navigationBar"]
@@ -1705,6 +1775,7 @@ depends-member:
 - !private ["So6UIViewC", "cellForRow"]
 - !private ["So6UIViewC", "configCell"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
+- !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "locationLbl"]
 - !private ["So6UIViewC", "numOfLikes"]
 - !private ["So6UIViewC", "reloadData"]
@@ -1775,6 +1846,7 @@ depends-member:
 - !private ["So4UserC", "uid"]
 - !private ["So8UserInfoP", "uid"]
 - !private ["12JustAThought15VCTableViewCellC", "configCell"]
+- !private ["12JustAThought15VCTableViewCellC", "layer"]
 - !private ["12JustAThought15VCTableViewCellC", "locationLbl"]
 - !private ["12JustAThought15VCTableViewCellC", "numOfLikes"]
 - !private ["12JustAThought15VCTableViewCellC", "timeStampLbl"]
@@ -1798,6 +1870,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cellForRow"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "configCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "locationLbl"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "numOfLikes"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
@@ -1821,6 +1894,8 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "characters"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s33_ExpressibleByStringInterpolationP", "characters"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
@@ -1857,7 +1932,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "allObjects"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backBarButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "borderWidth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellForRow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "characters"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "children"]
@@ -1873,6 +1952,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locationLbl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mainInstance"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
@@ -1962,7 +2042,9 @@ depends-nominal:
 - "s23BidirectionalCollectionP"
 - !private "s13BinaryIntegerP"
 - !private "Sb"
+- !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
 - "s7CVarArgP"
 - !private "SS13CharacterViewV"
 - "s10CollectionP"
@@ -2089,6 +2171,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/SwiftKeychainWrapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/KeychainSwift/KeychainSwift.framework/Modules/KeychainSwift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -2104,6 +2188,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-umbrella.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/KeychainSwift/KeychainSwift.framework/Headers/KeychainSwift-umbrella.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
@@ -2146,6 +2232,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
@@ -2157,6 +2244,8 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-Swift.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/KeychainSwift/KeychainSwift.framework/Headers/KeychainSwift-Swift.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -2169,7 +2258,9 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/KeychainSwift/KeychainSwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

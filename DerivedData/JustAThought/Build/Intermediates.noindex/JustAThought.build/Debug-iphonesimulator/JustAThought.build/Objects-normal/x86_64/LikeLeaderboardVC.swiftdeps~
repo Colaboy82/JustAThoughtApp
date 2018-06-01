@@ -124,6 +124,7 @@ depends-member:
 - !private ["So7CALayerC", "shadowOffset"]
 - !private ["So7CALayerC", "shadowOpacity"]
 - !private ["So7CALayerC", "shadowRadius"]
+- !private ["So15CALayerDelegateP", "adjustsFontSizeToFitWidth"]
 - !private ["So15CALayerDelegateP", "animate"]
 - !private ["So15CALayerDelegateP", "cellForRow"]
 - !private ["So15CALayerDelegateP", "configCell"]
@@ -177,6 +178,7 @@ depends-member:
 - !private ["s7CVarArgP", "UISearchController"]
 - !private ["s7CVarArgP", "UITableViewRowAnimation"]
 - !private ["s7CVarArgP", "UIView"]
+- !private ["s7CVarArgP", "adjustsFontSizeToFitWidth"]
 - !private ["s7CVarArgP", "allObjects"]
 - !private ["s7CVarArgP", "animate"]
 - !private ["s7CVarArgP", "append"]
@@ -395,6 +397,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UISearchController"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewRowAnimation"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
+- !private ["s28CustomDebugStringConvertibleP", "adjustsFontSizeToFitWidth"]
 - !private ["s28CustomDebugStringConvertibleP", "allObjects"]
 - !private ["s28CustomDebugStringConvertibleP", "animate"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
@@ -620,6 +623,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UITableViewRowAnimation"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "adjustsFontSizeToFitWidth"]
 - !private ["s23CustomStringConvertibleP", "allObjects"]
 - !private ["s23CustomStringConvertibleP", "animate"]
 - !private ["s23CustomStringConvertibleP", "append"]
@@ -867,6 +871,7 @@ depends-member:
 - !private ["s9EquatableP", "UITableViewRowAnimation"]
 - !private ["s9EquatableP", "UIView"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "adjustsFontSizeToFitWidth"]
 - !private ["s9EquatableP", "allObjects"]
 - !private ["s9EquatableP", "animate"]
 - !private ["s9EquatableP", "arrayLeaderboards"]
@@ -1107,6 +1112,7 @@ depends-member:
 - !private ["s8HashableP", "UITableViewRowAnimation"]
 - !private ["s8HashableP", "UIView"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "adjustsFontSizeToFitWidth"]
 - !private ["s8HashableP", "allObjects"]
 - !private ["s8HashableP", "animate"]
 - !private ["s8HashableP", "arrayLeaderboards"]
@@ -1485,6 +1491,7 @@ depends-member:
 - !private ["So8NSCodingP", "UISearchController"]
 - !private ["So8NSCodingP", "UITableViewRowAnimation"]
 - !private ["So8NSCodingP", "UIView"]
+- !private ["So8NSCodingP", "adjustsFontSizeToFitWidth"]
 - !private ["So8NSCodingP", "animate"]
 - !private ["So8NSCodingP", "arrayLeaderboards"]
 - !private ["So8NSCodingP", "backBarButtonItem"]
@@ -1845,6 +1852,7 @@ depends-member:
 - !private ["So8NSObjectC", "UITableViewRowAnimation"]
 - ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "VCTableViewCell"]
+- !private ["So8NSObjectC", "adjustsFontSizeToFitWidth"]
 - !private ["So8NSObjectC", "allObjects"]
 - !private ["So8NSObjectC", "animate"]
 - ["So8NSObjectC", "arrayLeaderboards"]
@@ -2038,6 +2046,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UISearchController"]
 - !private ["So16NSObjectProtocolP", "UITableViewRowAnimation"]
 - !private ["So16NSObjectProtocolP", "UIView"]
+- !private ["So16NSObjectProtocolP", "adjustsFontSizeToFitWidth"]
 - !private ["So16NSObjectProtocolP", "allObjects"]
 - !private ["So16NSObjectProtocolP", "animate"]
 - !private ["So16NSObjectProtocolP", "arrayLeaderboards"]
@@ -2338,6 +2347,7 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitle"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "showsTouchWhenHighlighted"]
+- !private ["So29UIAccessibilityIdentificationP", "adjustsFontSizeToFitWidth"]
 - !private ["So29UIAccessibilityIdentificationP", "animate"]
 - !private ["So29UIAccessibilityIdentificationP", "cellForRow"]
 - !private ["So29UIAccessibilityIdentificationP", "configCell"]
@@ -2363,6 +2373,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "titleTextAttributes"]
 - !private ["So29UIAccessibilityIdentificationP", "topicLbl"]
 - !private ["So29UIAccessibilityIdentificationP", "userLbl"]
+- !private ["So12UIAppearanceP", "adjustsFontSizeToFitWidth"]
 - !private ["So12UIAppearanceP", "animate"]
 - !private ["So12UIAppearanceP", "cellForRow"]
 - !private ["So12UIAppearanceP", "configCell"]
@@ -2409,6 +2420,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UISearchController"]
 - !private ["So21UIAppearanceContainerP", "UITableViewRowAnimation"]
 - !private ["So21UIAppearanceContainerP", "UIView"]
+- !private ["So21UIAppearanceContainerP", "adjustsFontSizeToFitWidth"]
 - !private ["So21UIAppearanceContainerP", "animate"]
 - !private ["So21UIAppearanceContainerP", "arrayLeaderboards"]
 - !private ["So21UIAppearanceContainerP", "cellForRow"]
@@ -2789,12 +2801,14 @@ depends-member:
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - ["So18UIContentContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "adjustsFontSizeToFitWidth"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "isHidden"]
 - !private ["So9UIControlC", "layer"]
 - !private ["So9UIControlC", "setTitle"]
 - !private ["So9UIControlC", "showsTouchWhenHighlighted"]
 - !private ["SC14UIControlStateV", "normal"]
+- !private ["So17UICoordinateSpaceP", "adjustsFontSizeToFitWidth"]
 - !private ["So17UICoordinateSpaceP", "animate"]
 - !private ["So17UICoordinateSpaceP", "cellForRow"]
 - !private ["So17UICoordinateSpaceP", "configCell"]
@@ -2826,6 +2840,7 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "layer"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So23UIDataSourceTranslatingP", "tableHeaderView"]
+- !private ["So13UIDynamicItemP", "adjustsFontSizeToFitWidth"]
 - !private ["So13UIDynamicItemP", "animate"]
 - !private ["So13UIDynamicItemP", "cellForRow"]
 - !private ["So13UIDynamicItemP", "configCell"]
@@ -2870,6 +2885,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UISearchController"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewRowAnimation"]
 - !private ["So18UIFocusEnvironmentP", "UIView"]
+- !private ["So18UIFocusEnvironmentP", "adjustsFontSizeToFitWidth"]
 - !private ["So18UIFocusEnvironmentP", "animate"]
 - !private ["So18UIFocusEnvironmentP", "arrayLeaderboards"]
 - !private ["So18UIFocusEnvironmentP", "cellForRow"]
@@ -2995,6 +3011,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "adjustsFontSizeToFitWidth"]
 - !private ["So11UIFocusItemP", "animate"]
 - !private ["So11UIFocusItemP", "cellForRow"]
 - !private ["So11UIFocusItemP", "configCell"]
@@ -3021,12 +3038,14 @@ depends-member:
 - !private ["So6UIFontC", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "configCell"]
 - !private ["So27UIGestureRecognizerDelegateP", "detailTextLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "layer"]
 - !private ["So27UIGestureRecognizerDelegateP", "locationLbl"]
 - !private ["So27UIGestureRecognizerDelegateP", "numOfLikes"]
 - !private ["So27UIGestureRecognizerDelegateP", "textLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "timeStampLbl"]
 - !private ["So27UIGestureRecognizerDelegateP", "topicLbl"]
 - !private ["So27UIGestureRecognizerDelegateP", "userLbl"]
+- !private ["So7UILabelC", "adjustsFontSizeToFitWidth"]
 - !private ["So7UILabelC", "text"]
 - !private ["So15UINavigationBarC", "titleTextAttributes"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
@@ -3053,6 +3072,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UISearchController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewRowAnimation"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIView"]
+- !private ["So30UIPasteConfigurationSupportingP", "adjustsFontSizeToFitWidth"]
 - !private ["So30UIPasteConfigurationSupportingP", "animate"]
 - !private ["So30UIPasteConfigurationSupportingP", "arrayLeaderboards"]
 - !private ["So30UIPasteConfigurationSupportingP", "cellForRow"]
@@ -3211,6 +3231,7 @@ depends-member:
 - !private ["So11UIResponderC", "UITableViewRowAnimation"]
 - ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "VCTableViewCell"]
+- !private ["So11UIResponderC", "adjustsFontSizeToFitWidth"]
 - !private ["So11UIResponderC", "animate"]
 - ["So11UIResponderC", "arrayLeaderboards"]
 - ["So11UIResponderC", "backToLeaderboard"]
@@ -3364,6 +3385,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UISearchController"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewRowAnimation"]
 - !private ["So30UIResponderStandardEditActionsP", "UIView"]
+- !private ["So30UIResponderStandardEditActionsP", "adjustsFontSizeToFitWidth"]
 - !private ["So30UIResponderStandardEditActionsP", "animate"]
 - !private ["So30UIResponderStandardEditActionsP", "arrayLeaderboards"]
 - !private ["So30UIResponderStandardEditActionsP", "cellForRow"]
@@ -3997,6 +4019,7 @@ depends-member:
 - !private ["So11UITableViewC", "tableHeaderView"]
 - !private ["So15UITableViewCellC", "configCell"]
 - !private ["So15UITableViewCellC", "detailTextLabel"]
+- !private ["So15UITableViewCellC", "layer"]
 - !private ["So15UITableViewCellC", "locationLbl"]
 - !private ["So15UITableViewCellC", "numOfLikes"]
 - !private ["So15UITableViewCellC", "textLabel"]
@@ -4259,6 +4282,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UISearchController"]
 - !private ["So18UITraitEnvironmentP", "UITableViewRowAnimation"]
 - !private ["So18UITraitEnvironmentP", "UIView"]
+- !private ["So18UITraitEnvironmentP", "adjustsFontSizeToFitWidth"]
 - !private ["So18UITraitEnvironmentP", "animate"]
 - !private ["So18UITraitEnvironmentP", "arrayLeaderboards"]
 - !private ["So18UITraitEnvironmentP", "cellForRow"]
@@ -4384,6 +4408,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "adjustsFontSizeToFitWidth"]
 - !private ["So6UIViewC", "animate"]
 - !private ["So6UIViewC", "cellForRow"]
 - !private ["So6UIViewC", "configCell"]
@@ -4563,6 +4588,7 @@ depends-member:
 - !private ["So4UserC", "uid"]
 - !private ["So8UserInfoP", "uid"]
 - !private ["12JustAThought15VCTableViewCellC", "configCell"]
+- !private ["12JustAThought15VCTableViewCellC", "layer"]
 - !private ["12JustAThought15VCTableViewCellC", "locationLbl"]
 - !private ["12JustAThought15VCTableViewCellC", "numOfLikes"]
 - !private ["12JustAThought15VCTableViewCellC", "timeStampLbl"]
@@ -4596,6 +4622,7 @@ depends-member:
 - !private ["s23_BidirectionalIndexableP", "timeStamp"]
 - !private ["s23_BidirectionalIndexableP", "typedTopic"]
 - !private ["s18_BitwiseOperationsP", "toString"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "adjustsFontSizeToFitWidth"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "animate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cellForRow"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "configCell"]
@@ -4732,6 +4759,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UISearchController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewRowAnimation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "adjustsFontSizeToFitWidth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "allObjects"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arrayLeaderboards"]
@@ -5127,6 +5155,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/SwiftKeychainWrapper.swiftmodule/x86_64.swiftmodule"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/KeychainSwift/KeychainSwift.framework/Modules/KeychainSwift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -5142,6 +5172,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-umbrella.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/KeychainSwift/KeychainSwift.framework/Headers/KeychainSwift-umbrella.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
@@ -5184,6 +5216,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
@@ -5195,6 +5228,8 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Headers/SwiftKeychainWrapper-Swift.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/KeychainSwift/KeychainSwift.framework/Headers/KeychainSwift-Swift.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
@@ -5207,7 +5242,9 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphonesimulator/KeychainSwift/KeychainSwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

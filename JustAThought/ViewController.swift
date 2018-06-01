@@ -38,6 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         @IBOutlet weak var enterThoughtBtn: UIButton!
     
+        @IBOutlet weak var backToMainTopicBtn: UIButton!
+        @IBOutlet weak var backToFeedBtn: UIButton!
+    
         @IBOutlet weak var searchTopicBtn: UIButton!
         @IBOutlet weak var searchCityBtn: UIButton!
         @IBOutlet weak var requestTopicBtn: UIButton!
@@ -111,8 +114,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var country: String?
         var region: String?
         var countryShortName: String?
-    
-        @IBOutlet weak var backToMainTopicBtn: UIButton!
     
         func configureSearchController() {
             searchController = UISearchController(searchResultsController: nil)
@@ -388,6 +389,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.timeStampLbl.text = thought.timeStamp
                 cell.locationLbl.text = thought.city! + ", " + thought.country!
                 cell.numOfLikes.text = numToString
+                
+                cell.topicLbl.center.x = cell.center.x
                 
                 Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { snapshot in
                         guard let dict = snapshot.value as? [String:Any] else {
@@ -886,6 +889,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             diaryBtn.showsTouchWhenHighlighted = true
             locationBtn.showsTouchWhenHighlighted = true
             profileBtn.showsTouchWhenHighlighted = true
+            
+            backToMainTopicBtn.layer.shadowColor = UIColor.black.cgColor
+            backToMainTopicBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            backToMainTopicBtn.layer.masksToBounds = false
+            backToMainTopicBtn.layer.shadowRadius = 1.0
+            backToMainTopicBtn.layer.shadowOpacity = 0.5
+            backToMainTopicBtn.layer.cornerRadius = 7
+            backToMainTopicBtn.showsTouchWhenHighlighted = true
+            
+            backToFeedBtn.layer.shadowColor = UIColor.black.cgColor
+            backToFeedBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            backToFeedBtn.layer.masksToBounds = false
+            backToFeedBtn.layer.shadowRadius = 1.0
+            backToFeedBtn.layer.shadowOpacity = 0.5
+            backToFeedBtn.layer.cornerRadius = 7
+            backToFeedBtn.showsTouchWhenHighlighted = true
             
             searchTopicBtn.layer.shadowColor = UIColor.black.cgColor
             searchTopicBtn.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)

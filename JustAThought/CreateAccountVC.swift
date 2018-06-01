@@ -11,7 +11,6 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
-
 class CreateAccountVC: UIViewController, UITextFieldDelegate {
 
     let databaseRef = Database.database().reference(fromURL: "https://just-a-thought-76ed7.firebaseio.com/")
@@ -26,7 +25,9 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var createBtn: UIButton!
     @IBOutlet weak var backBtn: UIButton!
     
-    override func viewDidLoad() {
+    let service = "Just A Thought"
+    
+     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         self.emailTextField.delegate = self
@@ -51,6 +52,13 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
         backBtn.layer.shadowOpacity = 0.5
         backBtn.layer.cornerRadius = 7
         backBtn.showsTouchWhenHighlighted = true
+        
+        /*if #available(iOS 11.0, *) {
+            emailTextField.textContentType = .username
+            passwordTextField.textContentType = .password
+        } else {
+            // Fallback on earlier versions
+        }*/
         
     }
     func containsSwearWord(text: String, swearWords: [String]) -> Bool {
@@ -121,7 +129,8 @@ class CreateAccountVC: UIViewController, UITextFieldDelegate {
             Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
                 if error == nil {
                     print("You have successfully signed up")
-                    
+                    //KeychainService.savePassword(service: self.service, account: self.emailTextField.text!, data: self.passwordTextField.text!)
+                   
                     guard let uid = user?.uid else{
                         return
                     }

@@ -8,22 +8,24 @@
 	<string>Firebase</string>
 	<string>FirebaseInstanceID</string>
 	<string>FirebaseFirestore</string>
-	<string>SwiftKeychainWrapper</string>
+	<string>Security</string>
 	<string>GoogleMobileAds</string>
+	<string>SwiftKeychainWrapper</string>
 	<string>FirebaseDatabase</string>
 	<string>Fabric</string>
 	<string>FirebaseAnalytics</string>
+	<string>UIKit</string>
 	<string>FirebasePerformance</string>
 	<string>sys</string>
-	<string>UIKit</string>
 	<string>FirebaseRemoteConfig</string>
 	<string>Crashlytics</string>
 	<string>CoreLocation</string>
+	<string>WatchKit</string>
 	<string>XCTest</string>
 	<string>FirebaseAuth</string>
 	<string>FirebaseCrash</string>
-	<string>WatchKit</string>
 	<string>FirebaseMessaging</string>
+	<string>KeychainSwift</string>
 	<string>FirebaseCore</string>
 	<string>FirebaseInvites</string>
 	<string>FirebaseStorage</string>

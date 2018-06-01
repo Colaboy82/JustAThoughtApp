@@ -321,6 +321,8 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //getting the thought of selected position
             thought = mostLikedPerTopic[indexPath.row]
             cell.configCell(thought: thought)
+            cell.layer.borderWidth = 1.0
+            cell.layer.borderColor = UIColor.black.cgColor
             let numToString = (thought._likes).toString()
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
@@ -366,6 +368,14 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //getting the thought of selected position
             thought = mostLikedByLocation[indexPath.row]
             cell.configCell(thought: thought)
+            cell.layer.borderWidth = 1.0
+            cell.layer.borderColor = UIColor.black.cgColor
+            
+            cell.topicLbl.adjustsFontSizeToFitWidth = true
+            cell.userLbl.adjustsFontSizeToFitWidth = true
+            cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+            cell.locationLbl.adjustsFontSizeToFitWidth = true
+            cell.numOfLikes.adjustsFontSizeToFitWidth = true
             let numToString = (thought._likes).toString()
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
@@ -404,6 +414,14 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //getting the thought of selected position
             thought = mostLikedDaily[indexPath.row]
             cell.configCell(thought: thought)
+            cell.layer.borderWidth = 1.0
+            cell.layer.borderColor = UIColor.black.cgColor
+            
+            cell.topicLbl.adjustsFontSizeToFitWidth = true
+            cell.userLbl.adjustsFontSizeToFitWidth = true
+            cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+            cell.locationLbl.adjustsFontSizeToFitWidth = true
+            cell.numOfLikes.adjustsFontSizeToFitWidth = true
             let numToString = (thought._likes).toString()
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
@@ -442,6 +460,14 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //getting the thought of selected position
             thought = mostLikedAllTimeList[indexPath.row]
             cell.configCell(thought: thought)
+            cell.layer.borderWidth = 1.0
+            cell.layer.borderColor = UIColor.black.cgColor
+            
+            cell.topicLbl.adjustsFontSizeToFitWidth = true
+            cell.userLbl.adjustsFontSizeToFitWidth = true
+            cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+            cell.locationLbl.adjustsFontSizeToFitWidth = true
+            cell.numOfLikes.adjustsFontSizeToFitWidth = true
             let numToString = (thought._likes).toString()
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
@@ -480,6 +506,14 @@ class LikeLeaderboardVC: UIViewController, UITableViewDataSource, UITableViewDel
             //getting the thought of selected position
             thought = mostLikedAllTimeList[indexPath.row]
             cell.configCell(thought: thought)
+            cell.layer.borderWidth = 1.0
+            cell.layer.borderColor = UIColor.black.cgColor
+            
+            cell.topicLbl.adjustsFontSizeToFitWidth = true
+            cell.userLbl.adjustsFontSizeToFitWidth = true
+            cell.timeStampLbl.adjustsFontSizeToFitWidth = true
+            cell.locationLbl.adjustsFontSizeToFitWidth = true
+            cell.numOfLikes.adjustsFontSizeToFitWidth = true
             let numToString = (thought._likes).toString()
             //adding values to labels
             //cell.thoughtLbl.text = thought.typedThought
