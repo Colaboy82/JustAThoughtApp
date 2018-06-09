@@ -176,6 +176,7 @@ depends-member:
 - ["12JustAThought15CreateAccountVCC", "phoneNumTextField"]
 - !private ["12JustAThought15CreateAccountVCC", "present"]
 - !private ["12JustAThought15CreateAccountVCC", "print"]
+- ["12JustAThought15CreateAccountVCC", "service"]
 - !private ["12JustAThought15CreateAccountVCC", "storyboard"]
 - ["12JustAThought15CreateAccountVCC", "textField"]
 - ["12JustAThought15CreateAccountVCC", "textFieldDidBeginEditing"]
@@ -655,6 +656,7 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "rangeOfCharacter"]
 - ["So8NSObjectC", "reference"]
+- ["So8NSObjectC", "service"]
 - !private ["So8NSObjectC", "shadowColor"]
 - !private ["So8NSObjectC", "shadowOffset"]
 - !private ["So8NSObjectC", "shadowOpacity"]
@@ -1009,6 +1011,7 @@ depends-member:
 - ["So11UIResponderC", "phoneNumTextField"]
 - !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "service"]
 - !private ["So11UIResponderC", "showsTouchWhenHighlighted"]
 - !private ["So11UIResponderC", "storyboard"]
 - !private ["So11UIResponderC", "text"]
@@ -1211,6 +1214,7 @@ depends-member:
 - ["So16UIViewControllerC", "phoneNumTextField"]
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "service"]
 - !private ["So16UIViewControllerC", "storyboard"]
 - ["So16UIViewControllerC", "textField"]
 - ["So16UIViewControllerC", "textFieldDidBeginEditing"]
@@ -1466,6 +1470,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphoneos/KeychainSwift/KeychainSwift.framework/Modules/KeychainSwift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -1481,23 +1486,17 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphoneos/KeychainSwift/KeychainSwift.framework/Headers/KeychainSwift-umbrella.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
@@ -1518,7 +1517,6 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -1531,45 +1529,30 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphoneos/KeychainSwift/KeychainSwift.framework/Headers/KeychainSwift-Swift.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
-interface-hash: "c1f4e4da945d9780d09e576d354c2017"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphoneos/KeychainSwift/KeychainSwift.framework/Modules/module.modulemap"
+interface-hash: "ab3dfb621c27cd7a32475bc4d2afda5e"

@@ -176,6 +176,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import ObjectiveC;
 @import CoreLocation;
+@import GoogleMobileAds;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -521,9 +523,11 @@ SWIFT_CLASS("_TtC12JustAThought15VCTableViewCell")
 @class CLLocationManager;
 @class CLLocation;
 @class UISwipeGestureRecognizer;
+@class GADBannerView;
+@class GADRequestError;
 
 SWIFT_CLASS("_TtC12JustAThought14ViewController")
-@interface ViewController : UIViewController <CLLocationManagerDelegate, UISearchBarDelegate, UISearchResultsUpdating, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UITextViewDelegate>
+@interface ViewController : UIViewController <CLLocationManagerDelegate, GADBannerViewDelegate, UISearchBarDelegate, UISearchResultsUpdating, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UITextViewDelegate>
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified menuBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified profileBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified diaryBtn;
@@ -571,6 +575,10 @@ SWIFT_CLASS("_TtC12JustAThought14ViewController")
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)didReceiveMemoryWarning;
 - (IBAction)logOutActionWithSender:(id _Nonnull)sender;
+- (void)adViewDidReceiveAd:(GADBannerView * _Null_unspecified)bannerView;
+- (void)adView:(GADBannerView * _Null_unspecified)bannerView didFailToReceiveAdWithError:(GADRequestError * _Null_unspecified)error;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 //import GooglePlaces
 
 @UIApplicationMain
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         //GMSPlacesClient.provideAPIKey("AIzaSyAN8TMQEdhX1_H6INXwHYHWhW37D-QnO5E")
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544/2934735716")//"ca-app-pub-3351170102380230~5385257117")
         UINavigationBar.appearance().titleTextAttributes = [
             NSAttributedStringKey.font: UIFont(name: "Menlo", size: 21)!
         ]

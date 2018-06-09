@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "1444b755dba5beb8250a06d6223c81c3"
-build_time: [1527367112, 214662000]
+build_time: [1527367435, 265771000]
 inputs:
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/Not used/FindTopicTableViewController.swift": [1514346502, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/CellTypes/VCTableViewCell.swift": [1523224693, 0]
@@ -17,7 +17,7 @@ inputs:
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/Global.swift": [1521721527, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/ContactPage.swift": [1526745471, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/UserProfileVC.swift": [1527004362, 0]
-  "/Users/derrickmu/Desktop/JustAThought/JustAThought/ViewController.swift": [1527366667, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/ViewController.swift": [1527367434, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/TopicCreateVC.swift": [1526752743, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/Models/TopicModel.swift": [1515522979, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/ResetPasswordVC.swift": [1526918151, 0]
@@ -26,4 +26,4 @@ inputs:
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/AboutPages.swift": [1526752517, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/Models/UserModel.swift": [1526755920, 0]
   "/Users/derrickmu/Desktop/JustAThought/JustAThought/UserDiaryVC.swift": [1527366680, 0]
-  "/Users/derrickmu/Desktop/JustAThought/JustAThought/AppDelegate.swift": [1527367110, 0]
+  "/Users/derrickmu/Desktop/JustAThought/JustAThought/AppDelegate.swift": [1527367428, 0]

@@ -174,6 +174,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import ObjectiveC;
 @import CoreLocation;
 #endif
 
@@ -284,6 +285,12 @@ SWIFT_CLASS("_TtC12JustAThought6InfoVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12JustAThought15KeychainService")
+@interface KeychainService : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC12JustAThought17LikeLeaderboardVC")
@@ -322,6 +329,7 @@ SWIFT_CLASS("_TtC12JustAThought7LoginVC")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified pwdBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createAcctBtn;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
@@ -465,6 +473,7 @@ SWIFT_CLASS("_TtC12JustAThought11UserDiaryVC")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified userNameLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified postCount;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeLeaderboardBtn;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -520,6 +529,8 @@ SWIFT_CLASS("_TtC12JustAThought14ViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified diaryBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified locationBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified enterThoughtBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backToMainTopicBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backToFeedBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified searchTopicBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified searchCityBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified requestTopicBtn;
@@ -541,7 +552,6 @@ SWIFT_CLASS("_TtC12JustAThought14ViewController")
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified upperConstraint;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified upperConstraintSearchView;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Null_unspecified upperConstraintCitySearchView;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backToMainTopicBtn;
 - (void)updateSearchResultsForSearchController:(UISearchController * _Nonnull)searchController;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

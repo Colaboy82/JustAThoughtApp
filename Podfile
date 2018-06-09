@@ -16,7 +16,8 @@ target 'JustAThought' do
   pod 'GooglePlacePicker'
   pod 'GoogleMaps’
   pod 'KeychainSwift'
-  
+  pod 'Google-Mobile-Ads-SDK'
+
   target 'JustAThoughtTests' do
     inherit! :search_paths
     # Pods for testing

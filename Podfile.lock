@@ -32,6 +32,7 @@ PODS:
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
+  - Google-Mobile-Ads-SDK (7.31.0)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - Google-Mobile-Ads-SDK
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
@@ -80,6 +82,7 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseInstanceID
     - FirebaseStorage
+    - Google-Mobile-Ads-SDK
     - GoogleMaps
     - GooglePlacePicker
     - GooglePlaces
@@ -97,6 +100,7 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 7088bfc4af2cc00231bb36e1404fc2d7509eb4dc
   FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
   FirebaseStorage: ab08d1c93a2feffa038fdd6693088b310ab1e6c6
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
@@ -106,6 +110,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 2748763f63b2e2354c933c9f4aba0596d6eddce4
+PODFILE CHECKSUM: 7488205f5c96d0edc40c766ddbc5df0aebc5a3c9
 
 COCOAPODS: 1.5.3

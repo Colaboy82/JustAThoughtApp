@@ -18,8 +18,10 @@ provides-dynamic-lookup:
 - "passwordTextField"
 - "pwdBtn"
 - "textFieldShouldReturn"
+- "viewDidAppear"
 - "viewDidLoad"
 depends-top-level:
+- !private "!="
 - !private "=="
 - "AnyObject"
 - "AssignmentPrecedence"
@@ -27,8 +29,11 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "CGSize"
+- !private "DataService"
 - "DatabaseReference"
 - "LoginVC"
+- "String"
+- "StringLiteralType"
 - !private "UIAlertAction"
 - !private "UIAlertController"
 - "UIButton"
@@ -43,7 +48,7 @@ depends-top-level:
 depends-member:
 - !private ["So4AuthC", "auth"]
 - !private ["So4AuthC", "signIn"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So7CALayerC", "masksToBounds"]
@@ -66,6 +71,7 @@ depends-member:
 - !private ["SC6CGSizeV", "init"]
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "DataService"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIColor"]
@@ -77,6 +83,7 @@ depends-member:
 - !private ["s7CVarArgP", "black"]
 - !private ["s7CVarArgP", "cancelsTouchesInView"]
 - !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "completeSignIn"]
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "createAcctBtn"]
 - !private ["s7CVarArgP", "delegate"]
@@ -85,7 +92,7 @@ depends-member:
 - !private ["s7CVarArgP", "emailTextField"]
 - !private ["s7CVarArgP", "endEditing"]
 - !private ["s7CVarArgP", "hideKeyboardWhenTappedAround"]
-- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "loginBtn"]
@@ -110,13 +117,15 @@ depends-member:
 - ["s7CVarArgP", "textFieldShouldClear"]
 - ["s7CVarArgP", "textFieldShouldEndEditing"]
 - ["s7CVarArgP", "textFieldShouldReturn"]
+- !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", ""]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "DataService"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
@@ -128,6 +137,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "black"]
 - !private ["s28CustomDebugStringConvertibleP", "cancelsTouchesInView"]
 - !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "completeSignIn"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "createAcctBtn"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
@@ -136,7 +146,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "emailTextField"]
 - !private ["s28CustomDebugStringConvertibleP", "endEditing"]
 - !private ["s28CustomDebugStringConvertibleP", "hideKeyboardWhenTappedAround"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "loginBtn"]
@@ -161,15 +171,17 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldClear"]
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldEndEditing"]
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "DataService"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
@@ -182,6 +194,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "cancelsTouchesInView"]
 - !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "completeSignIn"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "createAcctBtn"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
@@ -190,7 +203,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "emailTextField"]
 - !private ["s23CustomStringConvertibleP", "endEditing"]
 - !private ["s23CustomStringConvertibleP", "hideKeyboardWhenTappedAround"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "loginBtn"]
@@ -215,15 +228,19 @@ depends-member:
 - ["s23CustomStringConvertibleP", "textFieldShouldClear"]
 - ["s23CustomStringConvertibleP", "textFieldShouldEndEditing"]
 - ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["12JustAThought11DataServiceC", "init"]
+- !private ["12JustAThought11DataServiceC", "keyChain"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "init"]
+- ["s9DecodableP", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "init"]
+- ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "CGSize"]
+- !private ["s9EquatableP", "DataService"]
 - !private ["s9EquatableP", "UIAlertAction"]
 - !private ["s9EquatableP", "UIAlertController"]
 - !private ["s9EquatableP", "UIColor"]
@@ -238,6 +255,7 @@ depends-member:
 - !private ["s9EquatableP", "cancel"]
 - !private ["s9EquatableP", "cancelsTouchesInView"]
 - !private ["s9EquatableP", "cgColor"]
+- !private ["s9EquatableP", "completeSignIn"]
 - !private ["s9EquatableP", "cornerRadius"]
 - !private ["s9EquatableP", "createAcctBtn"]
 - !private ["s9EquatableP", "delegate"]
@@ -246,7 +264,7 @@ depends-member:
 - !private ["s9EquatableP", "emailTextField"]
 - !private ["s9EquatableP", "endEditing"]
 - !private ["s9EquatableP", "hideKeyboardWhenTappedAround"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "instantiateViewController"]
 - !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "loginBtn"]
@@ -271,16 +289,18 @@ depends-member:
 - ["s9EquatableP", "textFieldShouldClear"]
 - ["s9EquatableP", "textFieldShouldEndEditing"]
 - ["s9EquatableP", "textFieldShouldReturn"]
+- !private ["s9EquatableP", "uid"]
 - !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
 - !private ["s5ErrorP", "localizedDescription"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "CGSize"]
+- !private ["s8HashableP", "DataService"]
 - !private ["s8HashableP", "UIAlertAction"]
 - !private ["s8HashableP", "UIAlertController"]
 - !private ["s8HashableP", "UIColor"]
@@ -295,6 +315,7 @@ depends-member:
 - !private ["s8HashableP", "cancel"]
 - !private ["s8HashableP", "cancelsTouchesInView"]
 - !private ["s8HashableP", "cgColor"]
+- !private ["s8HashableP", "completeSignIn"]
 - !private ["s8HashableP", "cornerRadius"]
 - !private ["s8HashableP", "createAcctBtn"]
 - !private ["s8HashableP", "delegate"]
@@ -303,7 +324,7 @@ depends-member:
 - !private ["s8HashableP", "emailTextField"]
 - !private ["s8HashableP", "endEditing"]
 - !private ["s8HashableP", "hideKeyboardWhenTappedAround"]
-- !private ["s8HashableP", "init"]
+- ["s8HashableP", "init"]
 - !private ["s8HashableP", "instantiateViewController"]
 - !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "loginBtn"]
@@ -328,19 +349,25 @@ depends-member:
 - ["s8HashableP", "textFieldShouldClear"]
 - ["s8HashableP", "textFieldShouldEndEditing"]
 - ["s8HashableP", "textFieldShouldReturn"]
+- !private ["s8HashableP", "uid"]
 - !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
+- !private ["13KeychainSwiftAAC", "get"]
+- !private ["13KeychainSwiftAAC", "set"]
 - ["12JustAThought7LoginVCC", "AnyObject"]
 - !private ["12JustAThought7LoginVCC", "Auth"]
 - ["12JustAThought7LoginVCC", "Bool"]
 - !private ["12JustAThought7LoginVCC", "CGSize"]
+- !private ["12JustAThought7LoginVCC", "DataService"]
 - ["12JustAThought7LoginVCC", "DatabaseReference"]
+- ["12JustAThought7LoginVCC", "String"]
 - !private ["12JustAThought7LoginVCC", "UIAlertAction"]
 - !private ["12JustAThought7LoginVCC", "UIAlertController"]
 - ["12JustAThought7LoginVCC", "UIButton"]
 - !private ["12JustAThought7LoginVCC", "UIColor"]
 - ["12JustAThought7LoginVCC", "UITextField"]
+- ["12JustAThought7LoginVCC", "completeSignIn"]
 - ["12JustAThought7LoginVCC", "createAcctBtn"]
 - ["12JustAThought7LoginVCC", "deinit"]
 - ["12JustAThought7LoginVCC", "didReceiveMemoryWarning"]
@@ -355,6 +382,7 @@ depends-member:
 - !private ["12JustAThought7LoginVCC", "print"]
 - ["12JustAThought7LoginVCC", "pwdBtn"]
 - ["12JustAThought7LoginVCC", "refUsers"]
+- ["12JustAThought7LoginVCC", "service"]
 - !private ["12JustAThought7LoginVCC", "storyboard"]
 - ["12JustAThought7LoginVCC", "textField"]
 - ["12JustAThought7LoginVCC", "textFieldDidBeginEditing"]
@@ -364,13 +392,15 @@ depends-member:
 - ["12JustAThought7LoginVCC", "textFieldShouldEndEditing"]
 - ["12JustAThought7LoginVCC", "textFieldShouldReturn"]
 - !private ["12JustAThought7LoginVCC", "view"]
+- ["12JustAThought7LoginVCC", "viewDidAppear"]
 - ["12JustAThought7LoginVCC", "viewDidLoad"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - !private ["12JustAThought4MainC", "profile"]
-- !private ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "CGSize"]
+- !private ["So8NSCodingP", "DataService"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIColor"]
@@ -380,6 +410,7 @@ depends-member:
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "black"]
 - !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "completeSignIn"]
 - !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "createAcctBtn"]
 - !private ["So8NSCodingP", "delegate"]
@@ -388,7 +419,7 @@ depends-member:
 - !private ["So8NSCodingP", "emailTextField"]
 - !private ["So8NSCodingP", "endEditing"]
 - !private ["So8NSCodingP", "hideKeyboardWhenTappedAround"]
-- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "loginBtn"]
 - !private ["So8NSCodingP", "mainInstance"]
@@ -416,15 +447,17 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "cgColor"]
-- !private ["So9NSCopyingP", "init"]
+- ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "CGSize"]
+- !private ["So26NSExtensionRequestHandlingP", "DataService"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
 - !private ["So26NSExtensionRequestHandlingP", "UIViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "completeSignIn"]
 - !private ["So26NSExtensionRequestHandlingP", "createAcctBtn"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "dismissKeyboard"]
@@ -450,16 +483,18 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So21NSItemProviderReadingP", "black"]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
-- !private ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "black"]
 - !private ["So21NSItemProviderWritingP", "cgColor"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "AnyObject"]
 - !private ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "CGSize"]
+- !private ["So8NSObjectC", "DataService"]
 - ["So8NSObjectC", "DatabaseReference"]
+- ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
 - ["So8NSObjectC", "UIButton"]
@@ -473,6 +508,7 @@ depends-member:
 - !private ["So8NSObjectC", "black"]
 - !private ["So8NSObjectC", "cancelsTouchesInView"]
 - !private ["So8NSObjectC", "cgColor"]
+- ["So8NSObjectC", "completeSignIn"]
 - !private ["So8NSObjectC", "cornerRadius"]
 - ["So8NSObjectC", "createAcctBtn"]
 - !private ["So8NSObjectC", "delegate"]
@@ -493,6 +529,7 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "pwdBtn"]
 - ["So8NSObjectC", "refUsers"]
+- ["So8NSObjectC", "service"]
 - !private ["So8NSObjectC", "shadowColor"]
 - !private ["So8NSObjectC", "shadowOffset"]
 - !private ["So8NSObjectC", "shadowOpacity"]
@@ -508,10 +545,13 @@ depends-member:
 - ["So8NSObjectC", "textFieldShouldClear"]
 - ["So8NSObjectC", "textFieldShouldEndEditing"]
 - ["So8NSObjectC", "textFieldShouldReturn"]
+- !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidAppear"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "Auth"]
 - !private ["So16NSObjectProtocolP", "CGSize"]
+- !private ["So16NSObjectProtocolP", "DataService"]
 - !private ["So16NSObjectProtocolP", "UIAlertAction"]
 - !private ["So16NSObjectProtocolP", "UIAlertController"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
@@ -523,6 +563,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "black"]
 - !private ["So16NSObjectProtocolP", "cancelsTouchesInView"]
 - !private ["So16NSObjectProtocolP", "cgColor"]
+- !private ["So16NSObjectProtocolP", "completeSignIn"]
 - !private ["So16NSObjectProtocolP", "cornerRadius"]
 - !private ["So16NSObjectProtocolP", "createAcctBtn"]
 - !private ["So16NSObjectProtocolP", "delegate"]
@@ -531,7 +572,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "emailTextField"]
 - !private ["So16NSObjectProtocolP", "endEditing"]
 - !private ["So16NSObjectProtocolP", "hideKeyboardWhenTappedAround"]
-- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateViewController"]
 - !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "loginBtn"]
@@ -556,27 +597,28 @@ depends-member:
 - ["So16NSObjectProtocolP", "textFieldShouldClear"]
 - ["So16NSObjectProtocolP", "textFieldShouldEndEditing"]
 - ["So16NSObjectProtocolP", "textFieldShouldReturn"]
+- !private ["So16NSObjectProtocolP", "uid"]
 - !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "cgColor"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
-- !private ["So14NSSecureCodingP", "init"]
+- ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "masksToBounds"]
 - !private ["So14NSSecureCodingP", "shadowColor"]
 - !private ["So14NSSecureCodingP", "shadowOffset"]
 - !private ["So14NSSecureCodingP", "shadowOpacity"]
 - !private ["So14NSSecureCodingP", "shadowRadius"]
-- !private ["So8NSStringC", "init"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["So8NSStringC", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "alert"]
 - !private ["s16RawRepresentableP", "cancel"]
-- !private ["s8SequenceP", "init"]
-- !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["s8SequenceP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "showsTouchWhenHighlighted"]
 - !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
@@ -598,6 +640,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "CGSize"]
+- !private ["So21UIAppearanceContainerP", "DataService"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
@@ -605,6 +648,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIViewController"]
 - !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "completeSignIn"]
 - !private ["So21UIAppearanceContainerP", "createAcctBtn"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
@@ -639,12 +683,14 @@ depends-member:
 - !private ["So7UIColorC", "cgColor"]
 - !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "CGSize"]
+- !private ["So18UIContentContainerP", "DataService"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
 - !private ["So18UIContentContainerP", "UIViewController"]
 - !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "completeSignIn"]
 - !private ["So18UIContentContainerP", "createAcctBtn"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "dismissKeyboard"]
@@ -688,6 +734,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "CGSize"]
+- !private ["So18UIFocusEnvironmentP", "DataService"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
@@ -695,6 +742,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIViewController"]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "completeSignIn"]
 - !private ["So18UIFocusEnvironmentP", "createAcctBtn"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
@@ -735,6 +783,7 @@ depends-member:
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- !private ["So30UIPasteConfigurationSupportingP", "DataService"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
@@ -742,6 +791,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "completeSignIn"]
 - !private ["So30UIPasteConfigurationSupportingP", "createAcctBtn"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
@@ -774,7 +824,9 @@ depends-member:
 - !private ["So11UIResponderC", "Auth"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "CGSize"]
+- !private ["So11UIResponderC", "DataService"]
 - ["So11UIResponderC", "DatabaseReference"]
+- ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
 - ["So11UIResponderC", "UIButton"]
@@ -784,6 +836,7 @@ depends-member:
 - !private ["So11UIResponderC", "UIViewController"]
 - !private ["So11UIResponderC", "addAction"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
+- ["So11UIResponderC", "completeSignIn"]
 - ["So11UIResponderC", "createAcctBtn"]
 - !private ["So11UIResponderC", "delegate"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
@@ -801,6 +854,7 @@ depends-member:
 - !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "pwdBtn"]
 - ["So11UIResponderC", "refUsers"]
+- ["So11UIResponderC", "service"]
 - !private ["So11UIResponderC", "showsTouchWhenHighlighted"]
 - !private ["So11UIResponderC", "storyboard"]
 - !private ["So11UIResponderC", "text"]
@@ -812,9 +866,11 @@ depends-member:
 - ["So11UIResponderC", "textFieldShouldEndEditing"]
 - ["So11UIResponderC", "textFieldShouldReturn"]
 - !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidAppear"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "CGSize"]
+- !private ["So30UIResponderStandardEditActionsP", "DataService"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
@@ -822,6 +878,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "completeSignIn"]
 - !private ["So30UIResponderStandardEditActionsP", "createAcctBtn"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
@@ -856,12 +913,14 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "showsTouchWhenHighlighted"]
 - !private ["So16UIStateRestoringP", "Auth"]
 - !private ["So16UIStateRestoringP", "CGSize"]
+- !private ["So16UIStateRestoringP", "DataService"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
 - !private ["So16UIStateRestoringP", "UIViewController"]
 - !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "completeSignIn"]
 - !private ["So16UIStateRestoringP", "createAcctBtn"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "dismissKeyboard"]
@@ -896,9 +955,11 @@ depends-member:
 - !private ["So11UITextFieldC", "text"]
 - !private ["So19UITextFieldDelegateP", "Auth"]
 - !private ["So19UITextFieldDelegateP", "CGSize"]
+- !private ["So19UITextFieldDelegateP", "DataService"]
 - !private ["So19UITextFieldDelegateP", "UIAlertAction"]
 - !private ["So19UITextFieldDelegateP", "UIAlertController"]
 - !private ["So19UITextFieldDelegateP", "UIColor"]
+- !private ["So19UITextFieldDelegateP", "completeSignIn"]
 - !private ["So19UITextFieldDelegateP", "createAcctBtn"]
 - !private ["So19UITextFieldDelegateP", "emailTextField"]
 - !private ["So19UITextFieldDelegateP", "hideKeyboardWhenTappedAround"]
@@ -926,6 +987,7 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
+- !private ["So18UITraitEnvironmentP", "DataService"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
@@ -933,6 +995,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIViewController"]
 - !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "completeSignIn"]
 - !private ["So18UITraitEnvironmentP", "createAcctBtn"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
@@ -971,7 +1034,9 @@ depends-member:
 - !private ["So16UIViewControllerC", "Auth"]
 - ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "CGSize"]
+- !private ["So16UIViewControllerC", "DataService"]
 - ["So16UIViewControllerC", "DatabaseReference"]
+- ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - ["So16UIViewControllerC", "UIButton"]
@@ -980,6 +1045,7 @@ depends-member:
 - ["So16UIViewControllerC", "UITextField"]
 - !private ["So16UIViewControllerC", "UIViewController"]
 - !private ["So16UIViewControllerC", "addAction"]
+- ["So16UIViewControllerC", "completeSignIn"]
 - ["So16UIViewControllerC", "createAcctBtn"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "dismissKeyboard"]
@@ -994,6 +1060,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "pwdBtn"]
 - ["So16UIViewControllerC", "refUsers"]
+- ["So16UIViewControllerC", "service"]
 - !private ["So16UIViewControllerC", "storyboard"]
 - ["So16UIViewControllerC", "textField"]
 - ["So16UIViewControllerC", "textFieldDidBeginEditing"]
@@ -1003,9 +1070,12 @@ depends-member:
 - ["So16UIViewControllerC", "textFieldShouldEndEditing"]
 - ["So16UIViewControllerC", "textFieldShouldReturn"]
 - !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidAppear"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", ""]
-- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["So4UserC", "uid"]
+- !private ["So8UserInfoP", "uid"]
+- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "endEditing"]
@@ -1013,18 +1083,19 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "showsTouchWhenHighlighted"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DataService"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
@@ -1036,6 +1107,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cancelsTouchesInView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "completeSignIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "createAcctBtn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
@@ -1044,7 +1116,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "emailTextField"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideKeyboardWhenTappedAround"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "loginBtn"]
@@ -1069,58 +1141,61 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldClear"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldEndEditing"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s16_SwiftStringViewP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "So4AuthC"
-- !private "s23BidirectionalCollectionP"
+- "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
 - !private "SC6CGSizeV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- "s10CollectionP"
+- "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
+- !private "12JustAThought11DataServiceC"
+- "s9DecodableP"
+- "s9EncodableP"
 - "s9EquatableP"
 - !private "s5ErrorP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
+- !private "13KeychainSwiftAAC"
 - "12JustAThought7LoginVCC"
-- !private "s25LosslessStringConvertibleP"
+- "s25LosslessStringConvertibleP"
 - !private "12JustAThought4MainC"
-- !private "s10MirrorPathP"
+- "s10MirrorPathP"
 - "So8NSCodingP"
-- !private "So9NSCopyingP"
+- "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
-- !private "s26RangeReplaceableCollectionP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
-- !private "s8SequenceP"
-- !private "SS"
-- !private "s14StringProtocolP"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "s8SequenceP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So13UIAlertActionC"
@@ -1157,25 +1232,28 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
-- !private "s23_BidirectionalIndexableP"
+- !private "So4UserC"
+- !private "So8UserInfoP"
+- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s16_SwiftStringViewP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphoneos/KeychainSwift/KeychainSwift.framework/Modules/KeychainSwift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
@@ -1191,23 +1269,17 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphoneos/KeychainSwift/KeychainSwift.framework/Headers/KeychainSwift-umbrella.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
@@ -1228,7 +1300,6 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -1241,45 +1312,30 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphoneos/KeychainSwift/KeychainSwift.framework/Headers/KeychainSwift-Swift.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
-interface-hash: "7b025ae33c29bc98472c5fa1f3dc9aff"
+- "/Users/derrickmu/Desktop/JustAThought/DerivedData/JustAThought/Build/Products/Debug-iphoneos/KeychainSwift/KeychainSwift.framework/Modules/module.modulemap"
+interface-hash: "7741a738b3079299223faa78c2554b09"

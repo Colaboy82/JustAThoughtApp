@@ -26,7 +26,9 @@ depends-member:
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isHidden"]
+- !private ["s7CVarArgP", "isNavigationBarHidden"]
 - !private ["s7CVarArgP", "mainInstance"]
+- !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "toolbar"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", ""]
@@ -34,7 +36,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "isNavigationBarHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "mainInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "toolbar"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -45,7 +49,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
+- !private ["s23CustomStringConvertibleP", "isNavigationBarHidden"]
 - !private ["s23CustomStringConvertibleP", "mainInstance"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "toolbar"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
@@ -56,7 +62,9 @@ depends-member:
 - !private ["s9EquatableP", "didReceiveMemoryWarning"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isHidden"]
+- !private ["s9EquatableP", "isNavigationBarHidden"]
 - !private ["s9EquatableP", "mainInstance"]
+- !private ["s9EquatableP", "navigationController"]
 - !private ["s9EquatableP", "toolbar"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
@@ -66,7 +74,9 @@ depends-member:
 - !private ["s8HashableP", "didReceiveMemoryWarning"]
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "isHidden"]
+- !private ["s8HashableP", "isNavigationBarHidden"]
 - !private ["s8HashableP", "mainInstance"]
+- !private ["s8HashableP", "navigationController"]
 - !private ["s8HashableP", "toolbar"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
@@ -76,14 +86,18 @@ depends-member:
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isHidden"]
+- !private ["So8NSCodingP", "isNavigationBarHidden"]
 - !private ["So8NSCodingP", "mainInstance"]
+- !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "toolbar"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", ""]
 - ["So26NSExtensionRequestHandlingP", "Timer"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "isNavigationBarHidden"]
 - !private ["So26NSExtensionRequestHandlingP", "mainInstance"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - !private ["So26NSExtensionRequestHandlingP", "toolbar"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -93,7 +107,9 @@ depends-member:
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isHidden"]
+- !private ["So8NSObjectC", "isNavigationBarHidden"]
 - !private ["So8NSObjectC", "mainInstance"]
+- !private ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "searchToolbar"]
 - ["So8NSObjectC", "timer"]
 - !private ["So8NSObjectC", "toolbar"]
@@ -102,7 +118,9 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isHidden"]
+- !private ["So16NSObjectProtocolP", "isNavigationBarHidden"]
 - !private ["So16NSObjectProtocolP", "mainInstance"]
+- !private ["So16NSObjectProtocolP", "navigationController"]
 - !private ["So16NSObjectProtocolP", "toolbar"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
@@ -113,6 +131,7 @@ depends-member:
 - ["12JustAThought20NavigationControllerC", "didReceiveMemoryWarning"]
 - ["12JustAThought20NavigationControllerC", "init"]
 - !private ["12JustAThought20NavigationControllerC", "mainInstance"]
+- !private ["12JustAThought20NavigationControllerC", "navigationController"]
 - ["12JustAThought20NavigationControllerC", "searchToolbar"]
 - ["12JustAThought20NavigationControllerC", "timer"]
 - !private ["12JustAThought20NavigationControllerC", "toolbar"]
@@ -124,7 +143,9 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "isHidden"]
+- !private ["So21UIAppearanceContainerP", "isNavigationBarHidden"]
 - !private ["So21UIAppearanceContainerP", "mainInstance"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
 - !private ["So21UIAppearanceContainerP", "toolbar"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", ""]
@@ -132,7 +153,9 @@ depends-member:
 - ["So18UIContentContainerP", "Timer"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "isNavigationBarHidden"]
 - !private ["So18UIContentContainerP", "mainInstance"]
+- !private ["So18UIContentContainerP", "navigationController"]
 - !private ["So18UIContentContainerP", "toolbar"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", ""]
@@ -142,7 +165,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "isHidden"]
+- !private ["So18UIFocusEnvironmentP", "isNavigationBarHidden"]
 - !private ["So18UIFocusEnvironmentP", "mainInstance"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
 - !private ["So18UIFocusEnvironmentP", "toolbar"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -152,7 +177,9 @@ depends-member:
 - ["So22UINavigationControllerC", "checkToolbar"]
 - ["So22UINavigationControllerC", "didReceiveMemoryWarning"]
 - ["So22UINavigationControllerC", "init"]
+- !private ["So22UINavigationControllerC", "isNavigationBarHidden"]
 - !private ["So22UINavigationControllerC", "mainInstance"]
+- !private ["So22UINavigationControllerC", "navigationController"]
 - ["So22UINavigationControllerC", "searchToolbar"]
 - ["So22UINavigationControllerC", "timer"]
 - !private ["So22UINavigationControllerC", "toolbar"]
@@ -162,7 +189,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "isNavigationBarHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "mainInstance"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "toolbar"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -172,7 +201,9 @@ depends-member:
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isHidden"]
+- !private ["So11UIResponderC", "isNavigationBarHidden"]
 - !private ["So11UIResponderC", "mainInstance"]
+- !private ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "searchToolbar"]
 - ["So11UIResponderC", "timer"]
 - !private ["So11UIResponderC", "toolbar"]
@@ -181,14 +212,18 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "isHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "isNavigationBarHidden"]
 - !private ["So30UIResponderStandardEditActionsP", "mainInstance"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "toolbar"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So16UIStateRestoringP", "Timer"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "isNavigationBarHidden"]
 - !private ["So16UIStateRestoringP", "mainInstance"]
+- !private ["So16UIStateRestoringP", "navigationController"]
 - !private ["So16UIStateRestoringP", "toolbar"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", ""]
@@ -197,7 +232,9 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "isHidden"]
+- !private ["So18UITraitEnvironmentP", "isNavigationBarHidden"]
 - !private ["So18UITraitEnvironmentP", "mainInstance"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
 - !private ["So18UITraitEnvironmentP", "toolbar"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", ""]
@@ -207,7 +244,9 @@ depends-member:
 - ["So16UIViewControllerC", "checkToolbar"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "isNavigationBarHidden"]
 - !private ["So16UIViewControllerC", "mainInstance"]
+- !private ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "searchToolbar"]
 - ["So16UIViewControllerC", "timer"]
 - !private ["So16UIViewControllerC", "toolbar"]
@@ -218,7 +257,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isNavigationBarHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mainInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toolbar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -286,14 +327,21 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlace.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSUserAddedPlace.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteTableDataSource.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteBoundsMode.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/Firebase.h"
@@ -314,6 +362,7 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompletePrediction.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -326,28 +375,45 @@ depends-external:
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteResultsViewController.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteFilter.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GooglePlaces.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceTypes.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesErrors.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacesClient.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAutocompleteMatchFragment.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSAddressComponent.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlaceLikelihoodList.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/Firebase/Core/Sources/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/derrickmu/Desktop/JustAThought/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/derrickmu/Desktop/JustAThought/Pods/GooglePlaces/Frameworks/GooglePlaces.framework/Modules/module.modulemap"
 interface-hash: "59f9b615a7dccb147f81985a2a9ecfae"
